@@ -1,34 +1,67 @@
 # FarmMesh Node
 
-**Draft v0.1 — hardware architecture discussion**
+**Draft v0.2 — product goals and hardware architecture**
 
 English | [简体中文](README.zh-CN.md)
 
-[Overview](#overview) · [Architecture](#architecture) · [Internal interface](#candidate-internal-interface) · [Open decisions](#open-decisions) · [Roadmap](#roadmap) · [References](#references)
+[Overview](#overview) · [Features & targets](#key-features-and-performance-targets) · [Architecture](#architecture) · [Internal interface](#candidate-internal-interface) · [Open decisions](#open-decisions) · [Roadmap](#roadmap) · [Contact](#contact-and-participation) · [References](#references)
 
 ## Overview
 
-FarmMesh Node is a hardware node project for a Mesh network intended for large-area farm deployments. Each node contains **one RP2350B and three ESP32-C5 chips**. Multiple nodes form the intended network; the three internal links are one part of the node, not the definition of the whole project.
+FarmMesh Node aims to provide **farm-wide coverage using solar-powered infrastructure nodes that need no pre-installed power or network cabling**, combining on-demand high-speed client access with distributed access for hundreds to approximately 1,000 low-traffic sensors. Inter-node links are intended to be entirely wireless. Solar supply, storage and node power budgets remain to be designed; this is not a claim of all-weather energy autonomy, and a gateway/uplink may still be needed.
 
-The RP2350B is intended to aggregate and forward data inside each node. Each ESP32-C5 has an independent internal link to the RP2350B, with a **50 Mbps (megabits per second) target per link**. This is not a shared 50 Mbps budget. Whether that target applies to one direction, the sum of both directions, or each direction remains undecided. It does not specify actual wireless throughput.
+The client-access design target is **50 Mbps of effective throughput after connecting to a Mesh node**, available on demand wherever needed in the farm. The initial capacity assumption is **1–2 concurrent high-speed clients across the whole farm**, not per infrastructure node and not a limit on the number of Mesh nodes or total clients. This does not require every location to receive 50 Mbps simultaneously. Measurement endpoints, direction and test conditions remain TBD; there is no guarantee of 50 Mbps across multiple Mesh hops or to the Internet.
 
-The project follows a **hardware-first, software-later** sequence. This repository currently records the architecture draft. Schematics, PCB layout, interface programs and timing validation have not been completed, and sustained 50 Mbps operation has not been demonstrated.
+Infrastructure nodes are intended to provide **concurrent BLE or Wi-Fi access for several hundred to approximately 1,000 low-traffic, low-power sensors across the whole farm**, distributed among multiple Mesh nodes. This is an aggregate planning target requiring capacity validation, not 1,000 direct BLE connections per node or simultaneous packet transmission by every sensor. End-device energy requirements and the infrastructure's solar-power budget are separate concerns; neither implies that the forwarding infrastructure must sleep. Low Wi-Fi traffic alone does not establish low power consumption, and BLE/Wi-Fi coexistence requires validation.
+
+Each infrastructure node contains **one RP2350B and three ESP32-C5 chips**. The RP2350B is intended to aggregate and forward data inside the node, with an independent internal link to each C5. The separate preliminary **50 Mbps per internal link** target is a hardware design input, not a demonstrated user throughput figure or proof that the access-service target can be met. Its directional and raw-rate/payload-rate definitions remain TBD.
+
+The project follows a **hardware-first, software-later** sequence. This repository records product goals and an architecture draft. Schematics, PCB layout, interface programs and timing validation have not been completed. Coverage, user throughput, terminal capacity, power consumption and sustained internal-link performance have not been measured.
+
+## Key features and performance targets
+
+**Targets below are planned requirements, not measured results.** TBD means to be determined. Chip resource facts and candidate allocations are identified separately.
+
+| Item | Target or configuration | Status and boundaries |
+| --- | --- | --- |
+| Solar power and deployment | Solar-capable infrastructure nodes; no pre-installed power or network cables; wireless inter-node links | Design goal; solar sizing, storage and node power budget TBD; energy autonomy unverified; gateway/uplink architecture open |
+| Farm-wide coverage | Wireless access throughout the farm | Product goal; area, terrain, range, node count and placement TBD |
+| On-demand high-speed access | 50 Mbps effective client-access throughput after connecting to a Mesh node | Design goal; measurement endpoints, direction and conditions TBD; no multi-hop or Internet throughput guarantee |
+| High-speed client concurrency | Initially 1–2 across the whole farm | Capacity assumption, unverified; not per Mesh node, a Mesh-node count limit or a total-client limit |
+| Concurrent low-traffic access | Several hundred to approximately 1,000 sensors across the farm via BLE or Wi-Fi | Aggregate planning target, distributed across nodes; capacity has an upper bound and needs validation; not per-node BLE sessions or simultaneous packets from all sensors |
+| Per-node BLE capacity | Bounded by C5 controller, host stack/configuration and radio scheduling | Connection-based versus advertising/scanning mode TBD; role and per-node limits unconfirmed; three C5 capacities cannot simply be added into a guarantee |
+| End-device energy use | Support low-power terminal operation | Product goal; activity duty cycle, power budget and battery-life target TBD; solar infrastructure budget separately TBD |
+| Node composition | 1 × RP2350B + 3 × ESP32-C5 | Selected architecture; schematic and PCB not completed |
+| Independent internal links | Preliminary target: 50 Mbps per C5–RP2350 link, not shared across three links | Internal-interface target; direction, raw versus payload rate and required margin for the user-service target TBD; unverified |
+| Internal interface | PARLIO ↔ PIO, separate 4-bit TX/RX buses; both clocks supplied by C5 | Candidate; 12 signals per link; program, pin mapping and timing unverified |
+| RP2350B resources | 48 Bank0 GPIOs; 3 PIO blocks / 12 state machines; 32 shared instructions per block; 16 system DMA channels | Chip resource facts; preliminary interface allocation below is not implementation proof |
+| Wireless roles and interconnection | Three C5 chips per node; Mesh protocol, radio roles/channels and gateway/uplink TBD | Architecture decisions pending; no guaranteed BLE/Wi-Fi coexistence performance or Internet throughput |
 
 ## Architecture
 
 ### Network concept
 
-The dotted lines below indicate participation in the intended network, not specific radio links or a central network device. Inter-node topology, radio roles and Mesh protocol remain open.
+The diagram separates end-device access from the Mesh infrastructure. Dotted lines show intended service relationships and node membership, not physical radio links or packet paths. The service box is a logical grouping, not a central device. Inter-node topology, radio roles and Mesh protocol remain open; the measurement endpoint and gateway/uplink boundary are also TBD.
 
 ```mermaid
 flowchart TB
-    mesh["Farm Mesh network concept / 农场 Mesh 网络概念"]
-    a["FarmMesh Node A"]
-    b["FarmMesh Node B"]
-    c["FarmMesh Node C"]
+    fast["High-speed clients / 高速客户端<br/>50 Mbps access target / 接入目标<br/>1–2 concurrent farm-wide / 全网并发目标"]
+    low["Low-traffic sensors / 低流量传感器<br/>Hundreds to approx. 1,000 farm-wide / 全网数百至约千个<br/>Concurrent access goal / 并发接入目标"]
+    mesh["FarmMesh infrastructure services / 基础设施服务层<br/>Logical grouping / 逻辑分组"]
+    fast -.- mesh
+    low -.-|"BLE or Wi-Fi / 计划接入"| mesh
+    subgraph infra["Solar-capable Mesh nodes / 太阳能 Mesh 节点目标"]
+        a["FarmMesh Node A"]
+        b["FarmMesh Node B"]
+        c["FarmMesh Node C"]
+    end
     mesh -.- a
     mesh -.- b
     mesh -.- c
+    deployment["No pre-installed power or network cables / 免预布电源线或网线<br/>Wireless inter-node links / 节点间纯无线目标"]
+    deployment -.- mesh
+    boundary["Measurement endpoint and gateway/uplink / 测速端点与网关或上联<br/>TBD / 待定"]
+    mesh -.- boundary
 ```
 
 ### Inside one node
@@ -49,6 +82,12 @@ flowchart LR
 ```
 
 The three ESP32-C5 chips' wireless roles, channels and connections to other nodes are not assigned by this diagram.
+
+### Wireless coexistence boundary
+
+Espressif documents shared RF resources with time-division and priority arbitration. Its current C5 coexistence table marks Wi-Fi SoftAP Connecting/Connected combined with BLE Scan/Advertising/Connected as C1 (supported, with unstable performance). This is a constraint to validate if a C5 is assigned both Wi-Fi AP and BLE roles; it does not establish that the three-chip node cannot meet its goals. Radio-role allocation and coexistence must be checked against the selected SDK and operating scenarios. Concurrent terminal service does not imply independent, simultaneous full-load radios on a single C5. See the [official RF coexistence guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c5/api-guides/coexist.html#supported-coexistence-scenario-for-esp32-c5).
+
+Per-node BLE capacity has an implementation-dependent limit, not one universal fixed connection count imposed by the BLE specification. The C5 controller and NimBLE host expose separate connection-limit settings in the [official configuration reference](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c5/api-reference/kconfig-reference.html#config-bt-le-max-connections). Connection-based access and connectionless advertising/scanning are different [BLE roles and topologies](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c5/api-guides/ble/get-started/ble-introduction.html#bluetooth-le-network-topology); scanning advertisements must not be counted as persistent connections. Advertising/scanning terminal capacity needs its own validation. Select the access mode and three C5 roles before confirming per-node capacity; simply adding three chip-level limits does not establish node capacity.
 
 ## Candidate internal interface
 
@@ -88,12 +127,13 @@ Frame boundaries, DMA rearming and sustained operation also remain to be designe
 
 ## Open decisions
 
-1. Define the directional meaning of the per-link 50 Mbps target.
-2. Establish three-link PIO feasibility, clock/timing constraints, GPIO mapping, instruction budget and required CPU participation.
-3. Define first-beat readiness, VALID behavior, receive-transaction preparation, frame boundaries and DMA rearming.
-4. Later, decide radio roles/channels, Mesh protocol and routing, antennas, coverage targets, power supply, environmental protection and the full BOM.
+1. Define the client-to-Mesh-node 50 Mbps access test: measurement endpoints, uplink/downlink direction and conditions. Start with 1–2 concurrent high-speed clients farm-wide; multi-hop and Internet throughput remain outside any established guarantee.
+2. Define each internal link's 50 Mbps target separately: one direction, both directions combined, or each direction; raw rate versus effective payload rate; and the capacity margin needed to support the user-service goal.
+3. Establish three-link PIO feasibility, clock/timing constraints, GPIO mapping, instruction budget and required CPU participation. Define first-beat readiness, VALID behavior, receive-transaction preparation, frame boundaries and DMA rearming.
+4. Validate the farm-wide planning target of several hundred to approximately 1,000 low-traffic sensors. Select connection-based BLE versus advertising/scanning roles, establish per-node limits and define activity duty cycles, traffic, latency and end-device energy targets. Radio roles/channels and BLE/Wi-Fi coexistence remain to be validated.
+5. Design the solar supply, storage and infrastructure power budget for deployment without pre-installed power or network cabling. Later, decide Mesh protocol and routing, antennas, coverage area/terrain and deployment, gateway/uplink, environmental protection and the full BOM.
 
-The immediate discussion is limited to hardware interface feasibility and the division of work among PIO, system DMA and CPU. Wireless throughput and software routing are later topics.
+The current phase records these product requirements while focusing implementation discussion on hardware interfaces, resources and the division of work among PIO, system DMA and CPU. Firmware implementation, software routing and system optimization remain later work.
 
 ## Roadmap
 
@@ -104,6 +144,10 @@ The immediate discussion is limited to hardware interface feasibility and the di
 | 3 | Bring-up and interface validation | Pending hardware; includes necessary test firmware |
 | 4 | Application firmware and Mesh integration | After hardware validation |
 
+## Contact and participation
+
+Interested in FarmMesh Node? Use [GitHub Issues](https://github.com/chinawrj/FarmMesh-Node/issues) to discuss requirements, hardware design or ways to participate. You can also visit the project owner's [GitHub profile](https://github.com/chinawrj).
+
 ## References
 
 Official sources for subsequent design checks:
@@ -112,5 +156,6 @@ Official sources for subsequent design checks:
 - [ESP32-C5 datasheet](https://documentation.espressif.com/esp32-c5_datasheet_en.html) and [technical reference manual](https://documentation.espressif.com/esp32-c5_technical_reference_manual_en.pdf) — device and peripheral details.
 - [ESP32-C5 PARLIO RX driver](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c5/api-reference/peripherals/parlio/parlio_rx.html) — receive clock, VALID and transaction setup.
 - [ESP32-C5 PARLIO TX driver](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c5/api-reference/peripherals/parlio/parlio_tx.html) — transmit configuration and operation.
+- [ESP32-C5 RF coexistence](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c5/api-guides/coexist.html) — supported role combinations and shared RF scheduling constraints.
 
 Differences in maximum full-duplex width descriptions across C5 documentation still need reconciliation. This draft considers only the 4-bit-per-direction candidate and makes no claim about wider full-duplex configurations. The ESP-IDF `stable` links can change; record the selected SDK and document versions when the implementation baseline is set.
