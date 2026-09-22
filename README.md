@@ -1,10 +1,10 @@
 # FarmMesh Node
 
-**Draft v0.2 — product goals and hardware architecture**
+**Draft v0.3 — product goals and hardware architecture**
 
 English | [简体中文](README.zh-CN.md)
 
-[Overview](#overview) · [Features & targets](#key-features-and-performance-targets) · [Architecture](#architecture) · [Internal interface](#candidate-internal-interface) · [Open decisions](#open-decisions) · [Roadmap](#roadmap) · [Contact](#contact-and-participation) · [References](#references)
+[Overview](#overview) · [Features & targets](#key-features-and-performance-targets) · [Architecture](#architecture) · [Internal interface](#candidate-internal-interface) · [Wireless research](#wireless-research-status) · [Open decisions](#open-decisions) · [Roadmap](#roadmap) · [Contact](#contact-and-participation) · [References](#references)
 
 ## Overview
 
@@ -124,6 +124,17 @@ These estimates do not constitute an implemented PIO program or validated timing
 The C5 PARLIO RX documentation describes receive-clock output and VALID-based reception gating. C5 RX/GDMA transactions must be prepared before data arrives; VALID alone does not create a receive transaction. The RP must prepare the first beat and drive VALID correctly. Start/end behavior, sampling edges and gating timing still require a concrete design and validation.
 
 Frame boundaries, DMA rearming and sustained operation also remain to be designed. A ring-address setting alone is not a guarantee of indefinite operation, and this draft does not claim CPU-free transfer management.
+
+## Wireless research status
+
+The [wireless link research notes](docs/wireless-link-research.md) record the **2026-09-22** review, official sources, version-specific binary observations and MTU/MSS constraints. **No wireless transport has been selected.** The client-access targets and internal hardware candidate above remain unchanged.
+
+| Topic | Current finding | Status and boundary |
+| --- | --- | --- |
+| WDS / four-address bridge | Direct public C5 support not confirmed in the reviewed documentation/API | Does not establish a hardware impossibility |
+| ESP-NOW and public raw TX | Different frame/payload limits; neither establishes this project's 50 Mbps effective throughput | Research candidates; no sustained-throughput validation |
+| Rate and power controls | Public per-peer ESP-NOW rate configuration and per-C5 Wi-Fi maximum-power ceiling | Documented controls; no confirmed ready-to-enable ESP-NOW automatic-rate tool; custom adaptation remains future work |
+| AP+STA + proxy ARP | Currently not pursued | Project direction, not a technical impossibility finding |
 
 ## Open decisions
 
