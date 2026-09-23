@@ -1,0 +1,67 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-23T09:20:47",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/6d0073d9-c613-574f-ba50-862e2d368dcd",
+            "violations": []
+        },
+        {
+            "path": "/1S battery input and 3.3V buck-boost/",
+            "uuid_path": "/6d0073d9-c613-574f-ba50-862e2d368dcd/133191e6-57f1-5bbf-8df9-ef9a1619f925",
+            "violations": []
+        },
+        {
+            "path": "/RP2350B aggregation, memory and debug/",
+            "uuid_path": "/6d0073d9-c613-574f-ba50-862e2d368dcd/c57f2286-621b-5245-a989-26be723993c8",
+            "violations": []
+        },
+        {
+            "path": "/C5-A module and independent link A/",
+            "uuid_path": "/6d0073d9-c613-574f-ba50-862e2d368dcd/40589266-450e-516f-9507-d9afa71f03ab",
+            "violations": []
+        },
+        {
+            "path": "/C5-B module and independent link B/",
+            "uuid_path": "/6d0073d9-c613-574f-ba50-862e2d368dcd/bf9017d2-7357-5c8b-9289-810c61cd335d",
+            "violations": []
+        },
+        {
+            "path": "/C5-C module and independent link C/",
+            "uuid_path": "/6d0073d9-c613-574f-ba50-862e2d368dcd/09ef2405-d79d-5d97-8d05-641ad0bb6b70",
+            "violations": []
+        },
+        {
+            "path": "/RP USB boot / self-powered USB-C/",
+            "uuid_path": "/6d0073d9-c613-574f-ba50-862e2d368dcd/4758d59e-b609-5669-a969-27212eb2c275",
+            "violations": []
+        }
+    ],
+    "source": "FarmMesh-Node.kicad_sch"
+}

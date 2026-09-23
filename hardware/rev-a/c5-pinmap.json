@@ -1,0 +1,229 @@
+{
+  "mpn": "ESP32-C5-WROOM-1U-N8R8",
+  "pins": [
+    {
+      "pad": "1",
+      "name": "GND",
+      "electrical_type": "power_in",
+      "assignment": "GND",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "2",
+      "name": "3V3",
+      "electrical_type": "power_in",
+      "assignment": "3V3",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "3",
+      "name": "EN",
+      "electrical_type": "input",
+      "assignment": "EN_10K_1UF_RESET_BUTTON",
+      "application_direction": "input"
+    },
+    {
+      "pad": "4",
+      "name": "GPIO2",
+      "electrical_type": "bidirectional",
+      "assignment": "UNCONNECTED",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "5",
+      "name": "GPIO3",
+      "electrical_type": "bidirectional",
+      "assignment": "UNCONNECTED",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "6",
+      "name": "GPIO0",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_TX_D0",
+      "application_direction": "output"
+    },
+    {
+      "pad": "7",
+      "name": "GPIO1",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_TX_D1",
+      "application_direction": "output"
+    },
+    {
+      "pad": "8",
+      "name": "GPIO6",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_RX_D0",
+      "application_direction": "input"
+    },
+    {
+      "pad": "9",
+      "name": "GPIO7",
+      "electrical_type": "bidirectional",
+      "assignment": "UNCONNECTED",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "10",
+      "name": "GPIO8",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_RX_D1",
+      "application_direction": "input"
+    },
+    {
+      "pad": "11",
+      "name": "GPIO9",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_RX_D2",
+      "application_direction": "input"
+    },
+    {
+      "pad": "12",
+      "name": "GPIO10",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_RX_D3",
+      "application_direction": "input"
+    },
+    {
+      "pad": "13",
+      "name": "GPIO13",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_TX_D2",
+      "application_direction": "output"
+    },
+    {
+      "pad": "14",
+      "name": "GPIO14",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_TX_D3",
+      "application_direction": "output"
+    },
+    {
+      "pad": "15",
+      "name": "GPIO28",
+      "electrical_type": "bidirectional",
+      "assignment": "BOOT_GPIO28_PULLUP_BUTTON",
+      "application_direction": "input"
+    },
+    {
+      "pad": "16",
+      "name": "GPIO5",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_TX_VALID",
+      "application_direction": "output"
+    },
+    {
+      "pad": "17",
+      "name": "GPIO4",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_TX_CLK",
+      "application_direction": "output"
+    },
+    {
+      "pad": "18",
+      "name": "GPIO27",
+      "electrical_type": "bidirectional",
+      "assignment": "GPIO27_PULLUP",
+      "application_direction": "input"
+    },
+    {
+      "pad": "19",
+      "name": "NC_PSRAM_CS",
+      "electrical_type": "no_connect",
+      "assignment": "UNCONNECTED",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "20",
+      "name": "NC",
+      "electrical_type": "no_connect",
+      "assignment": "UNCONNECTED",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "21",
+      "name": "GPIO23",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_RX_CLK",
+      "application_direction": "output"
+    },
+    {
+      "pad": "22",
+      "name": "NC",
+      "electrical_type": "no_connect",
+      "assignment": "UNCONNECTED",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "23",
+      "name": "GPIO24",
+      "electrical_type": "bidirectional",
+      "assignment": "PARLIO_RX_VALID",
+      "application_direction": "input"
+    },
+    {
+      "pad": "24",
+      "name": "GPIO12_U0RXD",
+      "electrical_type": "bidirectional",
+      "assignment": "UART0_RX_DOWNLOAD",
+      "application_direction": "input"
+    },
+    {
+      "pad": "25",
+      "name": "GPIO11_U0TXD",
+      "electrical_type": "bidirectional",
+      "assignment": "UART0_TX_LOG",
+      "application_direction": "output"
+    },
+    {
+      "pad": "26",
+      "name": "GPIO25",
+      "electrical_type": "bidirectional",
+      "assignment": "UNCONNECTED",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "27",
+      "name": "GPIO26",
+      "electrical_type": "bidirectional",
+      "assignment": "UNCONNECTED",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "28",
+      "name": "GND",
+      "electrical_type": "power_in",
+      "assignment": "GND",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "29",
+      "name": "GND_EPAD",
+      "electrical_type": "power_in",
+      "assignment": "GND",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "30",
+      "name": "GND",
+      "electrical_type": "power_in",
+      "assignment": "GND",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "31",
+      "name": "ANT2_DISABLED",
+      "electrical_type": "passive",
+      "assignment": "UNCONNECTED",
+      "application_direction": "passive"
+    },
+    {
+      "pad": "32",
+      "name": "GND",
+      "electrical_type": "power_in",
+      "assignment": "GND",
+      "application_direction": "passive"
+    }
+  ]
+}

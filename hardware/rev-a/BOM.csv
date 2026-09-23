@@ -1,0 +1,63 @@
+References,Quantity,Value,Manufacturer part number,Footprint,Selection status
+"R1, R6",2,100k,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+"R3, R8",2,100k 1%,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+C104,1,100n,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+"C202, C302, C402, C5, C9",5,100n / 10V,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+"C1, C127, C2",3,100n / 16V,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C121,1,100n pin10,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C111,1,100n pin15,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C112,1,100n pin24,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C113,1,100n pin29,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C122,1,100n pin32,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C114,1,100n pin41,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C110,1,100n pin5,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C115,1,100n pin50,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C123,1,100n pin51,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C118,1,100n pin59,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C116,1,100n pin60,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C119,1,100n pin68,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C120,1,100n pin69,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C117,1,100n pin76,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C6,1,100u / 10V bulk,,Capacitor_SMD:CP_Elec_6.3x5.8,MPN TBD; footprint provisional
+"C203, C303, C403",3,100u / 6.3V bulk,,Capacitor_SMD:CP_Elec_6.3x5.8,MPN TBD; footprint provisional
+"R102, R201, R202, R203, R301, R302, R303, R401, R402, R403",10,10k,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+C126,1,10n,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+Y101,1,12MHz ABM8-272-T3,ABM8-272-T3,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,Draft selected; no stock check
+"C105, C106",2,15p C0G,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+R5,1,162k 1%,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+R7,1,174k 1%,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+J1,1,1S Li-ion pack,B2P-VH(LF)(SN),Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,Draft selected; no stock check
+"R103, R104, R105",3,1k,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+"C204, C304, C404",3,1u / 10V,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C7,1,220u / 6.3V polymer,6SVPE220M,Capacitor_SMD:CP_Elec_6.3x5.9,Draft selected; no stock check
+"R210, R211, R212, R213, R214, R215, R216, R217, R218, R219, R220, R221, R310, R311, R312, R313, R314, R315, R316, R317, R318, R319, R320, R321, R410, R411, R412, R413, R414, R415, R416, R417, R418, R419, R420, R421",36,22R,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+"C201, C3, C301, C4, C401, C8",6,22u / 10V X7R,,Capacitor_SMD:C_0805_2012Metric,MPN TBD; footprint provisional
+"R110, R111",2,27R at RP,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+L101,1,3.3uH - oriented,AOTA-B201610S3R3-101-T,FarmMesh:AOTA-B201610S3R3-101-T,Draft selected; no stock check
+R2,1,316k 1%,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+R101,1,33R,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+"R204, R205, R304, R305, R404, R405",6,4.7k VALID idle low,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+C11,1,4.7u / 10V,,Capacitor_SMD:C_0805_2012Metric,MPN TBD; footprint provisional
+"C101, C102, C103",3,4.7u X5R 20%,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+C124,1,4.7u at pad32,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+L1,1,4.7uH,XAL7070-472MEC,Inductor_SMD:L_Coilcraft_XAL7070-XXX,Draft selected; no stock check
+C12,1,470p C0G,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+"R108, R109, R112",3,5.1k 1%,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+F1,1,5A fuse,0451005.MRL,Fuse:Fuse_Littelfuse-NANO2-451_453,Draft selected; no stock check
+R113,1,7.5k 1%,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+R4,1,78.7k 1%,,Resistor_SMD:R_0603_1608Metric,MPN TBD; footprint provisional
+C10,1,820p C0G,,Capacitor_SMD:C_0603_1608Metric,MPN TBD; footprint provisional
+"SW202, SW302, SW402",3,BOOT,,Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG,MPN TBD; footprint provisional
+SW101,1,BOOTSEL,,Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG,MPN TBD; footprint provisional
+Q1,1,DMP2008UFG-7,DMP2008UFG-7,Package_SON:Diodes_PowerDI3333-8,Draft selected; no stock check
+"U201, U301, U401",3,ESP32-C5-WROOM-1U-N8R8,ESP32-C5-WROOM-1U-N8R8,FarmMesh:ESP32-C5-WROOM-1U,Draft selected; no stock check
+U1,1,LTC3119IFE#PBF,LTC3119IFE#PBF,Package_SO:TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.05x7.56mm,Draft selected; no stock check
+J2,1,OFF jumper,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,MPN TBD; footprint provisional
+D1,1,PMEG2010EA,"PMEG2010EA,115",Diode_SMD:D_SOD-323,Draft selected; no stock check
+"SW102, SW201, SW301, SW401",4,RESET,,Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG,MPN TBD; footprint provisional
+U101,1,RP2350B,RP2350B,Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm,Draft selected; no stock check
+J101,1,SWD / 3V3 ref only,,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,MPN TBD; footprint provisional
+"J201, J301, J401",3,UART / 3V3 reference only,,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,MPN TBD; footprint provisional
+J102,1,USB4105-GF-A,USB4105-GF-A,Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,Draft selected; no stock check
+D101,1,USBLC6-2SC6,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,Draft selected; no stock check
+U102,1,W25Q128JVSIQ,W25Q128JVSIQ,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,Draft selected; no stock check

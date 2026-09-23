@@ -1,0 +1,360 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "6d0073d9-c613-574f-ba50-862e2d368dcd")
+	(paper "A3")
+	(title_block
+		(title "FarmMesh Node - schematic review index")
+		(date "2026-09-23")
+		(rev "A0 DRAFT")
+		(company "FarmMesh Node")
+		(comment 1 "Engineering review only - NOT FOR FABRICATION")
+		(comment 2 "1S Li-ion battery input; no on-board charger")
+	)
+	(lib_symbols)
+	(text "Battery: conventional 4.20V-max Li-ion, NOT LiFePO4 or HV Li-ion.\nNormal loaded operation about 3.0-4.2V; cold start about 3.3V.\nExternal protected pack required. No on-board charger or PV input.\nPCB placement, RF isolation, converter stability and throughput unvalidated.\nSee DESIGN-NOTES.md and reports/erc.json before any layout or procurement."
+		(exclude_from_sim no)
+		(at 25.4 226.06 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "33c46c3e-be39-5320-ae9a-9bf9f17b4602")
+	)
+	(text "INTERFACE CONVENTION"
+		(exclude_from_sim no)
+		(at 25.4 165.1 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "419691cc-f032-5da4-a7d1-5682968b75ea")
+	)
+	(text "TX / RX are named from the C5 perspective.\nBoth TX_CLK and RX_CLK originate at that C5.\nRP drives only RX_D[0..3] and RX_VALID.\nGlobal net labels make the electrical sheet connections.\nNo wireless protocol is selected by this schematic."
+		(exclude_from_sim no)
+		(at 25.4 175.26 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left top)
+		)
+		(uuid "6aae4606-6c60-5932-9c29-95e1d4b965b1")
+	)
+	(text "REVIEW BOUNDARIES"
+		(exclude_from_sim no)
+		(at 25.4 215.9 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "b8c6bd61-2086-59cf-b087-fd28d8565dca")
+	)
+	(text "1 x RP2350B + 3 x ESP32-C5-WROOM-1U-N8R8\n1S protected Li-ion input; 3.3V regulated rail\nNative KiCad 10 schematic - engineering review only"
+		(exclude_from_sim no)
+		(at 25.4 35.56 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left top)
+		)
+		(uuid "dc2a8c52-1416-5e71-9532-0a5c0eda1943")
+	)
+	(text "FarmMesh Node / Revision A0 - DRAFT"
+		(exclude_from_sim no)
+		(at 25.4 22.86 0)
+		(effects
+			(font
+				(size 3 3)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "ee05ac9d-75fe-5720-bea2-0783b641600f")
+	)
+	(sheet
+		(at 228.6 167.64)
+		(size 135 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "09ef2405-d79d-5d97-8d05-641ad0bb6b70")
+		(property "Sheetname" "C5-C module and independent link C"
+			(at 228.6 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.3 1.3)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "05-radio-c.kicad_sch"
+			(at 228.6 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "FarmMesh-Node"
+				(path "/6d0073d9-c613-574f-ba50-862e2d368dcd"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 66.04)
+		(size 110 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "133191e6-57f1-5bbf-8df9-ef9a1619f925")
+		(property "Sheetname" "1S battery input and 3.3V buck-boost"
+			(at 25.4 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.3 1.3)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "01-power.kicad_sch"
+			(at 25.4 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "FarmMesh-Node"
+				(path "/6d0073d9-c613-574f-ba50-862e2d368dcd"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 228.6 66.04)
+		(size 135 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "40589266-450e-516f-9507-d9afa71f03ab")
+		(property "Sheetname" "C5-A module and independent link A"
+			(at 228.6 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.3 1.3)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "03-radio-a.kicad_sch"
+			(at 228.6 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "FarmMesh-Node"
+				(path "/6d0073d9-c613-574f-ba50-862e2d368dcd"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 228.6 218.44)
+		(size 135 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4758d59e-b609-5669-a969-27212eb2c275")
+		(property "Sheetname" "RP USB boot / self-powered USB-C"
+			(at 228.6 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.3 1.3)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "06-usb.kicad_sch"
+			(at 228.6 246.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "FarmMesh-Node"
+				(path "/6d0073d9-c613-574f-ba50-862e2d368dcd"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 228.6 116.84)
+		(size 135 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bf9017d2-7357-5c8b-9289-810c61cd335d")
+		(property "Sheetname" "C5-B module and independent link B"
+			(at 228.6 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.3 1.3)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "04-radio-b.kicad_sch"
+			(at 228.6 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "FarmMesh-Node"
+				(path "/6d0073d9-c613-574f-ba50-862e2d368dcd"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 116.84)
+		(size 110 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c57f2286-621b-5245-a989-26be723993c8")
+		(property "Sheetname" "RP2350B aggregation, memory and debug"
+			(at 25.4 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.3 1.3)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "02-rp2350.kicad_sch"
+			(at 25.4 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "FarmMesh-Node"
+				(path "/6d0073d9-c613-574f-ba50-862e2d368dcd"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
