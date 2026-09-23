@@ -1,12 +1,14 @@
 # FarmMesh Node
 
-**A1 hardware prototype — product goals, PCB and first-board validation plan**
+**An integrated hardware and software solution for farm-wide Mesh networking**
 
 English | [简体中文](README.zh-CN.md)
 
-[Overview](#overview) · [A1 hardware](#a1-hardware-prototype) · [Features & targets](#key-features-and-performance-targets) · [Architecture](#architecture) · [Internal interface](#candidate-internal-interface) · [Wireless research](#wireless-research-status) · [Open decisions](#open-decisions) · [Roadmap](#roadmap) · [Contact](#contact-and-participation) · [References](#references)
+[Overview](#overview) · [Solution scope](#solution-scope-and-current-progress) · [A1 hardware](#a1-hardware-prototype) · [Features & targets](#key-features-and-performance-targets) · [Architecture](#architecture) · [Internal interface](#candidate-internal-interface) · [Wireless research](#wireless-research-status) · [Open decisions](#open-decisions) · [Roadmap](#roadmap) · [Contact](#contact-and-participation) · [References](#references)
 
 ## Overview
+
+**FarmMesh Node is a hardware and software project for a complete farm wireless networking solution.** Its scope includes node electronics, embedded firmware, communication protocols, Mesh networking, client and sensor access, and system integration and field validation. Hardware and software are developed together toward the same farm-wide service goals; the A1 PCB is the current hardware milestone within that larger project.
 
 FarmMesh Node aims to provide **farm-wide coverage using solar-powered infrastructure nodes that need no pre-installed power or network cabling**, combining on-demand high-speed client access with distributed access for hundreds to approximately 1,000 low-traffic sensors. Inter-node links are intended to be entirely wireless. Solar supply, storage and node power budgets remain to be designed; this is not a claim of all-weather energy autonomy, and a gateway/uplink may still be needed.
 
@@ -16,7 +18,18 @@ Infrastructure nodes are intended to provide **concurrent BLE or Wi-Fi access fo
 
 Each infrastructure node contains **one RP2350B and three ESP32-C5 chips**, implemented in A1 with three official **ESP32-C5-WROOM-1U-N8R8 modules**. The RP2350B is intended to aggregate and forward data inside the node, with an independent internal link to each C5. The separate preliminary **50 Mbps per internal link** target is a hardware design input, not a demonstrated user throughput figure or proof that the access-service target can be met. Its directional and raw-rate/payload-rate definitions remain TBD.
 
-The project follows a **hardware-first, software-later** sequence. The **A1 prototype has eight schematic sheets and a four-layer PCB**; the current fabrication gate is recorded in [RELEASE.md](hardware/rev-a/RELEASE.md). Firmware, interface timing and physical performance validation remain unfinished. Coverage, user throughput, terminal capacity, power consumption and sustained internal-link performance have not been measured.
+Development is staged from the node hardware foundation through firmware and network software to full-system validation. The **A1 prototype has eight schematic sheets, a four-layer PCB and a manufacturing package released for controlled engineering prototypes**; its release record is [RELEASE.md](hardware/rev-a/RELEASE.md). Firmware and network software implementation remain pending. Coverage, user throughput, terminal capacity, power consumption and sustained internal-link performance have not been measured.
+
+## Solution scope and current progress
+
+| Area | Role in the complete solution | Current progress |
+| --- | --- | --- |
+| Node hardware | RP2350B and three ESP32-C5 modules, power, PCB, antennas and physical interfaces | A1 design and reviewed manufacturing package available; assembly and bring-up pending; deployment solar power remains to be designed |
+| Embedded firmware | RP2350 PIO/DMA and C5 PARLIO drivers, framing, buffering, flow control and coordination across the three links | Hardware pin assignments frozen for A1; firmware and interface timing validation pending |
+| Network software | Inter-node wireless transport, Mesh protocol and routing, Wi-Fi/BLE client and sensor access, configuration and diagnostics | Requirements and wireless research recorded; protocol selection and implementation pending |
+| System integration | Hardware/firmware/network integration, power and RF coexistence, throughput, sensor capacity and farm deployment | Staged first-board test plan available; multi-node and field validation planned |
+
+This repository currently contains the hardware release, system requirements and wireless research. Software will be developed as part of the same project; the table distinguishes the intended solution from what is already implemented.
 
 ## A1 hardware prototype
 
@@ -162,20 +175,21 @@ The [wireless link research notes](docs/wireless-link-research.md) record the **
 4. Validate the farm-wide planning target of several hundred to approximately 1,000 low-traffic sensors. Select connection-based BLE versus advertising/scanning roles, establish per-node limits and define activity duty cycles, traffic, latency and end-device energy targets. Radio roles/channels and BLE/Wi-Fi coexistence remain to be validated.
 5. Design the solar supply, storage and infrastructure power budget for deployment without pre-installed power or network cabling. Later, decide Mesh protocol and routing, antennas, coverage area/terrain and deployment, gateway/uplink, environmental protection and the full BOM.
 
-The current phase records these product requirements while focusing implementation discussion on hardware interfaces, resources and the division of work among PIO, system DMA and CPU. Firmware implementation, software routing and system optimization remain later work.
+These decisions guide the complete hardware and software solution. The current repository establishes the A1 hardware foundation and records the software design inputs; firmware, network protocols, routing and system optimization are the next development stages.
 
 ## Roadmap
 
 | Phase | Scope | Status |
 | --- | --- | --- |
-| 1 | Confirm hardware interfaces and architecture | Under review; interface implementation still unverified |
-| 2 | Schematics and PCB layout | A1 schematic and PCB; release gate in RELEASE.md |
-| 3 | Bring-up and interface validation | Pending hardware; includes necessary test firmware |
-| 4 | Application firmware and Mesh integration | After hardware validation |
+| 1 | System requirements and hardware/software architecture | Service targets and A1 hardware allocation recorded; software architecture and protocols remain open |
+| 2 | A1 schematics, PCB and manufacturing package | Released for controlled engineering prototypes; see RELEASE.md |
+| 3 | Board bring-up, drivers and internal-link firmware | Awaiting assembled boards; firmware and timing validation pending |
+| 4 | Network software, Mesh routing and client/sensor services | Planned; integrate with validated node hardware and firmware |
+| 5 | Multi-node integration and farm deployment | Planned; validate coverage, throughput, sensor capacity, power and reliability |
 
 ## Contact and participation
 
-Interested in FarmMesh Node? Use [GitHub Issues](https://github.com/chinawrj/FarmMesh-Node/issues) to discuss requirements, hardware design or ways to participate. You can also visit the project owner's [GitHub profile](https://github.com/chinawrj).
+Interested in FarmMesh Node? Use [GitHub Issues](https://github.com/chinawrj/FarmMesh-Node/issues) to discuss requirements, hardware, firmware, network software, system testing or ways to participate. You can also visit the project owner's [GitHub profile](https://github.com/chinawrj).
 
 ## References
 
