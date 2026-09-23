@@ -1,0 +1,58 @@
+{
+  "status": "rendered_requires_human_or_agent_visual_inspection",
+  "renderer": "gerbonara 1.6.3 / PyMuPDF 1.28.2",
+  "source_sha256": {
+    "gerber/FarmMesh-Node-B_Cu.gbr": "e7663e3b6e493be4e8cc4aaa8fb82291e53c30ca0b8c4ed4d2e2d369c7a0cd3c",
+    "gerber/FarmMesh-Node-B_Mask.gbr": "72e15b6d712c35a16c8ceff3f95cad29244d545f09f90ed82617e5870bf38840",
+    "gerber/FarmMesh-Node-B_Paste.gbr": "33b30e65fbe2bc9d96011f1ee09c8db731dbd0eed44e5a50189fbab110a50562",
+    "gerber/FarmMesh-Node-B_Silkscreen.gbr": "a7bd03bf6509151cd811290dac72427de7619df7c5b4bf251eb5a5f5c5d78fbe",
+    "gerber/FarmMesh-Node-Edge_Cuts.gbr": "c11e6e4db0bb867ff869d16d9630314e4f0faf7d7bef90d5b51d32b6aef9b3b3",
+    "gerber/FarmMesh-Node-F_Cu.gbr": "232f6a0de245f304f325ed373144f01393a56998064ebb3aff1cf9095496d8b2",
+    "gerber/FarmMesh-Node-F_Mask.gbr": "389ebb7aab2596e6fdc8d9604b7490cab835bd296d0698a6ce03a9f8bb09d686",
+    "gerber/FarmMesh-Node-F_Paste.gbr": "0b9cc5471417550cb06abcd676d1df6438baffc825974f016701e73decc89730",
+    "gerber/FarmMesh-Node-F_Silkscreen.gbr": "b53906695583c264af8d8137d411571d7ccb0b49c2f608af07c8be707e30a618",
+    "gerber/FarmMesh-Node-In1_Cu.gbr": "31ee662ec13bc41820dd9f545d847c450dd9e6abdfb34a3af77554f6256ecaf4",
+    "gerber/FarmMesh-Node-In2_Cu.gbr": "70d7bd5a88df8d18c36866d93d96776bb32eb5f1b36ec67199dde6f690862e5e",
+    "drill/FarmMesh-Node-NPTH.drl": "e5409b79b1917ce55569551380285645e8be5b8b246959fc16d554595593d859",
+    "drill/FarmMesh-Node-PTH.drl": "786438d241a85827cddbd3ba45e5ce1c7310f10cc8c615899c4383ab625fa583"
+  },
+  "outline_bounds_mm": [
+    [
+      -0.025,
+      -100.025
+    ],
+    [
+      100.025,
+      0.025
+    ]
+  ],
+  "gerber_layer_count": 11,
+  "pth_drill_objects": 427,
+  "npth_drill_objects": 6,
+  "rendered_files": {
+    "B_Cu.png": "ebd4f74d734f4cfcb3f3f1d0d8ff1d59387c7bb6a6c1e73b0bf7021358796a10",
+    "B_Cu.svg": "5666c88be0ab10bb3348cfbae98f12129b9199b6b4c3fb07bd469fd72d56918c",
+    "B_Mask.png": "806cbdf896ba35fe7249010d84d2d0ce03096d2dc362ed17a6283e2ff80a694a",
+    "B_Mask.svg": "344501718cff9be06fc2775c89bf665c90e1af70fa105c997917ce3710fc609f",
+    "B_Paste.png": "e00eb8b65d573cbb4c136005bfe0af8f32c24f2c79e05e9596fae47f0f871753",
+    "B_Paste.svg": "393b29b20e8701dbaed6bb099d59f1a72316c3f7d836a8467506a6bf7f922fb7",
+    "B_Silkscreen.png": "e00eb8b65d573cbb4c136005bfe0af8f32c24f2c79e05e9596fae47f0f871753",
+    "B_Silkscreen.svg": "f45e8a44900386ff457fd8426971783ff69df6ae6820daa0929f0808da5dc105",
+    "Edge_Cuts.png": "8019f7a8f308a1dd485828afe93fd01450ebb42b4722332fb2df969e17541e38",
+    "Edge_Cuts.svg": "cb4dc3cae4939a021567a59eeba85ca4f93677972ac4dc92a8fc034ca7fc7db2",
+    "F_Cu.png": "4a8dc3f9fc1e1f9803d8a965ac7b91365f26304b90113fc8c8d97ab7ac67ea9f",
+    "F_Cu.svg": "e99147decd8f60b36457f8aabc38fbacc81b15609d3d1df6e3fb0b9e5a9abcc1",
+    "F_Mask.png": "864cea22cd752a7c59da5dec96d78dd6cdca85827c94de11df950339889907e2",
+    "F_Mask.svg": "b99b53e3c1645277b52231822c54c46b59563a0a90e11bd82eff653157863b6c",
+    "F_Paste.png": "5f5383f8ce87a74dfb2dc6bc312f1605894e4fb6df58bb7d68957ad8216a8603",
+    "F_Paste.svg": "1d047ec419100f80644f01da556c022e6f5604348c6a7fc31da5ac6571150058",
+    "F_Silkscreen.png": "f30a4e8baebbe2140ad4977f6ebe7e46f619cb37f9fd35a92e5b2893cddbefc1",
+    "F_Silkscreen.svg": "e5a56f873a23fee19e78403f7f93a7e2ff261a98f3709ef9858c6bc3b0ac91d0",
+    "In1_Cu.png": "3f3cb179001bb042847fea369551770a381ec2cbba66243e53176c4a61a2bbfd",
+    "In1_Cu.svg": "f98a73dc32b1557745759b7065e2b25689334b43208ee286967be27c14b18ec8",
+    "In2_Cu.png": "1661e7f151e3058c6eb5547542de5fa5900cf8089d01084d96e58c46d64ad5a7",
+    "In2_Cu.svg": "f91a76ce914bdec845f598f6add2a8f368250c0b35350090b0c2734a0aeff77b",
+    "paste-drill-overlay.png": "26e196e694bca3bd33975ae3147986e989e0ecbe5df5bfa3ca296d7b5a465b05",
+    "paste-drill-overlay.svg": "ed6c7e6399d29adb35be4b11b9bbea156bdee84b2ed0db24ad8b33be4283bfad"
+  }
+}

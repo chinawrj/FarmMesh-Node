@@ -1,10 +1,10 @@
 # FarmMesh Node
 
-**Draft v0.4 — product goals, hardware architecture and A0 schematics**
+**A1 hardware prototype — product goals, PCB and first-board validation plan**
 
 English | [简体中文](README.zh-CN.md)
 
-[Overview](#overview) · [Hardware draft](#a0-hardware-draft) · [Features & targets](#key-features-and-performance-targets) · [Architecture](#architecture) · [Internal interface](#candidate-internal-interface) · [Wireless research](#wireless-research-status) · [Open decisions](#open-decisions) · [Roadmap](#roadmap) · [Contact](#contact-and-participation) · [References](#references)
+[Overview](#overview) · [A1 hardware](#a1-hardware-prototype) · [Features & targets](#key-features-and-performance-targets) · [Architecture](#architecture) · [Internal interface](#candidate-internal-interface) · [Wireless research](#wireless-research-status) · [Open decisions](#open-decisions) · [Roadmap](#roadmap) · [Contact](#contact-and-participation) · [References](#references)
 
 ## Overview
 
@@ -14,22 +14,26 @@ The client-access design target is **50 Mbps of effective throughput after conne
 
 Infrastructure nodes are intended to provide **concurrent BLE or Wi-Fi access for several hundred to approximately 1,000 low-traffic, low-power sensors across the whole farm**, distributed among multiple Mesh nodes. This is an aggregate planning target requiring capacity validation, not 1,000 direct BLE connections per node or simultaneous packet transmission by every sensor. End-device energy requirements and the infrastructure's solar-power budget are separate concerns; neither implies that the forwarding infrastructure must sleep. Low Wi-Fi traffic alone does not establish low power consumption, and BLE/Wi-Fi coexistence requires validation.
 
-Each infrastructure node contains **one RP2350B and three ESP32-C5 chips**, implemented in the A0 schematic draft with three official **ESP32-C5-WROOM-1U-N8R8 modules**. The RP2350B is intended to aggregate and forward data inside the node, with an independent internal link to each C5. The separate preliminary **50 Mbps per internal link** target is a hardware design input, not a demonstrated user throughput figure or proof that the access-service target can be met. Its directional and raw-rate/payload-rate definitions remain TBD.
+Each infrastructure node contains **one RP2350B and three ESP32-C5 chips**, implemented in A1 with three official **ESP32-C5-WROOM-1U-N8R8 modules**. The RP2350B is intended to aggregate and forward data inside the node, with an independent internal link to each C5. The separate preliminary **50 Mbps per internal link** target is a hardware design input, not a demonstrated user throughput figure or proof that the access-service target can be met. Its directional and raw-rate/payload-rate definitions remain TBD.
 
-The project follows a **hardware-first, software-later** sequence. The **first A0 schematic draft is available for review**. PCB layout, firmware, interface timing and performance validation remain unfinished. Coverage, user throughput, terminal capacity, power consumption and sustained internal-link performance have not been measured.
+The project follows a **hardware-first, software-later** sequence. The **A1 prototype has eight schematic sheets and a four-layer PCB**; the current fabrication gate is recorded in [RELEASE.md](hardware/rev-a/RELEASE.md). Firmware, interface timing and physical performance validation remain unfinished. Coverage, user throughput, terminal capacity, power consumption and sustained internal-link performance have not been measured.
 
-## A0 hardware draft
+## A1 hardware prototype
 
-The seven-sheet A0 design includes a single-cell, nominal 3.7 V Li-ion input with regulation, RP2350B, three C5 modules, the candidate parallel interfaces, UART download headers and RP USB/SWD connections. It is an initial schematic for review, not a fabrication-ready board. Solar charging and storage sizing remain outside this first circuit draft; the solar deployment goal is unchanged.
+A1 contains a 100 × 100 mm four-layer PCB, protected single-cell nominal 3.7 V Li-ion input, 3.3 V buck-boost supply, RP2350B, three C5 modules, independent parallel interfaces, UART download headers and RP USB/SWD. USB data disconnects in hardware when VBUS is absent, including ROM BOOTSEL operation. USB does not power or charge the board. Solar charging and storage sizing remain separate design work.
 
 | Artifact | Use and status |
 | --- | --- |
-| [KiCad project](hardware/rev-a/FarmMesh-Node.kicad_pro) / [root schematic](hardware/rev-a/FarmMesh-Node.kicad_sch) | Editable seven-sheet A0 schematic with project-local libraries; download the repository together to retain dependencies |
-| [Seven-page schematic PDF](hardware/rev-a/review/FarmMesh-Node-A0.pdf) | Review copy of the A0 schematics |
-| [Design notes](hardware/rev-a/DESIGN-NOTES.md) | Circuit choices, operating assumptions, sources and remaining checks |
-| [C5 review](hardware/rev-a/reports/c5-review.md) / [power review](hardware/rev-a/reports/power-review.md) | Design-review records; not hardware measurements |
+| [Release status](hardware/rev-a/RELEASE.md) | Authoritative prototype fabrication gate and validation boundaries |
+| [Manufacturing ZIP](hardware/rev-a/FarmMesh-Node-A1-manufacturing.zip) / [SHA-256](hardware/rev-a/FarmMesh-Node-A1-manufacturing.zip.sha256) | Released for controlled A1 prototypes: Gerber, drills, BOM, placements, drawings, editable source and review evidence |
+| [KiCad project](hardware/rev-a/FarmMesh-Node.kicad_pro) / [PCB](hardware/rev-a/FarmMesh-Node.kicad_pcb) | Editable native sources; download the repository together with project-local libraries |
+| [Eight-page schematic PDF](hardware/rev-a/review/FarmMesh-Node-A1.pdf) | A1 circuit review copy |
+| [Manufacturing instructions](hardware/rev-a/FABRICATION.md) / [parts selection](hardware/rev-a/parts-selection.json) | Stackup, assembly requirements, 153 selected assembly parts and accessories |
+| [First-board test plan](hardware/rev-a/FIRST-BOARD-TEST.md) | Staged power, debug, USB, thermal, load and RF checks; results are not yet measured |
+| [Design notes](hardware/rev-a/DESIGN-NOTES.md) | Circuit and layout choices, sources and reproducibility |
+| [Power review](hardware/rev-a/reports/a1-power-review.md) / [RF and digital review](hardware/rev-a/reports/a1-rf-digital-review.md) / [DFM and BOM review](hardware/rev-a/reports/a1-dfm-bom-review.md) | Independent engineering review records, with remaining bench-validation boundaries |
 
-The C5 modules use external antenna connectors. Their native USB pins are allocated to PARLIO; each C5 retains UART download and logging. Antennas, RF placement and actual interface behavior still require validation. **No wireless transport or Mesh protocol is selected by these schematics.**
+The C5 modules use external dual-band antennas. Their native USB pins are allocated to PARLIO; each C5 retains UART download and logging. **No wireless transport or Mesh protocol is selected by the hardware.** A fabrication-ready package does not establish RF, power or throughput performance.
 
 ## Key features and performance targets
 
@@ -44,10 +48,10 @@ The C5 modules use external antenna connectors. Their native USB pins are alloca
 | Concurrent low-traffic access | Several hundred to approximately 1,000 sensors across the farm via BLE or Wi-Fi | Aggregate planning target, distributed across nodes; capacity has an upper bound and needs validation; not per-node BLE sessions or simultaneous packets from all sensors |
 | Per-node BLE capacity | Bounded by C5 controller, host stack/configuration and radio scheduling | Connection-based versus advertising/scanning mode TBD; role and per-node limits unconfirmed; three C5 capacities cannot simply be added into a guarantee |
 | End-device energy use | Support low-power terminal operation | Product goal; activity duty cycle, power budget and battery-life target TBD; solar infrastructure budget separately TBD |
-| Node composition | 1 × RP2350B + 3 × ESP32-C5-WROOM-1U-N8R8 | Selected architecture; first A0 schematic available for review; PCB unfinished |
-| A0 hardware artifacts | Seven-sheet KiCad schematic and PDF; nominal 3.7 V single-cell Li-ion input | Initial circuit draft; solar charging, PCB, firmware and hardware validation unfinished |
+| Node composition | 1 × RP2350B + 3 × ESP32-C5-WROOM-1U-N8R8 | Selected A1 architecture; physical validation pending |
+| A1 hardware artifacts | Eight-sheet KiCad schematic, four-layer PCB and selected BOM; nominal 3.7 V single-cell Li-ion input | Fabrication gate in RELEASE.md; solar charging, firmware and physical validation remain separate |
 | Independent internal links | Preliminary target: 50 Mbps per C5–RP2350 link, not shared across three links | Internal-interface target; direction, raw versus payload rate and required margin for the user-service target TBD; unverified |
-| Internal interface | PARLIO ↔ PIO, separate 4-bit TX/RX buses; both clocks supplied by C5 | Candidate; 12 signals per link; A0 pin assignment drawn and reviewed; programs and timing unverified |
+| Internal interface | PARLIO ↔ PIO, separate 4-bit TX/RX buses; both clocks supplied by C5 | Candidate; 12 signals per link; A1 pin assignment drawn and reviewed; programs and timing unverified |
 | RP2350B resources | 48 Bank0 GPIOs; 3 PIO blocks / 12 state machines; 32 shared instructions per block; 16 system DMA channels | Chip resource facts; preliminary interface allocation below is not implementation proof |
 | Wireless roles and interconnection | Three C5 chips per node; Mesh protocol, radio roles/channels and gateway/uplink TBD | Architecture decisions pending; no guaranteed BLE/Wi-Fi coexistence performance or Internet throughput |
 
@@ -105,7 +109,7 @@ Per-node BLE capacity has an implementation-dependent limit, not one universal f
 
 ## Candidate internal interface
 
-The current candidate is **ESP32-C5 PARLIO ↔ RP2350 PIO**, using separate 4-bit TX and RX data buses. It is a candidate for concurrent bidirectional operation, not a frozen or validated implementation.
+The selected hardware interface is **ESP32-C5 PARLIO ↔ RP2350 PIO**, using separate 4-bit TX and RX data buses. A1 freezes the physical connections; firmware and timing for concurrent bidirectional operation remain unvalidated.
 
 **Each C5 supplies both clocks. The RP2350 PIO follows an external clock in both directions**, including when the RP2350 sends data to the C5.
 
@@ -114,7 +118,7 @@ The current candidate is **ESP32-C5 PARLIO ↔ RP2350 PIO**, using separate 4-bi
 | C5 → RP2350 | 4 signals, C5 → RP | C5 TX CLK → RP | C5 TX VALID → RP |
 | RP2350 → C5 | 4 signals, RP → C5 | C5 RX CLK → RP | RP VALID → C5 |
 
-This uses **12 signals per link**: 8 DATA, 2 CLK and 2 VALID. Three links use **36 signals**, plus a common ground reference. A0 records a reviewable pin assignment in the schematics and [C5 pinmap](hardware/rev-a/c5-pinmap.json); it is not a frozen or hardware-validated assignment.
+This uses **12 signals per link**: 8 DATA, 2 CLK and 2 VALID. Three links use **36 signals**, plus a common ground reference. A1 freezes the prototype pin assignment in the schematics and [C5 pinmap](hardware/rev-a/c5-pinmap.json); firmware and hardware timing validation remain open.
 
 PARLIO has separate TX and RX units. A shared-data, half-duplex alternative would require explicit output-enable, tri-state and direction-change handling. PARLIO must not be treated as an automatically reversing shared bus, and disabling TX does not by itself establish a high-impedance output.
 
@@ -127,7 +131,7 @@ PARLIO has separate TX and RX units. A shared-data, half-duplex alternative woul
 | System DMA channels | 16 | 6: one per direction per link |
 | PIO instruction memory | 32 shared instructions per PIO block | Program size not yet established |
 
-These estimates do not constitute an implemented PIO program or validated timing design. A0 assigns the three interfaces to RP2350B GPIO0–35. Each PIO has a 32-GPIO window selected by GPIOBASE 0 or 16; the PIO configuration and instruction use still need implementation checks. Dedicated QSPI storage pins, USB and SWD do not consume the 48 Bank0 GPIOs. Other board functions use part of the remaining GPIO budget. The 30-GPIO RP2350A cannot accommodate this 36-signal candidate.
+These estimates do not constitute an implemented PIO program or validated timing design. A1 assigns the three interfaces to RP2350B GPIO0–35. Each PIO has a 32-GPIO window selected by GPIOBASE 0 or 16; the PIO configuration and instruction use still need implementation checks. Dedicated QSPI storage pins, USB and SWD do not consume the 48 Bank0 GPIOs. Other board functions use part of the remaining GPIO budget. The 30-GPIO RP2350A cannot accommodate this 36-signal candidate.
 
 ### Processing responsibilities and timing boundary
 
@@ -165,7 +169,7 @@ The current phase records these product requirements while focusing implementati
 | Phase | Scope | Status |
 | --- | --- | --- |
 | 1 | Confirm hardware interfaces and architecture | Under review; interface implementation still unverified |
-| 2 | Schematics and PCB layout | First A0 schematic available for review; PCB unfinished |
+| 2 | Schematics and PCB layout | A1 schematic and PCB; release gate in RELEASE.md |
 | 3 | Bring-up and interface validation | Pending hardware; includes necessary test firmware |
 | 4 | Application firmware and Mesh integration | After hardware validation |
 

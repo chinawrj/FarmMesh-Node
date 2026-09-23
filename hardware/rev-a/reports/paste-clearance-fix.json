@@ -1,0 +1,44 @@
+[
+  {
+    "net": "GND",
+    "old_mm": [
+      88.0,
+      30.6
+    ],
+    "new_mm": [
+      88.0,
+      30.85
+    ],
+    "moved_track_endpoints": 0,
+    "added_short_B_Cu_stub": 0,
+    "already_applied": true
+  },
+  {
+    "net": "REG_RUN",
+    "old_mm": [
+      88.3,
+      35.5
+    ],
+    "new_mm": [
+      88.3,
+      35.75
+    ],
+    "moved_track_endpoints": 0,
+    "added_short_B_Cu_stub": 0,
+    "already_applied": true
+  },
+  {
+    "net": "GND",
+    "old_mm": [
+      98.0,
+      26.54
+    ],
+    "new_mm": [
+      98.25,
+      26.54
+    ],
+    "moved_track_endpoints": 1,
+    "added_short_B_Cu_stub": 0,
+    "already_applied": false
+  }
+]

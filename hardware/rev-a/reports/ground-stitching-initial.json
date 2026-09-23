@@ -1,0 +1,3449 @@
+{
+  "status": "requires_manual_review",
+  "signal_through_vias_checked": 141,
+  "ground_vias_added": 82,
+  "excluded_supply_or_non_signal_vias_by_short_net": {
+    "+3V3": 32,
+    "CORE_1V1": 6,
+    "GND": 123,
+    "REG_VCC": 2,
+    "VBAT_PROTECTED": 8
+  },
+  "criteria": {
+    "nearby_ground_center_distance_mm": 2.0,
+    "new_via_diameter_drill_mm": [
+      0.6,
+      0.3
+    ],
+    "all_pad_paste_annulus_clearance_mm": 0.05,
+    "other_net_copper_clearance_mm": 0.17,
+    "hole_edge_clearance_mm": 0.21,
+    "M3_head_radius_mm": 3.5,
+    "candidate_ring_radius_mm": [
+      0.8,
+      2.0
+    ],
+    "ordinary_tenting": "both sides; not filled/capped"
+  },
+  "added_ground_vias": [
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        87.5671,
+        35.8208
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        92.4679,
+        25.8832
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        91.8944,
+        32.2988
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        21.0559,
+        32.0775
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        19.7375,
+        36.5534
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        22.3555,
+        31.915
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        23.942,
+        39.1359
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        24.925,
+        40.5437
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        24.9744,
+        34.1539
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        27.73,
+        33.6123
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        30.2831,
+        47.1036
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        19.0628,
+        12.8621
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        28.8581,
+        29.2601
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        34.6684,
+        32.397
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        37.0665,
+        52.5587
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        32.6255,
+        79.5846
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        36.8023,
+        58.1241
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        30.9204,
+        77.4095
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        32.7226,
+        64.9013
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        30.6149,
+        64.4513
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        30.9731,
+        75.648
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        34.7966,
+        66.2936
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        12.8392,
+        82.9421
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        22.6949,
+        70.5847
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        79.9644,
+        63.382
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        79.1557,
+        68.1329
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        78.1533,
+        62.7751
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        78.0235,
+        68.9382
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        75.1072,
+        59.7025
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        75.0541,
+        57.0122
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        75.2548,
+        72.703
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        72.8536,
+        52.7707
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        78.1674,
+        87.1246
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        50.8004,
+        5.4413
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        51.6695,
+        20.861
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        54.4844,
+        19.5727
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        51.9602,
+        9.4615
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        29.9205,
+        40.5614
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        30.0376,
+        33.4782
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        54.0585,
+        57.4259
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        28.5055,
+        10.2745
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        29.1672,
+        19.9969
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        20.9873,
+        7.4981
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        24.7997,
+        14.9788
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        43.105,
+        34.8883
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        46.6363,
+        48.9613
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        38.2112,
+        46.2545
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        41.0857,
+        42.7874
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        37.2976,
+        48.8374
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        43.0227,
+        52.9775
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        23.8201,
+        9.1092
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        30.3436,
+        28.6994
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        35.3052,
+        44.5169
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        26.3953,
+        37.8356
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        40.7075,
+        37.404
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        46.6488,
+        46.982
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        37.9435,
+        43.0155
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        14.4807,
+        70.288
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        8.025,
+        78.6808
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        24.914,
+        57.8478
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        42.491,
+        60.6227
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        8.6154,
+        76.0521
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        14.9345,
+        55.023
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        40.1779,
+        77.3106
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        40.0918,
+        61.3545
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        39.2112,
+        75.28
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        41.0283,
+        56.6541
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        42.6241,
+        55.0118
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        38.9187,
+        70.8366
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        38.9616,
+        69.0539
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        18.0909,
+        56.3661
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        72.467,
+        90.9069
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        78.3202,
+        73.2107
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        69.0767,
+        52.0505
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        79.0248,
+        92.476
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        68.7772,
+        56.1819
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        48.822,
+        53.3312
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        55.8977,
+        57.8084
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        58.1239,
+        57.6461
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        71.6341,
+        32.5941
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        60.3001,
+        39.409
+      ]
+    },
+    {
+      "type": "added_ground_through_via",
+      "position_mm": [
+        58.6612,
+        42.022
+      ]
+    }
+  ],
+  "unserved_signal_vias": [
+    {
+      "signal_net": "/RP2350B aggregation, memory and debug/SWDIO",
+      "signal_position_mm": [
+        51.8485,
+        55.961
+      ],
+      "nearest_ground_before_mm": 2.651421,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          54.0585,
+          57.4259
+        ]
+      },
+      "distance_mm": 2.651421,
+      "candidates_checked": 816,
+      "rejection_counts": {
+        "track_copper": 250,
+        "pad_or_paste": 554,
+        "via_copper": 12
+      },
+      "nearest_ground_after_mm": 2.651421
+    },
+    {
+      "signal_net": "A_RX_D0",
+      "signal_position_mm": [
+        46.003,
+        43.5463
+      ],
+      "nearest_ground_before_mm": 3.424662,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          43.0,
+          41.9
+        ]
+      },
+      "distance_mm": 3.424662,
+      "candidates_checked": 804,
+      "rejection_counts": {
+        "via_copper": 39,
+        "track_copper": 552,
+        "pad_or_paste": 213
+      },
+      "nearest_ground_after_mm": 3.424662
+    },
+    {
+      "signal_net": "A_RX_D3",
+      "signal_position_mm": [
+        43.1146,
+        48.5897
+      ],
+      "nearest_ground_before_mm": 2.629674,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          40.78,
+          49.8
+        ]
+      },
+      "distance_mm": 2.629674,
+      "candidates_checked": 804,
+      "rejection_counts": {
+        "track_copper": 367,
+        "pad_or_paste": 426,
+        "via_copper": 11
+      },
+      "nearest_ground_after_mm": 2.629674
+    },
+    {
+      "signal_net": "B_RX_D0",
+      "signal_position_mm": [
+        45.8286,
+        52.7901
+      ],
+      "nearest_ground_before_mm": 2.673413,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          47.9,
+          51.1
+        ]
+      },
+      "distance_mm": 2.673413,
+      "candidates_checked": 804,
+      "rejection_counts": {
+        "via_copper": 34,
+        "track_copper": 332,
+        "pad_or_paste": 416,
+        "other_net_zone": 22
+      },
+      "nearest_ground_after_mm": 2.673413
+    },
+    {
+      "signal_net": "B_RX_D1",
+      "signal_position_mm": [
+        45.5199,
+        54.3042
+      ],
+      "nearest_ground_before_mm": 2.827745,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          43.0227,
+          52.9775
+        ]
+      },
+      "distance_mm": 2.827745,
+      "candidates_checked": 808,
+      "rejection_counts": {
+        "pad_or_paste": 414,
+        "track_copper": 378,
+        "via_copper": 16
+      },
+      "nearest_ground_after_mm": 2.827745
+    },
+    {
+      "signal_net": "B_RX_D3",
+      "signal_position_mm": [
+        45.439,
+        55.5881
+      ],
+      "nearest_ground_before_mm": 2.154122,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          44.1,
+          57.2755
+        ]
+      },
+      "distance_mm": 2.154122,
+      "candidates_checked": 788,
+      "rejection_counts": {
+        "pad_or_paste": 473,
+        "track_copper": 304,
+        "via_copper": 8,
+        "hole": 3
+      },
+      "nearest_ground_after_mm": 2.154122
+    },
+    {
+      "signal_net": "B_RX_VALID",
+      "signal_position_mm": [
+        47.8951,
+        56.5079
+      ],
+      "nearest_ground_before_mm": 3.195144,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          48.7,
+          59.6
+        ]
+      },
+      "distance_mm": 3.195144,
+      "candidates_checked": 800,
+      "rejection_counts": {
+        "pad_or_paste": 537,
+        "track_copper": 256,
+        "via_copper": 7
+      },
+      "nearest_ground_after_mm": 3.195144
+    },
+    {
+      "signal_net": "B_TX_CLK",
+      "signal_position_mm": [
+        45.8325,
+        52.1474
+      ],
+      "nearest_ground_before_mm": 2.317672,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          47.9,
+          51.1
+        ]
+      },
+      "distance_mm": 2.317672,
+      "candidates_checked": 808,
+      "rejection_counts": {
+        "track_copper": 349,
+        "pad_or_paste": 391,
+        "via_copper": 22,
+        "other_net_zone": 40,
+        "hole": 6
+      },
+      "nearest_ground_after_mm": 2.317672
+    },
+    {
+      "signal_net": "B_TX_VALID",
+      "signal_position_mm": [
+        8.4,
+        73.2201
+      ],
+      "nearest_ground_before_mm": 2.84018,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          8.6154,
+          76.0521
+        ]
+      },
+      "distance_mm": 2.84018,
+      "candidates_checked": 800,
+      "rejection_counts": {
+        "pad_or_paste": 680,
+        "track_copper": 120
+      },
+      "nearest_ground_after_mm": 2.84018
+    },
+    {
+      "signal_net": "C_RX_D2",
+      "signal_position_mm": [
+        54.5296,
+        54.9281
+      ],
+      "nearest_ground_before_mm": 2.541838,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          54.0585,
+          57.4259
+        ]
+      },
+      "distance_mm": 2.541838,
+      "candidates_checked": 808,
+      "rejection_counts": {
+        "track_copper": 420,
+        "pad_or_paste": 373,
+        "via_copper": 15
+      },
+      "nearest_ground_after_mm": 2.541838
+    },
+    {
+      "signal_net": "C_TX_D2",
+      "signal_position_mm": [
+        48.621,
+        55.9071
+      ],
+      "nearest_ground_before_mm": 2.58373,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          48.822,
+          53.3312
+        ]
+      },
+      "distance_mm": 2.58373,
+      "candidates_checked": 808,
+      "rejection_counts": {
+        "pad_or_paste": 480,
+        "track_copper": 304,
+        "via_copper": 24
+      },
+      "nearest_ground_after_mm": 2.58373
+    }
+  ],
+  "transitions": [
+    {
+      "signal_net": "/1S battery input and 3.3V buck-boost/REG_RUN",
+      "signal_position_mm": [
+        84.05,
+        29.4
+      ],
+      "nearest_ground_before_mm": 0.838153,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          84.85,
+          29.15
+        ]
+      },
+      "distance_mm": 0.838153
+    },
+    {
+      "signal_net": "/1S battery input and 3.3V buck-boost/REG_RUN",
+      "signal_position_mm": [
+        88.3,
+        35.5
+      ],
+      "nearest_ground_before_mm": 2.100595,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          87.5671,
+          35.8208
+        ]
+      },
+      "distance_mm": 0.800034,
+      "candidates_checked": 23
+    },
+    {
+      "signal_net": "/1S battery input and 3.3V buck-boost/REV_GATE",
+      "signal_position_mm": [
+        91.85,
+        25.375
+      ],
+      "nearest_ground_before_mm": 2.073192,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          92.4679,
+          25.8832
+        ]
+      },
+      "distance_mm": 0.800042,
+      "candidates_checked": 7
+    },
+    {
+      "signal_net": "/1S battery input and 3.3V buck-boost/REV_GATE",
+      "signal_position_mm": [
+        91.85,
+        31.5
+      ],
+      "nearest_ground_before_mm": 3.605551,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          91.8944,
+          32.2988
+        ]
+      },
+      "distance_mm": 0.800033,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_D0_C5",
+      "signal_position_mm": [
+        20.3056,
+        31.8
+      ],
+      "nearest_ground_before_mm": 6.290731,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          21.0559,
+          32.0775
+        ]
+      },
+      "distance_mm": 0.799973,
+      "candidates_checked": 43
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_D0_C5",
+      "signal_position_mm": [
+        20.4984,
+        36.8004
+      ],
+      "nearest_ground_before_mm": 4.75569,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          19.7375,
+          36.5534
+        ]
+      },
+      "distance_mm": 0.799986,
+      "candidates_checked": 29
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_D1_C5",
+      "signal_position_mm": [
+        23.1493,
+        31.8157
+      ],
+      "nearest_ground_before_mm": 2.109707,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          22.3555,
+          31.915
+        ]
+      },
+      "distance_mm": 0.799987,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_D1_C5",
+      "signal_position_mm": [
+        24.7419,
+        39.1226
+      ],
+      "nearest_ground_before_mm": 5.625372,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          23.942,
+          39.1359
+        ]
+      },
+      "distance_mm": 0.800011,
+      "candidates_checked": 11
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_D2_C5",
+      "signal_position_mm": [
+        25.4723,
+        41.1272
+      ],
+      "nearest_ground_before_mm": 2.511393,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          24.925,
+          40.5437
+        ]
+      },
+      "distance_mm": 0.800006,
+      "candidates_checked": 3
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_D2_C5",
+      "signal_position_mm": [
+        25.7744,
+        34.145
+      ],
+      "nearest_ground_before_mm": 4.081884,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          24.9744,
+          34.1539
+        ]
+      },
+      "distance_mm": 0.80005,
+      "candidates_checked": 13
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_D3_C5",
+      "signal_position_mm": [
+        27.7338,
+        34.4123
+      ],
+      "nearest_ground_before_mm": 2.771472,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          27.73,
+          33.6123
+        ]
+      },
+      "distance_mm": 0.800009,
+      "candidates_checked": 30
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_D3_C5",
+      "signal_position_mm": [
+        29.8443,
+        47.7725
+      ],
+      "nearest_ground_before_mm": 8.743859,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          30.2831,
+          47.1036
+        ]
+      },
+      "distance_mm": 0.799983,
+      "candidates_checked": 24
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_VALID_C5",
+      "signal_position_mm": [
+        19.8386,
+        12.6668
+      ],
+      "nearest_ground_before_mm": 3.357244,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          19.0628,
+          12.8621
+        ]
+      },
+      "distance_mm": 0.800005,
+      "candidates_checked": 26
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_VALID_C5",
+      "signal_position_mm": [
+        29.6513,
+        29.364
+      ],
+      "nearest_ground_before_mm": 4.662558,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          28.8581,
+          29.2601
+        ]
+      },
+      "distance_mm": 0.799976,
+      "candidates_checked": 26
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_VALID_C5",
+      "signal_position_mm": [
+        35.6183,
+        33.1302
+      ],
+      "nearest_ground_before_mm": 2.948581,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          34.6684,
+          32.397
+        ]
+      },
+      "distance_mm": 1.199955,
+      "candidates_checked": 293
+    },
+    {
+      "signal_net": "/C5-A module and independent link A/A_RX_VALID_C5",
+      "signal_position_mm": [
+        36.6034,
+        51.9064
+      ],
+      "nearest_ground_before_mm": 4.206858,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          37.0665,
+          52.5587
+        ]
+      },
+      "distance_mm": 0.799973,
+      "candidates_checked": 18
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_D0_C5",
+      "signal_position_mm": [
+        32.1687,
+        78.9279
+      ],
+      "nearest_ground_before_mm": 6.665718,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          32.6255,
+          79.5846
+        ]
+      },
+      "distance_mm": 0.799951,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_D0_C5",
+      "signal_position_mm": [
+        36.6406,
+        58.9076
+      ],
+      "nearest_ground_before_mm": 2.363129,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          36.8023,
+          58.1241
+        ]
+      },
+      "distance_mm": 0.800012,
+      "candidates_checked": 7
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_D1_C5",
+      "signal_position_mm": [
+        30.4268,
+        76.7799
+      ],
+      "nearest_ground_before_mm": 3.563793,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          30.9204,
+          77.4095
+        ]
+      },
+      "distance_mm": 0.800023,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_D1_C5",
+      "signal_position_mm": [
+        32.1872,
+        64.3069
+      ],
+      "nearest_ground_before_mm": 7.71532,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          32.7226,
+          64.9013
+        ]
+      },
+      "distance_mm": 0.799978,
+      "candidates_checked": 36
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_D2_C5",
+      "signal_position_mm": [
+        29.9605,
+        63.9911
+      ],
+      "nearest_ground_before_mm": 2.908206,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          30.6149,
+          64.4513
+        ]
+      },
+      "distance_mm": 0.800015,
+      "candidates_checked": 6
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_D2_C5",
+      "signal_position_mm": [
+        29.9605,
+        75.9989
+      ],
+      "nearest_ground_before_mm": 1.706224,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          30.9204,
+          77.4095
+        ]
+      },
+      "distance_mm": 1.706224
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_D3_C5",
+      "signal_position_mm": [
+        30.883,
+        74.8531
+      ],
+      "nearest_ground_before_mm": 2.556674,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          30.9731,
+          75.648
+        ]
+      },
+      "distance_mm": 0.79999,
+      "candidates_checked": 3
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_D3_C5",
+      "signal_position_mm": [
+        34.4139,
+        66.9961
+      ],
+      "nearest_ground_before_mm": 2.692338,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          34.7966,
+          66.2936
+        ]
+      },
+      "distance_mm": 0.799978,
+      "candidates_checked": 24
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_VALID_C5",
+      "signal_position_mm": [
+        12.6676,
+        82.1607
+      ],
+      "nearest_ground_before_mm": 3.599921,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          12.8392,
+          82.9421
+        ]
+      },
+      "distance_mm": 0.80002,
+      "candidates_checked": 20
+    },
+    {
+      "signal_net": "/C5-B module and independent link B/B_RX_VALID_C5",
+      "signal_position_mm": [
+        23.2804,
+        70.0395
+      ],
+      "nearest_ground_before_mm": 7.196842,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          22.6949,
+          70.5847
+        ]
+      },
+      "distance_mm": 0.800033,
+      "candidates_checked": 14
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_D0_C5",
+      "signal_position_mm": [
+        79.1647,
+        63.3594
+      ],
+      "nearest_ground_before_mm": 5.277442,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          79.9644,
+          63.382
+        ]
+      },
+      "distance_mm": 0.800019,
+      "candidates_checked": 3
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_D0_C5",
+      "signal_position_mm": [
+        79.7534,
+        68.6647
+      ],
+      "nearest_ground_before_mm": 5.286912,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          79.1557,
+          68.1329
+        ]
+      },
+      "distance_mm": 0.800035,
+      "candidates_checked": 19
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_D1_C5",
+      "signal_position_mm": [
+        77.3541,
+        62.7389
+      ],
+      "nearest_ground_before_mm": 2.688353,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          78.1533,
+          62.7751
+        ]
+      },
+      "distance_mm": 0.800019,
+      "candidates_checked": 5
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_D1_C5",
+      "signal_position_mm": [
+        77.3716,
+        69.4019
+      ],
+      "nearest_ground_before_mm": 2.189377,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          78.0235,
+          68.9382
+        ]
+      },
+      "distance_mm": 0.799995,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_D2_C5",
+      "signal_position_mm": [
+        75.1262,
+        58.9027
+      ],
+      "nearest_ground_before_mm": 4.915162,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          75.1072,
+          59.7025
+        ]
+      },
+      "distance_mm": 0.800026,
+      "candidates_checked": 14
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_D2_C5",
+      "signal_position_mm": [
+        76.7212,
+        70.0395
+      ],
+      "nearest_ground_before_mm": 1.705534,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          78.0235,
+          68.9382
+        ]
+      },
+      "distance_mm": 1.705534
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_D3_C5",
+      "signal_position_mm": [
+        74.4945,
+        56.4405
+      ],
+      "nearest_ground_before_mm": 3.319043,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          75.0541,
+          57.0122
+        ]
+      },
+      "distance_mm": 0.799996,
+      "candidates_checked": 13
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_D3_C5",
+      "signal_position_mm": [
+        74.518,
+        72.3913
+      ],
+      "nearest_ground_before_mm": 4.920613,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          75.2548,
+          72.703
+        ]
+      },
+      "distance_mm": 0.800019,
+      "candidates_checked": 24
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_VALID_C5",
+      "signal_position_mm": [
+        72.2678,
+        52.2259
+      ],
+      "nearest_ground_before_mm": 5.538243,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          72.8536,
+          52.7707
+        ]
+      },
+      "distance_mm": 0.79998,
+      "candidates_checked": 7
+    },
+    {
+      "signal_net": "/C5-C module and independent link C/C_RX_VALID_C5",
+      "signal_position_mm": [
+        77.3948,
+        87.3324
+      ],
+      "nearest_ground_before_mm": 3.359995,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          78.1674,
+          87.1246
+        ]
+      },
+      "distance_mm": 0.800057,
+      "candidates_checked": 28
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_CC1",
+      "signal_position_mm": [
+        47.0295,
+        9.3121
+      ],
+      "nearest_ground_before_mm": 1.045149,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          48.0,
+          9.7
+        ]
+      },
+      "distance_mm": 1.045149
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_CC1",
+      "signal_position_mm": [
+        50.0008,
+        5.4652
+      ],
+      "nearest_ground_before_mm": 4.620004,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          50.8004,
+          5.4413
+        ]
+      },
+      "distance_mm": 0.799957,
+      "candidates_checked": 9
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_CC2",
+      "signal_position_mm": [
+        48.5241,
+        9.1208
+      ],
+      "nearest_ground_before_mm": 0.781123,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          48.0,
+          9.7
+        ]
+      },
+      "distance_mm": 0.781123
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_CC2",
+      "signal_position_mm": [
+        53.1083,
+        10.7995
+      ],
+      "nearest_ground_before_mm": 1.210045,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          52.2,
+          10.0
+        ]
+      },
+      "distance_mm": 1.210045
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_DISCONNECT",
+      "signal_position_mm": [
+        51.0848,
+        20.3149
+      ],
+      "nearest_ground_before_mm": 2.91389,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          51.6695,
+          20.861
+        ]
+      },
+      "distance_mm": 0.800062,
+      "candidates_checked": 6
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_DISCONNECT",
+      "signal_position_mm": [
+        54.4585,
+        18.7731
+      ],
+      "nearest_ground_before_mm": 2.92689,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          54.4844,
+          19.5727
+        ]
+      },
+      "distance_mm": 0.800019,
+      "candidates_checked": 7
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_DM",
+      "signal_position_mm": [
+        49.05,
+        9.9
+      ],
+      "nearest_ground_before_mm": 1.068878,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          48.0,
+          9.7
+        ]
+      },
+      "distance_mm": 1.068878
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_DM",
+      "signal_position_mm": [
+        51.35,
+        8.9
+      ],
+      "nearest_ground_before_mm": 1.390144,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          52.2,
+          10.0
+        ]
+      },
+      "distance_mm": 1.390144
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_DP",
+      "signal_position_mm": [
+        49.25,
+        8.6
+      ],
+      "nearest_ground_before_mm": 1.665083,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          48.0,
+          9.7
+        ]
+      },
+      "distance_mm": 1.665083
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_DP",
+      "signal_position_mm": [
+        50.25,
+        8.9
+      ],
+      "nearest_ground_before_mm": 2.238861,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          51.9602,
+          9.4615
+        ]
+      },
+      "distance_mm": 1.800018,
+      "candidates_checked": 645
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_DP_SW",
+      "signal_position_mm": [
+        48.65,
+        24.6
+      ],
+      "nearest_ground_before_mm": 0.85,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          47.8,
+          24.6
+        ]
+      },
+      "distance_mm": 0.85
+    },
+    {
+      "signal_net": "/RP USB boot {slash} self-powered USB-C/USB_DP_SW",
+      "signal_position_mm": [
+        52.8,
+        21.6
+      ],
+      "nearest_ground_before_mm": 0.9,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          53.7,
+          21.6
+        ]
+      },
+      "distance_mm": 0.9
+    },
+    {
+      "signal_net": "/RP2350B aggregation, memory and debug/BOOT_BUTTON",
+      "signal_position_mm": [
+        29.1874,
+        40.8816
+      ],
+      "nearest_ground_before_mm": 4.275772,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          29.9205,
+          40.5614
+        ]
+      },
+      "distance_mm": 0.799977,
+      "candidates_checked": 54
+    },
+    {
+      "signal_net": "/RP2350B aggregation, memory and debug/BOOT_BUTTON",
+      "signal_position_mm": [
+        29.5449,
+        46.9506
+      ],
+      "nearest_ground_before_mm": 0.753889,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          30.2831,
+          47.1036
+        ]
+      },
+      "distance_mm": 0.753889
+    },
+    {
+      "signal_net": "/RP2350B aggregation, memory and debug/BOOT_BUTTON",
+      "signal_position_mm": [
+        30.8354,
+        33.5374
+      ],
+      "nearest_ground_before_mm": 3.106303,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          30.0376,
+          33.4782
+        ]
+      },
+      "distance_mm": 0.799993,
+      "candidates_checked": 2
+    },
+    {
+      "signal_net": "/RP2350B aggregation, memory and debug/SWCLK",
+      "signal_position_mm": [
+        52.3598,
+        56.3703
+      ],
+      "nearest_ground_before_mm": 2.454907,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          54.0585,
+          57.4259
+        ]
+      },
+      "distance_mm": 1.999968,
+      "candidates_checked": 782
+    },
+    {
+      "signal_net": "/RP2350B aggregation, memory and debug/SWCLK",
+      "signal_position_mm": [
+        59.9722,
+        44.5996
+      ],
+      "nearest_ground_before_mm": 1.209881,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          58.8,
+          44.3
+        ]
+      },
+      "distance_mm": 1.209881
+    },
+    {
+      "signal_net": "/RP2350B aggregation, memory and debug/SWDIO",
+      "signal_position_mm": [
+        51.8485,
+        55.961
+      ],
+      "nearest_ground_before_mm": 2.651421,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          54.0585,
+          57.4259
+        ]
+      },
+      "distance_mm": 2.651421,
+      "candidates_checked": 816,
+      "rejection_counts": {
+        "track_copper": 250,
+        "pad_or_paste": 554,
+        "via_copper": 12
+      },
+      "nearest_ground_after_mm": 2.651421
+    },
+    {
+      "signal_net": "/RP2350B aggregation, memory and debug/SWDIO",
+      "signal_position_mm": [
+        59.8457,
+        43.9873
+      ],
+      "nearest_ground_before_mm": 1.091453,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          58.8,
+          44.3
+        ]
+      },
+      "distance_mm": 1.091453
+    },
+    {
+      "signal_net": "/RP2350B aggregation, memory and debug/SWDIO",
+      "signal_position_mm": [
+        61.675,
+        40.3074
+      ],
+      "nearest_ground_before_mm": 1.344372,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "plated_ground_pad",
+        "reference": "J101",
+        "pad": "3",
+        "position_mm": [
+          63.0,
+          40.08
+        ]
+      },
+      "distance_mm": 1.344372
+    },
+    {
+      "signal_net": "A_BOOT",
+      "signal_position_mm": [
+        27.625,
+        9.6151
+      ],
+      "nearest_ground_before_mm": 8.002282,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          28.5055,
+          10.2745
+        ]
+      },
+      "distance_mm": 1.10004,
+      "candidates_checked": 225
+    },
+    {
+      "signal_net": "A_EN",
+      "signal_position_mm": [
+        29.9605,
+        20.1004
+      ],
+      "nearest_ground_before_mm": 7.192901,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          29.1672,
+          19.9969
+        ]
+      },
+      "distance_mm": 0.800023,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "A_RX_CLK",
+      "signal_position_mm": [
+        20.6472,
+        8.2222
+      ],
+      "nearest_ground_before_mm": 4.494047,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          20.9873,
+          7.4981
+        ]
+      },
+      "distance_mm": 0.799993,
+      "candidates_checked": 38
+    },
+    {
+      "signal_net": "A_RX_CLK",
+      "signal_position_mm": [
+        25.5071,
+        14.6052
+      ],
+      "nearest_ground_before_mm": 3.029819,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          24.7997,
+          14.9788
+        ]
+      },
+      "distance_mm": 0.799995,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "A_RX_CLK",
+      "signal_position_mm": [
+        43.899,
+        34.7901
+      ],
+      "nearest_ground_before_mm": 2.227668,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          43.105,
+          34.8883
+        ]
+      },
+      "distance_mm": 0.80005,
+      "candidates_checked": 45
+    },
+    {
+      "signal_net": "A_RX_CLK",
+      "signal_position_mm": [
+        45.8372,
+        49.0
+      ],
+      "nearest_ground_before_mm": 2.065222,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          46.6363,
+          48.9613
+        ]
+      },
+      "distance_mm": 0.800037,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "A_RX_D0",
+      "signal_position_mm": [
+        38.4479,
+        47.5328
+      ],
+      "nearest_ground_before_mm": 2.376837,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          38.2112,
+          46.2545
+        ]
+      },
+      "distance_mm": 1.30003,
+      "candidates_checked": 353
+    },
+    {
+      "signal_net": "A_RX_D0",
+      "signal_position_mm": [
+        40.9216,
+        43.5704
+      ],
+      "nearest_ground_before_mm": 2.666455,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          41.0857,
+          42.7874
+        ]
+      },
+      "distance_mm": 0.800011,
+      "candidates_checked": 15
+    },
+    {
+      "signal_net": "A_RX_D0",
+      "signal_position_mm": [
+        46.003,
+        43.5463
+      ],
+      "nearest_ground_before_mm": 3.424662,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          43.0,
+          41.9
+        ]
+      },
+      "distance_mm": 3.424662,
+      "candidates_checked": 804,
+      "rejection_counts": {
+        "via_copper": 39,
+        "track_copper": 552,
+        "pad_or_paste": 213
+      },
+      "nearest_ground_after_mm": 3.424662
+    },
+    {
+      "signal_net": "A_RX_D0",
+      "signal_position_mm": [
+        46.0084,
+        47.3767
+      ],
+      "nearest_ground_before_mm": 1.704469,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          46.6363,
+          48.9613
+        ]
+      },
+      "distance_mm": 1.704469
+    },
+    {
+      "signal_net": "A_RX_D1",
+      "signal_position_mm": [
+        38.297,
+        48.8038
+      ],
+      "nearest_ground_before_mm": 2.550743,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          37.2976,
+          48.8374
+        ]
+      },
+      "distance_mm": 0.999965,
+      "candidates_checked": 161
+    },
+    {
+      "signal_net": "A_RX_D1",
+      "signal_position_mm": [
+        40.679,
+        46.4218
+      ],
+      "nearest_ground_before_mm": 0.686434,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          40.785,
+          47.1
+        ]
+      },
+      "distance_mm": 0.686434
+    },
+    {
+      "signal_net": "A_RX_D3",
+      "signal_position_mm": [
+        43.1146,
+        48.5897
+      ],
+      "nearest_ground_before_mm": 2.629674,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          40.78,
+          49.8
+        ]
+      },
+      "distance_mm": 2.629674,
+      "candidates_checked": 804,
+      "rejection_counts": {
+        "track_copper": 367,
+        "pad_or_paste": 426,
+        "via_copper": 11
+      },
+      "nearest_ground_after_mm": 2.629674
+    },
+    {
+      "signal_net": "A_RX_D3",
+      "signal_position_mm": [
+        43.5339,
+        51.4614
+      ],
+      "nearest_ground_before_mm": 2.831914,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          43.0227,
+          52.9775
+        ]
+      },
+      "distance_mm": 1.599964,
+      "candidates_checked": 533
+    },
+    {
+      "signal_net": "A_RX_VALID",
+      "signal_position_mm": [
+        37.9796,
+        53.0818
+      ],
+      "nearest_ground_before_mm": 1.052324,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          37.0665,
+          52.5587
+        ]
+      },
+      "distance_mm": 1.052324
+    },
+    {
+      "signal_net": "A_RX_VALID",
+      "signal_position_mm": [
+        40.7144,
+        48.9237
+      ],
+      "nearest_ground_before_mm": 0.878752,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          40.78,
+          49.8
+        ]
+      },
+      "distance_mm": 0.878752
+    },
+    {
+      "signal_net": "A_TX_CLK",
+      "signal_position_mm": [
+        25.5039,
+        8.2289
+      ],
+      "nearest_ground_before_mm": 3.632366,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          23.8201,
+          9.1092
+        ]
+      },
+      "distance_mm": 1.900029,
+      "candidates_checked": 746
+    },
+    {
+      "signal_net": "A_TX_CLK",
+      "signal_position_mm": [
+        31.3727,
+        28.3109
+      ],
+      "nearest_ground_before_mm": 2.687786,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          30.3436,
+          28.6994
+        ]
+      },
+      "distance_mm": 1.09999,
+      "candidates_checked": 193
+    },
+    {
+      "signal_net": "A_TX_CLK",
+      "signal_position_mm": [
+        35.3335,
+        43.7174
+      ],
+      "nearest_ground_before_mm": 3.836409,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          35.3052,
+          44.5169
+        ]
+      },
+      "distance_mm": 0.800001,
+      "candidates_checked": 18
+    },
+    {
+      "signal_net": "A_TX_CLK",
+      "signal_position_mm": [
+        35.7214,
+        32.1721
+      ],
+      "nearest_ground_before_mm": 1.076749,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          34.6684,
+          32.397
+        ]
+      },
+      "distance_mm": 1.076749
+    },
+    {
+      "signal_net": "A_TX_D2",
+      "signal_position_mm": [
+        26.1,
+        33.2045
+      ],
+      "nearest_ground_before_mm": 1.472527,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          24.9744,
+          34.1539
+        ]
+      },
+      "distance_mm": 1.472527
+    },
+    {
+      "signal_net": "A_TX_D2",
+      "signal_position_mm": [
+        27.1021,
+        37.4609
+      ],
+      "nearest_ground_before_mm": 3.576571,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          26.3953,
+          37.8356
+        ]
+      },
+      "distance_mm": 0.799979,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "A_TX_D3",
+      "signal_position_mm": [
+        37.3678,
+        32.8997
+      ],
+      "nearest_ground_before_mm": 1.771583,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          37.8407,
+          31.1924
+        ]
+      },
+      "distance_mm": 1.771583
+    },
+    {
+      "signal_net": "A_TX_D3",
+      "signal_position_mm": [
+        40.7528,
+        36.6053
+      ],
+      "nearest_ground_before_mm": 2.912204,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          40.7075,
+          37.404
+        ]
+      },
+      "distance_mm": 0.799984,
+      "candidates_checked": 46
+    },
+    {
+      "signal_net": "A_TX_D3",
+      "signal_position_mm": [
+        46.3251,
+        45.9307
+      ],
+      "nearest_ground_before_mm": 3.046536,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          46.6488,
+          46.982
+        ]
+      },
+      "distance_mm": 1.100006,
+      "candidates_checked": 197
+    },
+    {
+      "signal_net": "A_TX_D3",
+      "signal_position_mm": [
+        47.7789,
+        37.7301
+      ],
+      "nearest_ground_before_mm": 1.223724,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          49.0,
+          37.65
+        ]
+      },
+      "distance_mm": 1.223724
+    },
+    {
+      "signal_net": "A_TX_VALID",
+      "signal_position_mm": [
+        28.5475,
+        8.421
+      ],
+      "nearest_ground_before_mm": 1.853976,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          28.5055,
+          10.2745
+        ]
+      },
+      "distance_mm": 1.853976
+    },
+    {
+      "signal_net": "A_TX_VALID",
+      "signal_position_mm": [
+        32.0208,
+        29.3623
+      ],
+      "nearest_ground_before_mm": 1.803451,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          30.3436,
+          28.6994
+        ]
+      },
+      "distance_mm": 1.803451
+    },
+    {
+      "signal_net": "A_TX_VALID",
+      "signal_position_mm": [
+        36.3339,
+        32.5117
+      ],
+      "nearest_ground_before_mm": 1.669445,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          34.6684,
+          32.397
+        ]
+      },
+      "distance_mm": 1.669445
+    },
+    {
+      "signal_net": "A_TX_VALID",
+      "signal_position_mm": [
+        37.1638,
+        43.1945
+      ],
+      "nearest_ground_before_mm": 2.281038,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          37.9435,
+          43.0155
+        ]
+      },
+      "distance_mm": 0.799983,
+      "candidates_checked": 57
+    },
+    {
+      "signal_net": "A_TX_VALID",
+      "signal_position_mm": [
+        39.4526,
+        46.1564
+      ],
+      "nearest_ground_before_mm": 1.24527,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          38.2112,
+          46.2545
+        ]
+      },
+      "distance_mm": 1.24527
+    },
+    {
+      "signal_net": "B_EN",
+      "signal_position_mm": [
+        14.3061,
+        69.5073
+      ],
+      "nearest_ground_before_mm": 7.854029,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          14.4807,
+          70.288
+        ]
+      },
+      "distance_mm": 0.799986,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "B_RX_CLK",
+      "signal_position_mm": [
+        9.9202,
+        78.8165
+      ],
+      "nearest_ground_before_mm": 5.053824,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          8.025,
+          78.6808
+        ]
+      },
+      "distance_mm": 1.900052,
+      "candidates_checked": 750
+    },
+    {
+      "signal_net": "B_RX_CLK",
+      "signal_position_mm": [
+        25.5071,
+        57.311
+      ],
+      "nearest_ground_before_mm": 4.989731,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          24.914,
+          57.8478
+        ]
+      },
+      "distance_mm": 0.799951,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "B_RX_D0",
+      "signal_position_mm": [
+        44.1947,
+        54.2551
+      ],
+      "nearest_ground_before_mm": 1.733738,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          43.0227,
+          52.9775
+        ]
+      },
+      "distance_mm": 1.733738
+    },
+    {
+      "signal_net": "B_RX_D0",
+      "signal_position_mm": [
+        45.8286,
+        52.7901
+      ],
+      "nearest_ground_before_mm": 2.673413,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          47.9,
+          51.1
+        ]
+      },
+      "distance_mm": 2.673413,
+      "candidates_checked": 804,
+      "rejection_counts": {
+        "via_copper": 34,
+        "track_copper": 332,
+        "pad_or_paste": 416,
+        "other_net_zone": 22
+      },
+      "nearest_ground_after_mm": 2.673413
+    },
+    {
+      "signal_net": "B_RX_D1",
+      "signal_position_mm": [
+        43.6622,
+        59.2558
+      ],
+      "nearest_ground_before_mm": 2.028117,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          42.491,
+          60.6227
+        ]
+      },
+      "distance_mm": 1.800035,
+      "candidates_checked": 695
+    },
+    {
+      "signal_net": "B_RX_D1",
+      "signal_position_mm": [
+        45.5199,
+        54.3042
+      ],
+      "nearest_ground_before_mm": 2.827745,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          43.0227,
+          52.9775
+        ]
+      },
+      "distance_mm": 2.827745,
+      "candidates_checked": 808,
+      "rejection_counts": {
+        "pad_or_paste": 414,
+        "track_copper": 378,
+        "via_copper": 16
+      },
+      "nearest_ground_after_mm": 2.827745
+    },
+    {
+      "signal_net": "B_RX_D3",
+      "signal_position_mm": [
+        44.8307,
+        58.9261
+      ],
+      "nearest_ground_before_mm": 1.805105,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          44.1,
+          57.2755
+        ]
+      },
+      "distance_mm": 1.805105
+    },
+    {
+      "signal_net": "B_RX_D3",
+      "signal_position_mm": [
+        45.439,
+        55.5881
+      ],
+      "nearest_ground_before_mm": 2.154122,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          44.1,
+          57.2755
+        ]
+      },
+      "distance_mm": 2.154122,
+      "candidates_checked": 788,
+      "rejection_counts": {
+        "pad_or_paste": 473,
+        "track_copper": 304,
+        "via_copper": 8,
+        "hole": 3
+      },
+      "nearest_ground_after_mm": 2.154122
+    },
+    {
+      "signal_net": "B_RX_VALID",
+      "signal_position_mm": [
+        47.8951,
+        53.688
+      ],
+      "nearest_ground_before_mm": 1.879247,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          48.9,
+          52.1
+        ]
+      },
+      "distance_mm": 1.879247
+    },
+    {
+      "signal_net": "B_RX_VALID",
+      "signal_position_mm": [
+        47.8951,
+        56.5079
+      ],
+      "nearest_ground_before_mm": 3.195144,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          48.7,
+          59.6
+        ]
+      },
+      "distance_mm": 3.195144,
+      "candidates_checked": 800,
+      "rejection_counts": {
+        "pad_or_paste": 537,
+        "track_copper": 256,
+        "via_copper": 7
+      },
+      "nearest_ground_after_mm": 3.195144
+    },
+    {
+      "signal_net": "B_TX_CLK",
+      "signal_position_mm": [
+        8.2244,
+        74.5006
+      ],
+      "nearest_ground_before_mm": 4.184953,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          8.6154,
+          76.0521
+        ]
+      },
+      "distance_mm": 1.60001,
+      "candidates_checked": 519
+    },
+    {
+      "signal_net": "B_TX_CLK",
+      "signal_position_mm": [
+        14.3736,
+        54.4526
+      ],
+      "nearest_ground_before_mm": 9.684394,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          14.9345,
+          55.023
+        ]
+      },
+      "distance_mm": 0.799978,
+      "candidates_checked": 2
+    },
+    {
+      "signal_net": "B_TX_CLK",
+      "signal_position_mm": [
+        44.1304,
+        53.5626
+      ],
+      "nearest_ground_before_mm": 1.252734,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          43.0227,
+          52.9775
+        ]
+      },
+      "distance_mm": 1.252734
+    },
+    {
+      "signal_net": "B_TX_CLK",
+      "signal_position_mm": [
+        45.8325,
+        52.1474
+      ],
+      "nearest_ground_before_mm": 2.317672,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          47.9,
+          51.1
+        ]
+      },
+      "distance_mm": 2.317672,
+      "candidates_checked": 808,
+      "rejection_counts": {
+        "track_copper": 349,
+        "pad_or_paste": 391,
+        "via_copper": 22,
+        "other_net_zone": 40,
+        "hole": 6
+      },
+      "nearest_ground_after_mm": 2.317672
+    },
+    {
+      "signal_net": "B_TX_D0",
+      "signal_position_mm": [
+        40.7171,
+        76.7196
+      ],
+      "nearest_ground_before_mm": 8.583835,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          40.1779,
+          77.3106
+        ]
+      },
+      "distance_mm": 0.800011,
+      "candidates_checked": 11
+    },
+    {
+      "signal_net": "B_TX_D0",
+      "signal_position_mm": [
+        41.4797,
+        62.5007
+      ],
+      "nearest_ground_before_mm": 2.132982,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          40.0918,
+          61.3545
+        ]
+      },
+      "distance_mm": 1.800011,
+      "candidates_checked": 669
+    },
+    {
+      "signal_net": "B_TX_D0",
+      "signal_position_mm": [
+        43.4544,
+        60.526
+      ],
+      "nearest_ground_before_mm": 0.968241,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          42.491,
+          60.6227
+        ]
+      },
+      "distance_mm": 0.968241
+    },
+    {
+      "signal_net": "B_TX_D0",
+      "signal_position_mm": [
+        46.5523,
+        50.4842
+      ],
+      "nearest_ground_before_mm": 1.481724,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          47.9,
+          51.1
+        ]
+      },
+      "distance_mm": 1.481724
+    },
+    {
+      "signal_net": "B_TX_D1",
+      "signal_position_mm": [
+        38.8673,
+        74.5577
+      ],
+      "nearest_ground_before_mm": 3.048956,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          39.2112,
+          75.28
+        ]
+      },
+      "distance_mm": 0.79999,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "B_TX_D1",
+      "signal_position_mm": [
+        41.0751,
+        57.4527
+      ],
+      "nearest_ground_before_mm": 3.030086,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          41.0283,
+          56.6541
+        ]
+      },
+      "distance_mm": 0.79997,
+      "candidates_checked": 33
+    },
+    {
+      "signal_net": "B_TX_D1",
+      "signal_position_mm": [
+        43.6188,
+        54.909
+      ],
+      "nearest_ground_before_mm": 2.021392,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          42.6241,
+          55.0118
+        ]
+      },
+      "distance_mm": 0.999998,
+      "candidates_checked": 157
+    },
+    {
+      "signal_net": "B_TX_D1",
+      "signal_position_mm": [
+        45.8974,
+        50.6518
+      ],
+      "nearest_ground_before_mm": 1.844929,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          46.6363,
+          48.9613
+        ]
+      },
+      "distance_mm": 1.844929
+    },
+    {
+      "signal_net": "B_TX_D2",
+      "signal_position_mm": [
+        38.8661,
+        70.0383
+      ],
+      "nearest_ground_before_mm": 5.253048,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          38.9187,
+          70.8366
+        ]
+      },
+      "distance_mm": 0.800031,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "B_TX_D2",
+      "signal_position_mm": [
+        40.6148,
+        50.5051
+      ],
+      "nearest_ground_before_mm": 0.724194,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          40.78,
+          49.8
+        ]
+      },
+      "distance_mm": 0.724194
+    },
+    {
+      "signal_net": "B_TX_D3",
+      "signal_position_mm": [
+        38.8673,
+        68.2595
+      ],
+      "nearest_ground_before_mm": 2.577613,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          38.9616,
+          69.0539
+        ]
+      },
+      "distance_mm": 0.799977,
+      "candidates_checked": 3
+    },
+    {
+      "signal_net": "B_TX_D3",
+      "signal_position_mm": [
+        40.7528,
+        51.185
+      ],
+      "nearest_ground_before_mm": 1.016097,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          40.8,
+          52.2
+        ]
+      },
+      "distance_mm": 1.016097
+    },
+    {
+      "signal_net": "B_TX_VALID",
+      "signal_position_mm": [
+        8.4,
+        73.2201
+      ],
+      "nearest_ground_before_mm": 2.84018,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          8.6154,
+          76.0521
+        ]
+      },
+      "distance_mm": 2.84018,
+      "candidates_checked": 800,
+      "rejection_counts": {
+        "pad_or_paste": 680,
+        "track_copper": 120
+      },
+      "nearest_ground_after_mm": 2.84018
+    },
+    {
+      "signal_net": "B_TX_VALID",
+      "signal_position_mm": [
+        18.827,
+        56.6793
+      ],
+      "nearest_ground_before_mm": 4.230235,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          18.0909,
+          56.3661
+        ]
+      },
+      "distance_mm": 0.799961,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "B_TX_VALID",
+      "signal_position_mm": [
+        43.3612,
+        54.0052
+      ],
+      "nearest_ground_before_mm": 1.082012,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          43.0227,
+          52.9775
+        ]
+      },
+      "distance_mm": 1.082012
+    },
+    {
+      "signal_net": "B_TX_VALID",
+      "signal_position_mm": [
+        44.2715,
+        52.7062
+      ],
+      "nearest_ground_before_mm": 1.27793,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          43.0227,
+          52.9775
+        ]
+      },
+      "distance_mm": 1.27793
+    },
+    {
+      "signal_net": "C_BOOT",
+      "signal_position_mm": [
+        73.4466,
+        91.6
+      ],
+      "nearest_ground_before_mm": 6.50501,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          72.467,
+          90.9069
+        ]
+      },
+      "distance_mm": 1.200002,
+      "candidates_checked": 293
+    },
+    {
+      "signal_net": "C_EN",
+      "signal_position_mm": [
+        78.8908,
+        73.7714
+      ],
+      "nearest_ground_before_mm": 3.78972,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          78.3202,
+          73.2107
+        ]
+      },
+      "distance_mm": 0.799981,
+      "candidates_checked": 10
+    },
+    {
+      "signal_net": "C_RX_CLK",
+      "signal_position_mm": [
+        68.0804,
+        52.5168
+      ],
+      "nearest_ground_before_mm": 4.779948,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          69.0767,
+          52.0505
+        ]
+      },
+      "distance_mm": 1.100022,
+      "candidates_checked": 203
+    },
+    {
+      "signal_net": "C_RX_CLK",
+      "signal_position_mm": [
+        79.2997,
+        91.7247
+      ],
+      "nearest_ground_before_mm": 4.554462,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          79.0248,
+          92.476
+        ]
+      },
+      "distance_mm": 0.800014,
+      "candidates_checked": 36
+    },
+    {
+      "signal_net": "C_RX_D2",
+      "signal_position_mm": [
+        54.5296,
+        54.9281
+      ],
+      "nearest_ground_before_mm": 2.541838,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          54.0585,
+          57.4259
+        ]
+      },
+      "distance_mm": 2.541838,
+      "candidates_checked": 808,
+      "rejection_counts": {
+        "track_copper": 420,
+        "pad_or_paste": 373,
+        "via_copper": 15
+      },
+      "nearest_ground_after_mm": 2.541838
+    },
+    {
+      "signal_net": "C_RX_D2",
+      "signal_position_mm": [
+        59.5901,
+        53.0172
+      ],
+      "nearest_ground_before_mm": 1.721771,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          58.715,
+          54.5
+        ]
+      },
+      "distance_mm": 1.721771
+    },
+    {
+      "signal_net": "C_TX_CLK",
+      "signal_position_mm": [
+        68.3414,
+        55.511
+      ],
+      "nearest_ground_before_mm": 3.537757,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          68.7772,
+          56.1819
+        ]
+      },
+      "distance_mm": 0.800018,
+      "candidates_checked": 48
+    },
+    {
+      "signal_net": "C_TX_CLK",
+      "signal_position_mm": [
+        74.3,
+        91.3216
+      ],
+      "nearest_ground_before_mm": 1.879326,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          72.467,
+          90.9069
+        ]
+      },
+      "distance_mm": 1.879326
+    },
+    {
+      "signal_net": "C_TX_D0",
+      "signal_position_mm": [
+        48.7714,
+        54.1296
+      ],
+      "nearest_ground_before_mm": 2.03367,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          48.822,
+          53.3312
+        ]
+      },
+      "distance_mm": 0.800002,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "C_TX_D0",
+      "signal_position_mm": [
+        56.6809,
+        57.9713
+      ],
+      "nearest_ground_before_mm": 2.678515,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          55.8977,
+          57.8084
+        ]
+      },
+      "distance_mm": 0.799962,
+      "candidates_checked": 1
+    },
+    {
+      "signal_net": "C_TX_D1",
+      "signal_position_mm": [
+        48.005,
+        58.8238
+      ],
+      "nearest_ground_before_mm": 1.041879,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          48.7,
+          59.6
+        ]
+      },
+      "distance_mm": 1.041879
+    },
+    {
+      "signal_net": "C_TX_D1",
+      "signal_position_mm": [
+        58.9076,
+        57.807
+      ],
+      "nearest_ground_before_mm": 2.65225,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          58.1239,
+          57.6461
+        ]
+      },
+      "distance_mm": 0.800047,
+      "candidates_checked": 36
+    },
+    {
+      "signal_net": "C_TX_D2",
+      "signal_position_mm": [
+        48.621,
+        55.9071
+      ],
+      "nearest_ground_before_mm": 2.58373,
+      "status": "requires_manual_review",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          48.822,
+          53.3312
+        ]
+      },
+      "distance_mm": 2.58373,
+      "candidates_checked": 808,
+      "rejection_counts": {
+        "pad_or_paste": 480,
+        "track_copper": 304,
+        "via_copper": 24
+      },
+      "nearest_ground_after_mm": 2.58373
+    },
+    {
+      "signal_net": "C_TX_D2",
+      "signal_position_mm": [
+        52.2001,
+        59.6072
+      ],
+      "nearest_ground_before_mm": 0.7872,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          52.2,
+          58.82
+        ]
+      },
+      "distance_mm": 0.7872
+    },
+    {
+      "signal_net": "C_TX_D3",
+      "signal_position_mm": [
+        51.503,
+        54.1541
+      ],
+      "nearest_ground_before_mm": 1.964005,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          51.7,
+          52.2
+        ]
+      },
+      "distance_mm": 1.964005
+    },
+    {
+      "signal_net": "C_TX_D3",
+      "signal_position_mm": [
+        53.7388,
+        58.3588
+      ],
+      "nearest_ground_before_mm": 0.986159,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          54.0585,
+          57.4259
+        ]
+      },
+      "distance_mm": 0.986159
+    },
+    {
+      "signal_net": "C_TX_VALID",
+      "signal_position_mm": [
+        69.6305,
+        56.5193
+      ],
+      "nearest_ground_before_mm": 0.917584,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          68.7772,
+          56.1819
+        ]
+      },
+      "distance_mm": 0.917584
+    },
+    {
+      "signal_net": "C_TX_VALID",
+      "signal_position_mm": [
+        72.4531,
+        92.2841
+      ],
+      "nearest_ground_before_mm": 1.37727,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          72.467,
+          90.9069
+        ]
+      },
+      "distance_mm": 1.37727
+    },
+    {
+      "signal_net": "PWR_GOOD",
+      "signal_position_mm": [
+        70.825,
+        32.2
+      ],
+      "nearest_ground_before_mm": 3.265061,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          71.6341,
+          32.5941
+        ]
+      },
+      "distance_mm": 0.899976,
+      "candidates_checked": 92
+    },
+    {
+      "signal_net": "PWR_GOOD",
+      "signal_position_mm": [
+        76.15,
+        28.625
+      ],
+      "nearest_ground_before_mm": 1.129437,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          75.149999,
+          29.15
+        ]
+      },
+      "distance_mm": 1.129437
+    },
+    {
+      "signal_net": "RP_RUN",
+      "signal_position_mm": [
+        53.9078,
+        49.1104
+      ],
+      "nearest_ground_before_mm": 1.820002,
+      "status": "existing_nearby_ground",
+      "nearest_ground": {
+        "type": "ground_through_via",
+        "position_mm": [
+          52.1,
+          48.9
+        ]
+      },
+      "distance_mm": 1.820002
+    },
+    {
+      "signal_net": "RP_RUN",
+      "signal_position_mm": [
+        59.7129,
+        38.8657
+      ],
+      "nearest_ground_before_mm": 3.504219,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          60.3001,
+          39.409
+        ]
+      },
+      "distance_mm": 0.799987,
+      "candidates_checked": 8
+    },
+    {
+      "signal_net": "RP_RUN",
+      "signal_position_mm": [
+        60.0162,
+        42.6654
+      ],
+      "nearest_ground_before_mm": 2.037415,
+      "status": "added_nearby_ground",
+      "nearest_ground": {
+        "type": "added_ground_through_via",
+        "position_mm": [
+          58.6612,
+          42.022
+        ]
+      },
+      "distance_mm": 1.499996,
+      "candidates_checked": 476
+    }
+  ],
+  "candidate_rejection_counts": {
+    "pad_or_paste": 9807,
+    "track_copper": 7542,
+    "via_copper": 290,
+    "hole": 23,
+    "other_net_zone": 62
+  },
+  "limits": [
+    "No existing copper changed. The caller must refill and achieve KiCad DRC=0 before acceptance.",
+    "Plated-neighbor proximity does not prove ground connectivity, high-frequency loop inductance, impedance or timing.",
+    "Bounding boxes conservatively reject pad/custom-pad/paste areas. Signal classification excludes explicit supply/switch nets.",
+    "The intended continuous In1/In2 ground zones are checked by their outlines; final filled-plane integrity and connectivity must be verified separately."
+  ]
+}

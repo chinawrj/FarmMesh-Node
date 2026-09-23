@@ -8,3 +8,7 @@ __pycache__/
 *-backups/
 _autosave-*
 fp-info-cache
+
+# Locally isolated manufacturing exports
+.manufacturing-staging-*/
+.manufacturing-previous-*/

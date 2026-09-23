@@ -1,0 +1,191 @@
+[
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "version"
+    ],
+    "returncode": 0,
+    "stdout": "10.0.5\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "-o",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/audit/erc.json",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/FarmMesh-Node.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Found 0 violations\nSaved ERC Report to /Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/audit/erc.json\n",
+    "stderr": "Fontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 19: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 20: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 23: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 42: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 43: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 46: invalid constant used : sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 68: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 69: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 72: invalid constant used : serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 88: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 89: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 92: invalid constant used : emoji\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 108: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 109: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 112: invalid constant used : math\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 120: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 121: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 124: invalid constant used : system-ui\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 132: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 133: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 136: invalid constant used : cursive\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 144: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 145: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 148: invalid constant used : fantasy\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 156: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 157: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 160: invalid constant used : ui-sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 168: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 169: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 172: invalid constant used : ui-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 180: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 181: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 184: invalid constant used : ui-monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 192: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 193: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 196: invalid constant used : ui-rounded\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 204: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 205: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 208: invalid constant used : fangsong\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-spacing.conf\", line 14: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 10: invalid constant used : serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 18: invalid constant used : sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 26: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 34: invalid constant used : emoji\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 42: invalid constant used : math\n"
+  },
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "drc",
+      "--format",
+      "json",
+      "--severity-all",
+      "--exit-code-violations",
+      "--all-track-errors",
+      "--schematic-parity",
+      "-o",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/audit/drc.json",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/FarmMesh-Node.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to /Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/audit/drc.json\n",
+    "stderr": "Fontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 19: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 20: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 23: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 42: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 43: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 46: invalid constant used : sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 68: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 69: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 72: invalid constant used : serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 88: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 89: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 92: invalid constant used : emoji\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 108: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 109: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 112: invalid constant used : math\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 120: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 121: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 124: invalid constant used : system-ui\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 132: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 133: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 136: invalid constant used : cursive\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 144: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 145: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 148: invalid constant used : fantasy\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 156: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 157: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 160: invalid constant used : ui-sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 168: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 169: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 172: invalid constant used : ui-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 180: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 181: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 184: invalid constant used : ui-monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 192: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 193: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 196: invalid constant used : ui-rounded\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 204: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 205: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 208: invalid constant used : fangsong\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-spacing.conf\", line 14: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 10: invalid constant used : serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 18: invalid constant used : sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 26: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 34: invalid constant used : emoji\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 42: invalid constant used : math\n"
+  },
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "--layers",
+      "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,F.Paste,B.Paste,Edge.Cuts",
+      "--no-protel-ext",
+      "--precision",
+      "6",
+      "--subtract-soldermask",
+      "-o",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/FarmMesh-Node.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-F_Cu.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-In1_Cu.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-In2_Cu.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-B_Cu.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-F_Paste.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-B_Paste.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-F_Silkscreen.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-B_Silkscreen.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-F_Mask.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-B_Mask.gbr'.\nPlotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/gerber/FarmMesh-Node-Edge_Cuts.gbr'.\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "--format",
+      "excellon",
+      "--drill-origin",
+      "absolute",
+      "--excellon-units",
+      "mm",
+      "--excellon-zeros-format",
+      "decimal",
+      "--excellon-oval-format",
+      "route",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "pdf",
+      "--generate-report",
+      "--report-path",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/drill/drill-report.txt",
+      "-o",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/drill/",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/FarmMesh-Node.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Created file '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/drill/FarmMesh-Node-PTH.drl'\nCreated file '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/drill/FarmMesh-Node-NPTH.drl'\nCreated file '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/drill/FarmMesh-Node-PTH-drl_map.pdf'.\nCreated file '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/drill/FarmMesh-Node-NPTH-drl_map.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--side",
+      "both",
+      "--exclude-dnp",
+      "-o",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/assembly/positions-raw.csv",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/FarmMesh-Node.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Wrote position data to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/assembly/positions-raw.csv'.\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "ipcd356",
+      "-o",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/FarmMesh-Node-A1.ipc",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/FarmMesh-Node.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Successfully created IPC-D-356 file\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/review/FarmMesh-Node-A1.pdf",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/FarmMesh-Node.kicad_sch"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/review/FarmMesh-Node-A1.pdf'.\nDone.\n",
+    "stderr": "Fontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 19: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 20: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 23: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 42: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 43: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 46: invalid constant used : sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 68: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 69: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 72: invalid constant used : serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 88: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 89: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 92: invalid constant used : emoji\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 108: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 109: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 112: invalid constant used : math\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 120: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 121: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 124: invalid constant used : system-ui\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 132: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 133: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 136: invalid constant used : cursive\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 144: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 145: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 148: invalid constant used : fantasy\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 156: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 157: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 160: invalid constant used : ui-sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 168: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 169: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 172: invalid constant used : ui-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 180: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 181: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 184: invalid constant used : ui-monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 192: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 193: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 196: invalid constant used : ui-rounded\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 204: invalid attribute 'xsi:nil'\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 205: invalid constant used : \nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-guessfamily.conf\", line 208: invalid constant used : fangsong\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/48-spacing.conf\", line 14: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 10: invalid constant used : serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 18: invalid constant used : sans-serif\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 26: invalid constant used : monospace\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 34: invalid constant used : emoji\nFontconfig warning: \"/opt/homebrew/etc/fonts/conf.d/49-sansserif.conf\", line 42: invalid constant used : math\n"
+  },
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Fab,F.CrtYd,Edge.Cuts",
+      "--mode-single",
+      "--exclude-value",
+      "--no-property-popups",
+      "--black-and-white",
+      "--drill-shape-opt",
+      "0",
+      "--scale",
+      "2",
+      "-o",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/assembly/assembly-top.pdf",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/FarmMesh-Node.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/assembly/assembly-top.pdf'.\nDone.\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Users/rjwang/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,F.Paste,B.Paste,Edge.Cuts",
+      "--common-layers",
+      "Edge.Cuts",
+      "--mode-multipage",
+      "--no-property-popups",
+      "-o",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/review/FarmMesh-Node-A1-layers.pdf",
+      "/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/FarmMesh-Node.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "Plotted to '/Users/rjwang/Documents/ChatGPT/FarmMesh Node/hardware/rev-a/.manufacturing-staging-4q5yiyxx/review/FarmMesh-Node-A1-layers.pdf'.\nDone.\n",
+    "stderr": ""
+  }
+]

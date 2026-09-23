@@ -1,0 +1,2065 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-23T07:55:50.707958+00:00",
+  "kicad_version": "10.0.5",
+  "board": "FarmMesh-Node.kicad_pcb",
+  "read_only": true,
+  "input_sha256": {
+    "pcb": "94b96a96ef75f9561a9c2552ea9e2db2f6d1eb0fe6a99cec8e6313b0ac1b4ab9",
+    "manifest": "49630dc82be5df988226a0ded9285d90b9c9ce5d131bb519e6015b225cfd5cd3",
+    "xml_netlist": "2672058410e57731da5b2f3779e4e08b497b07fe67b0c87ba27453234e0a4ad3"
+  },
+  "automated_checks": {
+    "component_inventory": {
+      "status": "pass",
+      "errors": [],
+      "expected_count": 164,
+      "actual_count": 164,
+      "manifest_count": 164,
+      "all_front": true
+    },
+    "pad_net_topology": {
+      "status": "pass",
+      "errors": [],
+      "scope": "Pad net assignments and exact node-set parity; physical copper shorts are checked separately by KiCad DRC.",
+      "manifest_connected_net_groups": 136,
+      "xml_net_groups": 180,
+      "numbered_pad_regions_checked": 609,
+      "unique_numbered_pads_checked": 566,
+      "manifest_no_connect_nodes_checked": 44
+    },
+    "library_pad_geometry": {
+      "status": "pass",
+      "errors": [],
+      "ignored": "Fields, UUIDs, board net codes, and whole-footprint placement/rotation; all footprints must remain front-side.",
+      "positional_tolerance_mm": 3e-06,
+      "footprint_types": 27,
+      "pad_regions_checked": 640,
+      "footprints": [
+        {
+          "reference": "C1",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C10",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C101",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C102",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C103",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C104",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C105",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C106",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C11",
+          "footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C110",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C111",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C112",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C113",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C114",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C115",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C116",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C117",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C118",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C119",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C12",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C120",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C121",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C122",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C123",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C124",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C126",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C127",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C128",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C129",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C130",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C2",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C201",
+          "footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C202",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C203",
+          "footprint": "Capacitor_SMD:CP_Elec_5x5.9",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C204",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C3",
+          "footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C301",
+          "footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C302",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C303",
+          "footprint": "Capacitor_SMD:CP_Elec_5x5.9",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C304",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C4",
+          "footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C401",
+          "footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C402",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C403",
+          "footprint": "Capacitor_SMD:CP_Elec_5x5.9",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C404",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C5",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C6",
+          "footprint": "Capacitor_SMD:CP_Elec_6.3x5.9",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C7",
+          "footprint": "Capacitor_SMD:CP_Elec_6.3x5.9",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C8",
+          "footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "C9",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "D1",
+          "footprint": "Diode_SMD:D_SOD-323",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "D101",
+          "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+          "pad_region_count": 6,
+          "status": "pass"
+        },
+        {
+          "reference": "F1",
+          "footprint": "Fuse:Fuse_Littelfuse-NANO2-451_453",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "H1",
+          "footprint": "MountingHole:MountingHole_3.2mm_M3",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "H2",
+          "footprint": "MountingHole:MountingHole_3.2mm_M3",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "H3",
+          "footprint": "MountingHole:MountingHole_3.2mm_M3",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "H4",
+          "footprint": "MountingHole:MountingHole_3.2mm_M3",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "J1",
+          "footprint": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "J101",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+          "pad_region_count": 5,
+          "status": "pass"
+        },
+        {
+          "reference": "J102",
+          "footprint": "FarmMesh:USB_C_GCT_USB4105_A1",
+          "pad_region_count": 22,
+          "status": "pass"
+        },
+        {
+          "reference": "J2",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "J201",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+          "pad_region_count": 6,
+          "status": "pass"
+        },
+        {
+          "reference": "J301",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+          "pad_region_count": 6,
+          "status": "pass"
+        },
+        {
+          "reference": "J401",
+          "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+          "pad_region_count": 6,
+          "status": "pass"
+        },
+        {
+          "reference": "L1",
+          "footprint": "Inductor_SMD:L_Coilcraft_XAL7070-XXX",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "L101",
+          "footprint": "FarmMesh:AOTA-B201610S3R3-101-T",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "Q1",
+          "footprint": "Package_SON:Diodes_PowerDI3333-8",
+          "pad_region_count": 13,
+          "status": "pass"
+        },
+        {
+          "reference": "R1",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R101",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R102",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R103",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R104",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R105",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R108",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R109",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R110",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R111",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R112",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R113",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R114",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R115",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R116",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R2",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R201",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R202",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R203",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R204",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R205",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R210",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R211",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R212",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R213",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R214",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R215",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R216",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R217",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R218",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R219",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R220",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R221",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R3",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R301",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R302",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R303",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R304",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R305",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R310",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R311",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R312",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R313",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R314",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R315",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R316",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R317",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R318",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R319",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R320",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R321",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R4",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R401",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R402",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R403",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R404",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R405",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R410",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R411",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R412",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R413",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R414",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R415",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R416",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R417",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R418",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R419",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R420",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R421",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R5",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R6",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R7",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "R8",
+          "footprint": "Resistor_SMD:R_0603_1608Metric",
+          "pad_region_count": 2,
+          "status": "pass"
+        },
+        {
+          "reference": "SW101",
+          "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+          "pad_region_count": 4,
+          "status": "pass"
+        },
+        {
+          "reference": "SW102",
+          "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+          "pad_region_count": 4,
+          "status": "pass"
+        },
+        {
+          "reference": "SW201",
+          "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+          "pad_region_count": 4,
+          "status": "pass"
+        },
+        {
+          "reference": "SW202",
+          "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+          "pad_region_count": 4,
+          "status": "pass"
+        },
+        {
+          "reference": "SW301",
+          "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+          "pad_region_count": 4,
+          "status": "pass"
+        },
+        {
+          "reference": "SW302",
+          "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+          "pad_region_count": 4,
+          "status": "pass"
+        },
+        {
+          "reference": "SW401",
+          "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+          "pad_region_count": 4,
+          "status": "pass"
+        },
+        {
+          "reference": "SW402",
+          "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+          "pad_region_count": 4,
+          "status": "pass"
+        },
+        {
+          "reference": "TP1",
+          "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "TP101",
+          "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "TP102",
+          "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "TP103",
+          "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "TP104",
+          "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "TP2",
+          "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "TP3",
+          "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+          "pad_region_count": 1,
+          "status": "pass"
+        },
+        {
+          "reference": "U1",
+          "footprint": "Package_SO:TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.05x7.56mm",
+          "pad_region_count": 37,
+          "status": "pass"
+        },
+        {
+          "reference": "U101",
+          "footprint": "Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm",
+          "pad_region_count": 90,
+          "status": "pass"
+        },
+        {
+          "reference": "U102",
+          "footprint": "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm",
+          "pad_region_count": 8,
+          "status": "pass"
+        },
+        {
+          "reference": "U103",
+          "footprint": "Package_SO:TSSOP-10_3x3mm_P0.5mm",
+          "pad_region_count": 10,
+          "status": "pass"
+        },
+        {
+          "reference": "U104",
+          "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+          "pad_region_count": 6,
+          "status": "pass"
+        },
+        {
+          "reference": "U201",
+          "footprint": "FarmMesh:ESP32-C5-WROOM-1U",
+          "pad_region_count": 40,
+          "status": "pass"
+        },
+        {
+          "reference": "U301",
+          "footprint": "FarmMesh:ESP32-C5-WROOM-1U",
+          "pad_region_count": 40,
+          "status": "pass"
+        },
+        {
+          "reference": "U401",
+          "footprint": "FarmMesh:ESP32-C5-WROOM-1U",
+          "pad_region_count": 40,
+          "status": "pass"
+        },
+        {
+          "reference": "Y101",
+          "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+          "pad_region_count": 4,
+          "status": "pass"
+        }
+      ],
+      "library_file_sha256": {
+        "Capacitor_SMD:C_0603_1608Metric": "fe0dbfefbb181a0466f93a8de52d84ba7b00fcd9acdbb69575f4128a0af4e405",
+        "Capacitor_SMD:C_0402_1005Metric": "0403382fc4583ed510b461b1fa4a36dfaec6f4c0d9b1a67e6b0027837a54e1b5",
+        "Capacitor_SMD:C_0805_2012Metric": "62775a51fe74ba7f1b572de327bdbd3fc92582721b2abcaa47787865590d89cb",
+        "Capacitor_SMD:CP_Elec_5x5.9": "576ca0204e52d22a02e0325619fb9850bd68d0ae59cb76968b32219075755f05",
+        "Capacitor_SMD:CP_Elec_6.3x5.9": "efe6ce7548c27034d3ee899c6d00ac17e75879f562c4f5b40d445e4770b8bdcd",
+        "Diode_SMD:D_SOD-323": "03669ee95335b8ad49c3458e5262e7c2fd7ace6fe481bfd00f46b6f2f32abc8a",
+        "Package_TO_SOT_SMD:SOT-23-6": "f341c73aac9dcb553456f68bf3fee3d26eb14acf6d8a1cae82b50418fe1d71ca",
+        "Fuse:Fuse_Littelfuse-NANO2-451_453": "4d7971c5346420f32946d8f6f19189db0074a717fa4ad9566c72a60c7c21cb84",
+        "MountingHole:MountingHole_3.2mm_M3": "b83ec84428449465df3b459f1bc24b285045c812102a2052b1b7ce0f67e018f2",
+        "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical": "db267aa991d5a9d6f37a7118ea3649762027773687cf65df88339d984a25edb3",
+        "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical": "4b62e226ec163657a79acde1229c1fca2b2453ff75fddcbc038fc7484bbc2711",
+        "FarmMesh:USB_C_GCT_USB4105_A1": "6b5a19aa0bc9462f0afe56b61d3cd2b0560e5659198d3ff32dcae09e6b7866ef",
+        "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical": "5301303268f72ba9cc94b7fdbac355951933e6854272ce8d300b679b86b5d45d",
+        "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical": "5f2993c50dbd5024384bf6fa972fcd10d40d0837039e1e371b326a27d9f5b8b7",
+        "Inductor_SMD:L_Coilcraft_XAL7070-XXX": "817472fe0542359934edbf65cbd0926e76503a9b11fa581303fb00be76639c16",
+        "FarmMesh:AOTA-B201610S3R3-101-T": "c69ba388f3ce4eb4f24229e1125edd25ec1a54eddd010caaf24db2ee4825d73c",
+        "Package_SON:Diodes_PowerDI3333-8": "e868e39c4329b02aca12e4f1e25421231fa667922dea0c90c50f585b5ab32d1a",
+        "Resistor_SMD:R_0603_1608Metric": "7190ac4a00125b807e54129ef0d87d87f2a658eeb74d025a7028203419b09f23",
+        "Resistor_SMD:R_0402_1005Metric": "e05c7605248c220836f642ed1f526133edf0374acdfd5bb2631e58b4e377acfb",
+        "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG": "02f635918133e6ec5a4b8846f5ddff358493bfa70019cfa37ae4a9094470e1f6",
+        "TestPoint:TestPoint_Pad_D1.5mm": "d7ae230b69d8c3dad5082515a51aac9e4840360c8f4324a00673353676d43042",
+        "Package_SO:TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.05x7.56mm": "54adb9579cfbd3693ea0a124c15783c73f054b8ea33d07ecf35ac60a5032636f",
+        "Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm": "9dc4266d5e5939c0f6a89beae370f4f4e29207308d02d02977c2c541af6fffb5",
+        "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm": "cc86a7083c9df1c1bf808dfa469e913d446455fd7ab7a7941e18681b80e8b9b5",
+        "Package_SO:TSSOP-10_3x3mm_P0.5mm": "2086038e5c7206b71f55b2b549ebc926ab2462fa36b107db5287ae1d38a0da96",
+        "FarmMesh:ESP32-C5-WROOM-1U": "5f97774ac3058f1fcb4e208ec947708ca64f5ec29340f5ede6f67a485ae71729",
+        "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm": "7648bca15399a8bd7856b5da6a1d2bc3a87049dc63958f8e8a3ab7409941a8e4"
+      }
+    },
+    "ep_paste_and_holes": {
+      "status": "pass",
+      "errors": [],
+      "finished_holes_checked": 433,
+      "method": "Conservative 0.001 mm polygon approximation; complete drilled capsules/circles checked against paste and the entire EP bounding envelope.",
+      "components": [
+        {
+          "reference": "U101",
+          "ep_pad_number": "81",
+          "ep_copper_regions": 1,
+          "paste_aperture_count": 9,
+          "paste_area_mm2": 7.057652,
+          "ep_envelope_mm": [
+            48.3,
+            48.3,
+            51.7,
+            51.7
+          ],
+          "paste_hole_intersections": [],
+          "ep_envelope_hole_intersections": []
+        },
+        {
+          "reference": "U1",
+          "ep_pad_number": "29",
+          "ep_copper_regions": 1,
+          "paste_aperture_count": 8,
+          "paste_area_mm2": 14.531791,
+          "ep_envelope_mm": [
+            78.475,
+            23.22,
+            81.525,
+            30.78
+          ],
+          "paste_hole_intersections": [],
+          "ep_envelope_hole_intersections": []
+        },
+        {
+          "reference": "U201",
+          "ep_pad_number": "29",
+          "ep_copper_regions": 9,
+          "paste_aperture_count": 9,
+          "paste_area_mm2": 15.21,
+          "ep_envelope_mm": [
+            17.328,
+            16.8202,
+            22.028,
+            21.5202
+          ],
+          "paste_hole_intersections": [],
+          "ep_envelope_hole_intersections": []
+        },
+        {
+          "reference": "U301",
+          "ep_pad_number": "29",
+          "ep_copper_regions": 9,
+          "paste_aperture_count": 9,
+          "paste_area_mm2": 15.21,
+          "ep_envelope_mm": [
+            16.8202,
+            77.972,
+            21.5202,
+            82.672
+          ],
+          "paste_hole_intersections": [],
+          "ep_envelope_hole_intersections": []
+        },
+        {
+          "reference": "U401",
+          "ep_pad_number": "29",
+          "ep_copper_regions": 9,
+          "paste_aperture_count": 9,
+          "paste_area_mm2": 15.21,
+          "ep_envelope_mm": [
+            77.972,
+            78.4798,
+            82.672,
+            83.1798
+          ],
+          "paste_hole_intersections": [],
+          "ep_envelope_hole_intersections": []
+        }
+      ]
+    },
+    "all_via_drills_vs_paste": {
+      "status": "pass",
+      "errors": [],
+      "via_drills_checked": 396,
+      "paste_apertures_checked": 597,
+      "nonzero_margin_apertures": [],
+      "method": "Native effective-shape collision against via center plus drill radius; detached pad geometry first incorporates actual paste margins using KiCad plotting rules. All F/B paste pads checked; component PTH/NPTH drills excluded.",
+      "plotting_rule_reference": "https://docs.kicad.org/doxygen/plot__board__layers_8cpp_source.html"
+    },
+    "inner_ground_planes_and_routing_layers": {
+      "status": "pass",
+      "errors": [],
+      "acceptance": "One saved connected filled GND polygon per inner layer, >=90% of its zone-outline area, no inner-layer tracks/arcs. Through vias are allowed.",
+      "inner_tracks_or_arcs": 0,
+      "planes": [
+        {
+          "layer": "In1.Cu",
+          "net": "GND",
+          "saved_fill_present": true,
+          "filled_polygon_outlines": 1,
+          "filled_area_mm2": 9664.724823,
+          "zone_outline_area_mm2": 9880.36,
+          "filled_area_ratio": 0.978175
+        },
+        {
+          "layer": "In2.Cu",
+          "net": "GND",
+          "saved_fill_present": true,
+          "filled_polygon_outlines": 1,
+          "filled_area_mm2": 9672.906378,
+          "zone_outline_area_mm2": 9880.36,
+          "filled_area_ratio": 0.979003
+        }
+      ],
+      "scope_limit": "Polygon connectivity is not a minimum-neck-width or every-return-path proof."
+    },
+    "rp_lx_adjacent_layer_clearance": {
+      "status": "pass",
+      "errors": [],
+      "lx_front_copper_area_mm2": 2.06950784,
+      "in1_copper_beneath_lx_mm2": 0.0,
+      "intersection_area_tolerance_mm2": 1e-06,
+      "method": "Boolean intersection of actual saved filled copper and track/via/pad geometry; conservative 0.001 mm polygon approximation. All In1 nets are considered.",
+      "reference": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf#page=456",
+      "reference_section": "6.3.8, printed page 455, Figure 24; immediately adjacent copper layer only."
+    },
+    "usb_straight_coupled_trunk": {
+      "status": "pass",
+      "errors": [],
+      "common_span_y_mm": [
+        25.95,
+        40.048
+      ],
+      "common_span_length_mm": 14.098,
+      "nominal_center_spacing_mm": 0.358,
+      "nominal_copper_edge_gap_mm": 0.2,
+      "traces": [
+        {
+          "net": "/RP USB boot {slash} self-powered USB-C/USB_DP_SW",
+          "x_mm": 50.0,
+          "layer": "F.Cu",
+          "width_mm": 0.158,
+          "verified_spans_y_mm": [
+            [
+              25.95,
+              40.048
+            ]
+          ],
+          "complete_required_span": true
+        },
+        {
+          "net": "/RP USB boot {slash} self-powered USB-C/USB_DM_SW",
+          "x_mm": 50.358,
+          "layer": "F.Cu",
+          "width_mm": 0.158,
+          "verified_spans_y_mm": [
+            [
+              25.95,
+              40.048
+            ]
+          ],
+          "complete_required_span": true
+        }
+      ],
+      "ground_reference_samples": [
+        {
+          "layer": "In1.Cu",
+          "sample_count": 429,
+          "missing_count": 0,
+          "missing_coupled_span_ground_area_mm2": 0.0
+        },
+        {
+          "layer": "In2.Cu",
+          "sample_count": 429,
+          "missing_count": 0,
+          "missing_coupled_span_ground_area_mm2": 0.0
+        }
+      ],
+      "scope": "Only the specified straight coupled span; escape widths/gaps/impedance are not generalized from this result."
+    },
+    "source_series_placement": {
+      "status": "pass",
+      "errors": [],
+      "expected_series_count": 36,
+      "actual_series_count": 36,
+      "scope": "Center-to-center Euclidean distance and total copper length on the source-side net, not a timing/SI certification. 3 mm C5 / 10 mm RP are review attention thresholds, not vendor limits.",
+      "max_c5_distance_mm": 2.047102,
+      "max_rp_distance_mm": 10.337824,
+      "attention_rows": [
+        "C_RX_D1"
+      ],
+      "signals": [
+        {
+          "signal": "A_TX_D0",
+          "clock_or_control": false,
+          "source_reference": "U201",
+          "source_pad": "6",
+          "series_reference": "R210",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            17.44,
+            28.75
+          ],
+          "series_source_pad_xy_mm": [
+            17.2,
+            30.775
+          ],
+          "source_center_to_series_pad_mm": 2.039173,
+          "source_net": "/C5-A module and independent link A/A_TX_D0_C5",
+          "source_net_total_trace_length_mm": 2.124411,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "A_TX_D1",
+          "clock_or_control": false,
+          "source_reference": "U201",
+          "source_pad": "7",
+          "series_reference": "R211",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            18.71,
+            28.75
+          ],
+          "series_source_pad_xy_mm": [
+            19.0,
+            30.775
+          ],
+          "source_center_to_series_pad_mm": 2.04566,
+          "source_net": "/C5-A module and independent link A/A_TX_D1_C5",
+          "source_net_total_trace_length_mm": 2.145122,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "A_TX_D2",
+          "clock_or_control": false,
+          "source_reference": "U201",
+          "source_pad": "13",
+          "series_reference": "R212",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            26.33,
+            28.75
+          ],
+          "series_source_pad_xy_mm": [
+            26.1,
+            30.775
+          ],
+          "source_center_to_series_pad_mm": 2.03802,
+          "source_net": "/C5-A module and independent link A/A_TX_D2_C5",
+          "source_net_total_trace_length_mm": 2.120269,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "A_TX_D3",
+          "clock_or_control": false,
+          "source_reference": "U201",
+          "source_pad": "14",
+          "series_reference": "R213",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            27.6,
+            28.75
+          ],
+          "series_source_pad_xy_mm": [
+            27.9,
+            30.775
+          ],
+          "source_center_to_series_pad_mm": 2.047102,
+          "source_net": "/C5-A module and independent link A/A_TX_D3_C5",
+          "source_net_total_trace_length_mm": 2.149264,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "A_TX_CLK",
+          "clock_or_control": true,
+          "source_reference": "U201",
+          "source_pad": "17",
+          "series_reference": "R214",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            25.06,
+            11.25
+          ],
+          "series_source_pad_xy_mm": [
+            24.85,
+            9.225
+          ],
+          "source_center_to_series_pad_mm": 2.03586,
+          "source_net": "/C5-A module and independent link A/A_TX_CLK_C5",
+          "source_net_total_trace_length_mm": 2.111985,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "A_TX_VALID",
+          "clock_or_control": true,
+          "source_reference": "U201",
+          "source_pad": "16",
+          "series_reference": "R215",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            26.33,
+            11.25
+          ],
+          "series_source_pad_xy_mm": [
+            26.55,
+            9.225
+          ],
+          "source_center_to_series_pad_mm": 2.036916,
+          "source_net": "/C5-A module and independent link A/A_TX_VALID_C5",
+          "source_net_total_trace_length_mm": 2.116127,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "A_RX_D0",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "3",
+          "series_reference": "R216",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            45.05,
+            47.0
+          ],
+          "series_source_pad_xy_mm": [
+            40.01,
+            46.8
+          ],
+          "source_center_to_series_pad_mm": 5.043967,
+          "source_net": "A_RX_D0",
+          "source_net_total_trace_length_mm": 17.18518,
+          "source_net_via_count": 4,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "A_RX_D1",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "4",
+          "series_reference": "R217",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            45.05,
+            47.4
+          ],
+          "series_source_pad_xy_mm": [
+            37.81,
+            48.1
+          ],
+          "source_center_to_series_pad_mm": 7.273761,
+          "source_net": "A_RX_D1",
+          "source_net_total_trace_length_mm": 9.050362,
+          "source_net_via_count": 2,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "A_RX_D2",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "6",
+          "series_reference": "R218",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            45.05,
+            48.2
+          ],
+          "series_source_pad_xy_mm": [
+            40.01,
+            49.4
+          ],
+          "source_center_to_series_pad_mm": 5.180888,
+          "source_net": "A_RX_D2",
+          "source_net_total_trace_length_mm": 5.813368,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "A_RX_D3",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "7",
+          "series_reference": "R219",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            45.05,
+            48.6
+          ],
+          "series_source_pad_xy_mm": [
+            37.81,
+            50.7
+          ],
+          "source_center_to_series_pad_mm": 7.538408,
+          "source_net": "A_RX_D3",
+          "source_net_total_trace_length_mm": 11.580203,
+          "source_net_via_count": 2,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "A_RX_CLK",
+          "clock_or_control": true,
+          "source_reference": "U201",
+          "source_pad": "21",
+          "series_reference": "R220",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            19.98,
+            11.25
+          ],
+          "series_source_pad_xy_mm": [
+            20.0,
+            9.225
+          ],
+          "source_center_to_series_pad_mm": 2.025099,
+          "source_net": "/C5-A module and independent link A/A_RX_CLK_C5",
+          "source_net_total_trace_length_mm": 2.033284,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "A_RX_VALID",
+          "clock_or_control": true,
+          "source_reference": "U101",
+          "source_pad": "9",
+          "series_reference": "R221",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            45.05,
+            49.4
+          ],
+          "series_source_pad_xy_mm": [
+            40.01,
+            52.0
+          ],
+          "source_center_to_series_pad_mm": 5.67112,
+          "source_net": "A_RX_VALID",
+          "source_net_total_trace_length_mm": 12.302277,
+          "source_net_via_count": 2,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "B_TX_D0",
+          "clock_or_control": false,
+          "source_reference": "U301",
+          "source_pad": "6",
+          "series_reference": "R310",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            28.75,
+            82.56
+          ],
+          "series_source_pad_xy_mm": [
+            30.775,
+            82.8
+          ],
+          "source_center_to_series_pad_mm": 2.039173,
+          "source_net": "/C5-B module and independent link B/B_TX_D0_C5",
+          "source_net_total_trace_length_mm": 2.124411,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "B_TX_D1",
+          "clock_or_control": false,
+          "source_reference": "U301",
+          "source_pad": "7",
+          "series_reference": "R311",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            28.75,
+            81.29
+          ],
+          "series_source_pad_xy_mm": [
+            30.775,
+            81.0
+          ],
+          "source_center_to_series_pad_mm": 2.04566,
+          "source_net": "/C5-B module and independent link B/B_TX_D1_C5",
+          "source_net_total_trace_length_mm": 2.145122,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "B_TX_D2",
+          "clock_or_control": false,
+          "source_reference": "U301",
+          "source_pad": "13",
+          "series_reference": "R312",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            28.75,
+            73.67
+          ],
+          "series_source_pad_xy_mm": [
+            30.775,
+            73.9
+          ],
+          "source_center_to_series_pad_mm": 2.03802,
+          "source_net": "/C5-B module and independent link B/B_TX_D2_C5",
+          "source_net_total_trace_length_mm": 2.120269,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "B_TX_D3",
+          "clock_or_control": false,
+          "source_reference": "U301",
+          "source_pad": "14",
+          "series_reference": "R313",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            28.75,
+            72.4
+          ],
+          "series_source_pad_xy_mm": [
+            30.775,
+            72.1
+          ],
+          "source_center_to_series_pad_mm": 2.047102,
+          "source_net": "/C5-B module and independent link B/B_TX_D3_C5",
+          "source_net_total_trace_length_mm": 2.149264,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "B_TX_CLK",
+          "clock_or_control": true,
+          "source_reference": "U301",
+          "source_pad": "17",
+          "series_reference": "R314",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            11.25,
+            74.94
+          ],
+          "series_source_pad_xy_mm": [
+            9.225,
+            75.15
+          ],
+          "source_center_to_series_pad_mm": 2.03586,
+          "source_net": "/C5-B module and independent link B/B_TX_CLK_C5",
+          "source_net_total_trace_length_mm": 2.111985,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "B_TX_VALID",
+          "clock_or_control": true,
+          "source_reference": "U301",
+          "source_pad": "16",
+          "series_reference": "R315",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            11.25,
+            73.67
+          ],
+          "series_source_pad_xy_mm": [
+            9.225,
+            73.45
+          ],
+          "source_center_to_series_pad_mm": 2.036916,
+          "source_net": "/C5-B module and independent link B/B_TX_VALID_C5",
+          "source_net_total_trace_length_mm": 2.116127,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "B_RX_D0",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "18",
+          "series_reference": "R316",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            45.05,
+            53.0
+          ],
+          "series_source_pad_xy_mm": [
+            38.5,
+            57.99
+          ],
+          "source_center_to_series_pad_mm": 8.234233,
+          "source_net": "B_RX_D0",
+          "source_net_total_trace_length_mm": 10.417018,
+          "source_net_via_count": 2,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "B_RX_D1",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "19",
+          "series_reference": "R317",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            45.05,
+            53.4
+          ],
+          "series_source_pad_xy_mm": [
+            40.7,
+            59.59
+          ],
+          "source_center_to_series_pad_mm": 7.56562,
+          "source_net": "B_RX_D1",
+          "source_net_total_trace_length_mm": 10.628569,
+          "source_net_via_count": 2,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "B_RX_D2",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "20",
+          "series_reference": "R318",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            45.05,
+            53.8
+          ],
+          "series_source_pad_xy_mm": [
+            42.9,
+            57.99
+          ],
+          "source_center_to_series_pad_mm": 4.709416,
+          "source_net": "B_RX_D2",
+          "source_net_total_trace_length_mm": 5.080559,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "B_RX_D3",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "21",
+          "series_reference": "R319",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            46.2,
+            54.95
+          ],
+          "series_source_pad_xy_mm": [
+            45.1,
+            59.59
+          ],
+          "source_center_to_series_pad_mm": 4.768606,
+          "source_net": "B_RX_D3",
+          "source_net_total_trace_length_mm": 5.390723,
+          "source_net_via_count": 2,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "B_RX_CLK",
+          "clock_or_control": true,
+          "source_reference": "U301",
+          "source_pad": "21",
+          "series_reference": "R320",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            11.25,
+            80.02
+          ],
+          "series_source_pad_xy_mm": [
+            9.225,
+            80.0
+          ],
+          "source_center_to_series_pad_mm": 2.025099,
+          "source_net": "/C5-B module and independent link B/B_RX_CLK_C5",
+          "source_net_total_trace_length_mm": 2.033284,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "B_RX_VALID",
+          "clock_or_control": true,
+          "source_reference": "U101",
+          "source_pad": "23",
+          "series_reference": "R321",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            47.0,
+            54.95
+          ],
+          "series_source_pad_xy_mm": [
+            47.3,
+            57.99
+          ],
+          "source_center_to_series_pad_mm": 3.054767,
+          "source_net": "B_RX_VALID",
+          "source_net_total_trace_length_mm": 6.22953,
+          "source_net_via_count": 2,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "C_TX_D0",
+          "clock_or_control": false,
+          "source_reference": "U401",
+          "source_pad": "6",
+          "series_reference": "R410",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            82.56,
+            71.25
+          ],
+          "series_source_pad_xy_mm": [
+            82.8,
+            69.225
+          ],
+          "source_center_to_series_pad_mm": 2.039173,
+          "source_net": "/C5-C module and independent link C/C_TX_D0_C5",
+          "source_net_total_trace_length_mm": 2.124411,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "C_TX_D1",
+          "clock_or_control": false,
+          "source_reference": "U401",
+          "source_pad": "7",
+          "series_reference": "R411",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            81.29,
+            71.25
+          ],
+          "series_source_pad_xy_mm": [
+            81.0,
+            69.225
+          ],
+          "source_center_to_series_pad_mm": 2.04566,
+          "source_net": "/C5-C module and independent link C/C_TX_D1_C5",
+          "source_net_total_trace_length_mm": 2.145122,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "C_TX_D2",
+          "clock_or_control": false,
+          "source_reference": "U401",
+          "source_pad": "13",
+          "series_reference": "R412",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            73.67,
+            71.25
+          ],
+          "series_source_pad_xy_mm": [
+            73.9,
+            69.225
+          ],
+          "source_center_to_series_pad_mm": 2.03802,
+          "source_net": "/C5-C module and independent link C/C_TX_D2_C5",
+          "source_net_total_trace_length_mm": 2.120269,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "C_TX_D3",
+          "clock_or_control": false,
+          "source_reference": "U401",
+          "source_pad": "14",
+          "series_reference": "R413",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            72.4,
+            71.25
+          ],
+          "series_source_pad_xy_mm": [
+            72.1,
+            69.225
+          ],
+          "source_center_to_series_pad_mm": 2.047102,
+          "source_net": "/C5-C module and independent link C/C_TX_D3_C5",
+          "source_net_total_trace_length_mm": 2.149264,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "C_TX_CLK",
+          "clock_or_control": true,
+          "source_reference": "U401",
+          "source_pad": "17",
+          "series_reference": "R414",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            74.94,
+            88.75
+          ],
+          "series_source_pad_xy_mm": [
+            75.15,
+            90.775
+          ],
+          "source_center_to_series_pad_mm": 2.03586,
+          "source_net": "/C5-C module and independent link C/C_TX_CLK_C5",
+          "source_net_total_trace_length_mm": 2.111985,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "C_TX_VALID",
+          "clock_or_control": true,
+          "source_reference": "U401",
+          "source_pad": "16",
+          "series_reference": "R415",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            73.67,
+            88.75
+          ],
+          "series_source_pad_xy_mm": [
+            73.45,
+            90.775
+          ],
+          "source_center_to_series_pad_mm": 2.036916,
+          "source_net": "/C5-C module and independent link C/C_TX_VALID_C5",
+          "source_net_total_trace_length_mm": 2.116127,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "C_RX_D0",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "38",
+          "series_reference": "R416",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            53.0,
+            54.95
+          ],
+          "series_source_pad_xy_mm": [
+            61.49,
+            54.0
+          ],
+          "source_center_to_series_pad_mm": 8.542985,
+          "source_net": "C_RX_D0",
+          "source_net_total_trace_length_mm": 9.926207,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "C_RX_D1",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "39",
+          "series_reference": "R417",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            53.4,
+            54.95
+          ],
+          "series_source_pad_xy_mm": [
+            63.49,
+            52.7
+          ],
+          "source_center_to_series_pad_mm": 10.337824,
+          "source_net": "C_RX_D1",
+          "source_net_total_trace_length_mm": 11.778202,
+          "source_net_via_count": 0,
+          "placement_attention": true,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "C_RX_D2",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "40",
+          "series_reference": "R418",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            53.8,
+            54.95
+          ],
+          "series_source_pad_xy_mm": [
+            61.49,
+            51.4
+          ],
+          "source_center_to_series_pad_mm": 8.469864,
+          "source_net": "C_RX_D2",
+          "source_net_total_trace_length_mm": 9.160458,
+          "source_net_via_count": 2,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "C_RX_D3",
+          "clock_or_control": false,
+          "source_reference": "U101",
+          "source_pad": "42",
+          "series_reference": "R419",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            54.95,
+            53.4
+          ],
+          "series_source_pad_xy_mm": [
+            63.49,
+            50.1
+          ],
+          "source_center_to_series_pad_mm": 9.155414,
+          "source_net": "C_RX_D3",
+          "source_net_total_trace_length_mm": 9.906905,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        },
+        {
+          "signal": "C_RX_CLK",
+          "clock_or_control": true,
+          "source_reference": "U401",
+          "source_pad": "21",
+          "series_reference": "R420",
+          "series_source_pad": "1",
+          "source_xy_mm": [
+            80.02,
+            88.75
+          ],
+          "series_source_pad_xy_mm": [
+            80.0,
+            90.775
+          ],
+          "source_center_to_series_pad_mm": 2.025099,
+          "source_net": "/C5-C module and independent link C/C_RX_CLK_C5",
+          "source_net_total_trace_length_mm": 2.033284,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 3
+        },
+        {
+          "signal": "C_RX_VALID",
+          "clock_or_control": true,
+          "source_reference": "U101",
+          "source_pad": "44",
+          "series_reference": "R421",
+          "series_source_pad": "2",
+          "source_xy_mm": [
+            54.95,
+            52.6
+          ],
+          "series_source_pad_xy_mm": [
+            61.49,
+            48.8
+          ],
+          "source_center_to_series_pad_mm": 7.563835,
+          "source_net": "C_RX_VALID",
+          "source_net_total_trace_length_mm": 8.83858,
+          "source_net_via_count": 0,
+          "placement_attention": false,
+          "attention_threshold_mm": 10
+        }
+      ]
+    },
+    "physical_connectivity": {
+      "status": "pass",
+      "errors": [],
+      "unconnected_items": 0,
+      "scope": "KiCad connectivity count from the saved board; does not replace copper-short or full-rule DRC."
+    },
+    "input_files_unchanged": {
+      "status": "pass",
+      "errors": []
+    }
+  },
+  "expert_review_required": [
+    "Complete KiCad DRC/ERC, including shorts, clearances, schematic parity and zero unrouted connections, is a separate release gate.",
+    "Ground filled-polygon connectivity and area do not prove adequate return-path neck widths, stitching, EMI performance or every high-speed return path.",
+    "USB trunk dimensions are geometric checks for the specified straight coupled span only; connector/switch/ESD/via/resistor escapes are not claimed to maintain the same impedance. Fabricator stackup/impedance acceptance and USB measurements remain required.",
+    "Source-series distance is a placement measurement, not timing/SI sign-off. Confirm drive strengths, chosen clocks, crosstalk, skew and ringing on hardware; firmware remains unimplemented.",
+    "EP checks prove no finished drill geometry intersects the defined paste apertures or EP bounding envelope. They do not certify solder-mask tenting, stencil/reflow yield, thermal resistance or fabricator process capability.",
+    "Inspect buck switching-current loops, crystal/QSPI coupling, RP reset/boot behavior, connector/mechanical access and external dual-band antenna/coax assembly clearances.",
+    "RF coexistence, antenna placement in the enclosure, output power, thermal rise and multi-radio performance require measurements; this report is not a fabrication-release authorization."
+  ],
+  "automated_status": "pass",
+  "release_status": "expert_and_manufacturing_validation_required"
+}

@@ -1,0 +1,1447 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-23",
+  "selection_status": "prototype_parts_selected_with_validation_limits",
+  "by_reference": {
+    "J1": {
+      "mpn": "B2P-VH(LF)(SN)",
+      "manufacturer": "JST",
+      "footprint": "Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical",
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eVH.pdf",
+      "notes": "2-position 3.96mm VH vertical board header. Mates VHR-2N housing with SVH-21T-P1.1 contacts; polarity is project-specific BAT_PLUS pin1/GND pin2."
+    },
+    "F1": {
+      "mpn": "0451005.MRL",
+      "manufacturer": "Littelfuse",
+      "footprint": "Fuse:Fuse_Littelfuse-NANO2-451_453",
+      "source": "https://www.littelfuse.com/products/fuses-overcurrent-protection/fuses/surface-mount-fuses/nano2-fuses/451/0451005mrl",
+      "notes": "5A fast-acting NANO2 451; 125V rated; verify battery short-circuit protection and wiring coordination separately."
+    },
+    "Q1": {
+      "mpn": "DMP2008UFG-7",
+      "manufacturer": "Diodes Incorporated",
+      "footprint": "Package_SON:Diodes_PowerDI3333-8",
+      "source": "https://www.diodes.com/assets/Datasheets/DMP2008UFG.pdf",
+      "notes": "P-channel -20V MOSFET in PowerDI3333-8; reverse-polarity stage, not a lithium-cell protection controller."
+    },
+    "R1": {
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "U1": {
+      "mpn": "LTC3119IFE#PBF",
+      "manufacturer": "Analog Devices",
+      "footprint": "Package_SO:TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.05x7.56mm",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/3119fb.pdf",
+      "notes": "Industrial-grade 28-lead FE exposed-pad TSSOP; exposed pad GND, layout/thermal and low-VIN full-load validation required."
+    },
+    "L1": {
+      "mpn": "XAL7070-472MEC",
+      "manufacturer": "Coilcraft",
+      "footprint": "Inductor_SMD:L_Coilcraft_XAL7070-XXX",
+      "source": "https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xal/xal70xx/xal7070/",
+      "notes": "4.7uH ±20% shielded power inductor; use exact XAL7070 footprint and confirm saturation/temperature under low-battery peak input current."
+    },
+    "C1": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "C2": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "C3": {
+      "mpn": "GRM21BZ71A226ME15L",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01A.pdf",
+      "notes": "22uF ±20%, 10V, X7R(MURATA) Z7, 0805. Official SimSurfing typical at 25C/0.5Vrms/120Hz: 14.288852uF at 3.3V, 11.788160uF at 4.2V; not a guaranteed full-temperature/small-ripple minimum. See capacitor_validation. Local polymer supplements transient reservoir; retain short HF return."
+    },
+    "C4": {
+      "mpn": "GRM21BZ71A226ME15L",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01A.pdf",
+      "notes": "22uF ±20%, 10V, X7R(MURATA) Z7, 0805. Official SimSurfing typical at 25C/0.5Vrms/120Hz: 14.288852uF at 3.3V, 11.788160uF at 4.2V; not a guaranteed full-temperature/small-ripple minimum. See capacitor_validation. Local polymer supplements transient reservoir; retain short HF return."
+    },
+    "C5": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "C6": {
+      "mpn": "10SVPC120M",
+      "manufacturer": "Panasonic",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x5.9",
+      "source": "https://industrial.panasonic.com/ww/products/pt/os-con/models/10SVPC120M",
+      "notes": "120uF ±20%, 10V polymer, ESR max 27mΩ at 100kHz, rated ripple 2.32Arms at 100kHz/105°C. Replaces original 100u nominal; input ripple and inrush require bench verification.",
+      "value": "120u / 10V polymer"
+    },
+    "C7": {
+      "mpn": "6SVPE220M",
+      "manufacturer": "Panasonic",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x5.9",
+      "source": "https://industrial.panasonic.com/ww/products/pt/os-con/models/6SVPE220M",
+      "notes": "220uF ±20%, 6.3V conductive-polymer OS-CON; maximum ESR 10mΩ at 100kHz; rated ripple 3.90Arms at 100kHz/105°C; polarity required. LTC3119 compensation/ripple must be measured with all three radio reservoirs present."
+    },
+    "C8": {
+      "mpn": "GRM21BZ71A226ME15L",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01A.pdf",
+      "notes": "22uF ±20%, 10V, X7R(MURATA) Z7, 0805. Official SimSurfing typical at 25C/0.5Vrms/120Hz: 14.288852uF at 3.3V, 11.788160uF at 4.2V; not a guaranteed full-temperature/small-ripple minimum. See capacitor_validation. Local polymer supplements transient reservoir; retain short HF return."
+    },
+    "C9": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "R2": {
+      "mpn": "RC0603FR-07316KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R3": {
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R4": {
+      "mpn": "RC0603FR-0778K7L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "C10": {
+      "mpn": "C0603C821J5GACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C821J5GACTU",
+      "notes": "820pF ±5%, 50V C0G/NP0 0603; stable dielectric for compensation/reference filtering."
+    },
+    "R5": {
+      "mpn": "RC0603FR-07162KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "C11": {
+      "mpn": "GRM21BR71A475KA73L",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A475KA73-01.pdf",
+      "notes": "4.7uF ±10%, 10V X7R 0805; LTC3119 VCC bypass. Verify biased capacitance and VCC behavior during initial power tests."
+    },
+    "D1": {
+      "mpn": "PMEG2010EA,115",
+      "manufacturer": "Nexperia",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "source": "https://assets.nexperia.com/documents/data-sheet/PMEG2010EA.pdf",
+      "notes": "20V 1A Schottky in SOD323; orientation per VCC bypass network."
+    },
+    "R6": {
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R7": {
+      "mpn": "RC0603FR-07174KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R8": {
+      "mpn": "RC0603FR-07100KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "C12": {
+      "mpn": "C0603C471J5GACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C471J5GACTU",
+      "notes": "470pF ±5%, 50V C0G/NP0 0603; stable dielectric for compensation/reference filtering."
+    },
+    "J2": {
+      "mpn": "TSW-102-07-G-S",
+      "manufacturer": "Samtec",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+      "source": "https://www.samtec.com/products/tsw-102-07-g-s",
+      "notes": "Single-row 2.54mm pitch 0.635mm square post through-hole header, -07 standard tail. J101/Jx01 3V3 is reference only, do not power externally through debugger."
+    },
+    "U101": {
+      "mpn": "RP2350B",
+      "manufacturer": "Raspberry Pi",
+      "footprint": "Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm",
+      "source": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf",
+      "notes": "QFN80 10x10mm pitch0.4mm; exposed pad81 GND. Prefer A3/A4 silicon; design retains A2 E9-compatible external pull-downs."
+    },
+    "R101": {
+      "mpn": "RC0402FR-0733RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "33Ω ±1%, 0402, 1/16W; exact reference VREG_AVDD filter resistor."
+    },
+    "C101": {
+      "mpn": "GRM155R60J475ME47D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "4.7uF ±20%, 6.3V X5R; exact RP2350B R4-S1 reference BOM C6/C7/C9. Preserve reference buck layout; not 4.7uF guaranteed after bias/tolerance."
+    },
+    "C102": {
+      "mpn": "GRM155R60J475ME47D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "4.7uF ±20%, 6.3V X5R; exact RP2350B R4-S1 reference BOM C6/C7/C9. Preserve reference buck layout; not 4.7uF guaranteed after bias/tolerance."
+    },
+    "L101": {
+      "mpn": "AOTA-B201610S3R3-101-T",
+      "manufacturer": "Abracon",
+      "footprint": "FarmMesh:AOTA-B201610S3R3-101-T",
+      "source": "https://abracon.com/datasheets/AOTA-B201610S3R3-101-T.pdf",
+      "notes": "3.3uH oriented RP2350 buck inductor, exact official reference choice. Local footprint pad1/mark=CORE_1V1; pad2=LX, matches official RP2350B layout."
+    },
+    "C103": {
+      "mpn": "GRM155R60J475ME47D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "4.7uF ±20%, 6.3V X5R; exact RP2350B R4-S1 reference BOM C6/C7/C9. Preserve reference buck layout; not 4.7uF guaranteed after bias/tolerance."
+    },
+    "U102": {
+      "mpn": "W25Q128JVSIQ",
+      "manufacturer": "Winbond",
+      "footprint": "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm",
+      "source": "https://www.winbond.com/export/sites/winbond/product-selection-guide/file/2025-Product-Selection-Guide-Winbond-Code-Storage-Flash-Memory.pdf",
+      "notes": "128Mbit 2.7–3.6V QSPI NOR; SI=208mil SOIC8 5.3x5.3mm, not 150mil SOIC. Q=QE bit factory setting. Verify marking and ROM flash boot."
+    },
+    "C104": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "R102": {
+      "mpn": "RC0402FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R103": {
+      "mpn": "RC0402FR-071KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "SW101": {
+      "mpn": "TL3301NF160QG",
+      "manufacturer": "E-Switch",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+      "source": "https://www.e-switch.com/product/tl3301-series-smt-tactile-switch/",
+      "notes": "6x6mm SMT gullwing normally-open tactile; 4.3mm actuator, 160gf, silver contacts; current P010515 drawing."
+    },
+    "SW102": {
+      "mpn": "TL3301NF160QG",
+      "manufacturer": "E-Switch",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+      "source": "https://www.e-switch.com/product/tl3301-series-smt-tactile-switch/",
+      "notes": "6x6mm SMT gullwing normally-open tactile; 4.3mm actuator, 160gf, silver contacts; current P010515 drawing."
+    },
+    "R104": {
+      "mpn": "RC0603FR-071KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "Y101": {
+      "mpn": "ABM8-272-T3",
+      "manufacturer": "Abracon",
+      "footprint": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+      "source": "https://abracon.com/datasheets/ABM8-272-T3.pdf",
+      "notes": "12MHz, CL10pF, 3.2x2.5mm four-pad crystal; official RP2350 reference with 15pF external load caps, pin2/4 GND."
+    },
+    "R105": {
+      "mpn": "RC0402FR-071KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "C105": {
+      "mpn": "GRM1555C1H150JA01D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "15pF ±5%, 50V C0G; exact reference crystal loading part."
+    },
+    "C106": {
+      "mpn": "GRM1555C1H150JA01D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "15pF ±5%, 50V C0G; exact reference crystal loading part."
+    },
+    "C110": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C111": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C112": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C113": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C114": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C115": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C116": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C117": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C118": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C119": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C120": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C121": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C122": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C123": {
+      "mpn": "GRM155R71E104KE14D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "source": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip",
+      "notes": "100nF ±10%, 25V X7R; reference BOM decoupler, close to assigned supply pin."
+    },
+    "C124": {
+      "mpn": "GRM188R60J475KE19D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R60J475KE19-01.pdf",
+      "notes": "4.7uF ±10%, 6.3V X5R 0603; added local CORE_1V1 bulk, not a replacement for official buck C103."
+    },
+    "J101": {
+      "mpn": "TSW-105-07-G-S",
+      "manufacturer": "Samtec",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+      "source": "https://www.samtec.com/products/tsw-105-07-g-s",
+      "notes": "Single-row 2.54mm pitch 0.635mm square post through-hole header, -07 standard tail. J101/Jx01 3V3 is reference only, do not power externally through debugger."
+    },
+    "J102": {
+      "mpn": "USB4105-GF-A",
+      "manufacturer": "GCT",
+      "footprint": "FarmMesh:USB_C_GCT_USB4105_A1",
+      "source": "https://gct.co/connector/usb4105",
+      "notes": "USB-C USB2.0 16-signal top-mount receptacle; use exact xx-A footprint, GCT drawing and slot/drill checks; no battery charging via VBUS. A1 derived land pattern shortens only four co-located outer GND pads 0.04mm on hole-facing edge (Y length1.11mm; centerY-3.70mm), within GCT 1.15±0.05mm recommended PCB land tolerance. Geometric NPTH-to-pad clearance≈0.2333mm. Paste follows shortened copper; all holes and other pads unchanged."
+    },
+    "R108": {
+      "mpn": "RC0603FR-075K1L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R109": {
+      "mpn": "RC0603FR-075K1L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "D101": {
+      "mpn": "USBLC6-2SC6",
+      "manufacturer": "STMicroelectronics",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "source": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+      "notes": "SOT23-6 USB ESD array, pin5 connector VBUS bypassed by C127, pin2 GND. Kept connector-side of U103; not power-off isolation by itself."
+    },
+    "U103": {
+      "mpn": "TS3USB30EDGSR",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_SO:TSSOP-10_3x3mm_P0.5mm",
+      "source": "https://www.ti.com/lit/ds/symlink/ts3usb30e.pdf",
+      "notes": "DGS VSSOP10 3x3mm pitch0.5mm USB2.0 mux with Ioff; active-low OE hardware-gated from VBUS comparator; unselected port NC."
+    },
+    "R110": {
+      "mpn": "RC0402FR-0727RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R111": {
+      "mpn": "RC0402FR-0727RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "C128": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "C127": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "R114": {
+      "mpn": "RT0603BRD07237KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD07237KL",
+      "notes": "237kΩ ±0.1%, 25ppm/°C, 0.1W thin-film 0603; USB VBUS hardware threshold divider, do not replace by 1%."
+    },
+    "R115": {
+      "mpn": "RT0603BRD07100KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD07100KL",
+      "notes": "100kΩ ±0.1%, 25ppm/°C, 0.1W thin-film 0603; USB VBUS hardware threshold divider, do not replace by 1%."
+    },
+    "U104": {
+      "mpn": "TLV3011BIDBVR",
+      "manufacturer": "Texas Instruments",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "source": "https://www.ti.com/lit/ds/symlink/tlv3011.pdf",
+      "notes": "B-version fail-safe input comparator with reference/POR, SOT23-6 DBV. Do not substitute legacy TLV3011. VBUS threshold ~4.19V nominal; actual tolerance/hysteresis per power review."
+    },
+    "R116": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "C129": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "C130": {
+      "mpn": "C0603C102J5GACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C102J5GACTU",
+      "notes": "1nF ±5%, 50V C0G/NP0 0603; stable dielectric for compensation/reference filtering."
+    },
+    "R112": {
+      "mpn": "RC0603FR-075K1L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R113": {
+      "mpn": "RC0603FR-077K5L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "C126": {
+      "mpn": "C0603C103K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C103K5RACTU",
+      "notes": "10nF ±10%, 50V X7R 0603; GPIO37 VBUS sense filter."
+    },
+    "U201": {
+      "mpn": "ESP32-C5-WROOM-1U-N8R8",
+      "manufacturer": "Espressif Systems",
+      "footprint": "FarmMesh:ESP32-C5-WROOM-1U",
+      "source": "https://www.espressif.com/sites/default/files/documentation/esp32-c5-wroom-1_wroom-1u_datasheet_en.pdf",
+      "notes": "External-antenna module; 8MB flash + 8MB PSRAM exact suffix. Three 50Ω external dual-band antennas required; custom footprint checked against official land pattern."
+    },
+    "R210": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R211": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R212": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R213": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R214": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R215": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R216": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R217": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R218": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R219": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R220": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R221": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "C201": {
+      "mpn": "GRM21BZ71A226ME15L",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01A.pdf",
+      "notes": "22uF ±20%, 10V, X7R(MURATA) Z7, 0805. Official SimSurfing typical at 25C/0.5Vrms/120Hz: 14.288852uF at 3.3V, 11.788160uF at 4.2V; not a guaranteed full-temperature/small-ripple minimum. See capacitor_validation. Local polymer supplements transient reservoir; retain short HF return."
+    },
+    "C202": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "C203": {
+      "mpn": "6SVPC100M",
+      "manufacturer": "Panasonic",
+      "footprint": "Capacitor_SMD:CP_Elec_5x5.9",
+      "source": "https://industrial.panasonic.com/ww/products/pt/os-con/models/6SVPC100M",
+      "notes": "100uF ±20%, 6.3V polymer, ESR max 30mΩ at 100kHz, rated ripple 1.97Arms at 100kHz/105°C. B6 case 5.0mm diameter, not original 6.3mm generic can. Distributed rail capacitance changes loop response.",
+      "value": "100u / 6.3V polymer"
+    },
+    "R201": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "C204": {
+      "mpn": "GRM188R71C105KA12D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C105KA12-01.pdf",
+      "notes": "1uF ±10%, 16V X7R 0603; ESP32-C5 EN reset RC; nominal RC with 10k is 10ms, actual startup timing remains bias/tolerance dependent."
+    },
+    "SW201": {
+      "mpn": "TL3301NF160QG",
+      "manufacturer": "E-Switch",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+      "source": "https://www.e-switch.com/product/tl3301-series-smt-tactile-switch/",
+      "notes": "6x6mm SMT gullwing normally-open tactile; 4.3mm actuator, 160gf, silver contacts; current P010515 drawing."
+    },
+    "R202": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "SW202": {
+      "mpn": "TL3301NF160QG",
+      "manufacturer": "E-Switch",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+      "source": "https://www.e-switch.com/product/tl3301-series-smt-tactile-switch/",
+      "notes": "6x6mm SMT gullwing normally-open tactile; 4.3mm actuator, 160gf, silver contacts; current P010515 drawing."
+    },
+    "R203": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "J201": {
+      "mpn": "TSW-106-07-G-S",
+      "manufacturer": "Samtec",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "source": "https://www.samtec.com/products/tsw-106-07-g-s",
+      "notes": "Single-row 2.54mm pitch 0.635mm square post through-hole header, -07 standard tail. J101/Jx01 3V3 is reference only, do not power externally through debugger."
+    },
+    "R204": {
+      "mpn": "RC0603FR-074K7L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. VALID default-low pull-down selected ≤8.2kΩ for RP2350 A2 E9 compatibility."
+    },
+    "R205": {
+      "mpn": "RC0603FR-074K7L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. VALID default-low pull-down selected ≤8.2kΩ for RP2350 A2 E9 compatibility."
+    },
+    "U301": {
+      "mpn": "ESP32-C5-WROOM-1U-N8R8",
+      "manufacturer": "Espressif Systems",
+      "footprint": "FarmMesh:ESP32-C5-WROOM-1U",
+      "source": "https://www.espressif.com/sites/default/files/documentation/esp32-c5-wroom-1_wroom-1u_datasheet_en.pdf",
+      "notes": "External-antenna module; 8MB flash + 8MB PSRAM exact suffix. Three 50Ω external dual-band antennas required; custom footprint checked against official land pattern."
+    },
+    "R310": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R311": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R312": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R313": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R314": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R315": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R316": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R317": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R318": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R319": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R320": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R321": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "C301": {
+      "mpn": "GRM21BZ71A226ME15L",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01A.pdf",
+      "notes": "22uF ±20%, 10V, X7R(MURATA) Z7, 0805. Official SimSurfing typical at 25C/0.5Vrms/120Hz: 14.288852uF at 3.3V, 11.788160uF at 4.2V; not a guaranteed full-temperature/small-ripple minimum. See capacitor_validation. Local polymer supplements transient reservoir; retain short HF return."
+    },
+    "C302": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "C303": {
+      "mpn": "6SVPC100M",
+      "manufacturer": "Panasonic",
+      "footprint": "Capacitor_SMD:CP_Elec_5x5.9",
+      "source": "https://industrial.panasonic.com/ww/products/pt/os-con/models/6SVPC100M",
+      "notes": "100uF ±20%, 6.3V polymer, ESR max 30mΩ at 100kHz, rated ripple 1.97Arms at 100kHz/105°C. B6 case 5.0mm diameter, not original 6.3mm generic can. Distributed rail capacitance changes loop response.",
+      "value": "100u / 6.3V polymer"
+    },
+    "R301": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "C304": {
+      "mpn": "GRM188R71C105KA12D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C105KA12-01.pdf",
+      "notes": "1uF ±10%, 16V X7R 0603; ESP32-C5 EN reset RC; nominal RC with 10k is 10ms, actual startup timing remains bias/tolerance dependent."
+    },
+    "SW301": {
+      "mpn": "TL3301NF160QG",
+      "manufacturer": "E-Switch",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+      "source": "https://www.e-switch.com/product/tl3301-series-smt-tactile-switch/",
+      "notes": "6x6mm SMT gullwing normally-open tactile; 4.3mm actuator, 160gf, silver contacts; current P010515 drawing."
+    },
+    "R302": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "SW302": {
+      "mpn": "TL3301NF160QG",
+      "manufacturer": "E-Switch",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+      "source": "https://www.e-switch.com/product/tl3301-series-smt-tactile-switch/",
+      "notes": "6x6mm SMT gullwing normally-open tactile; 4.3mm actuator, 160gf, silver contacts; current P010515 drawing."
+    },
+    "R303": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "J301": {
+      "mpn": "TSW-106-07-G-S",
+      "manufacturer": "Samtec",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "source": "https://www.samtec.com/products/tsw-106-07-g-s",
+      "notes": "Single-row 2.54mm pitch 0.635mm square post through-hole header, -07 standard tail. J101/Jx01 3V3 is reference only, do not power externally through debugger."
+    },
+    "R304": {
+      "mpn": "RC0603FR-074K7L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. VALID default-low pull-down selected ≤8.2kΩ for RP2350 A2 E9 compatibility."
+    },
+    "R305": {
+      "mpn": "RC0603FR-074K7L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. VALID default-low pull-down selected ≤8.2kΩ for RP2350 A2 E9 compatibility."
+    },
+    "U401": {
+      "mpn": "ESP32-C5-WROOM-1U-N8R8",
+      "manufacturer": "Espressif Systems",
+      "footprint": "FarmMesh:ESP32-C5-WROOM-1U",
+      "source": "https://www.espressif.com/sites/default/files/documentation/esp32-c5-wroom-1_wroom-1u_datasheet_en.pdf",
+      "notes": "External-antenna module; 8MB flash + 8MB PSRAM exact suffix. Three 50Ω external dual-band antennas required; custom footprint checked against official land pattern."
+    },
+    "R410": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R411": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R412": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R413": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R414": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R415": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R416": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R417": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R418": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R419": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "R420": {
+      "mpn": "RC0603FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "R421": {
+      "mpn": "RC0402FR-0722RL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0402 ±1%, 1/16W; downsize for RP2350 reference layout/fanout."
+    },
+    "C401": {
+      "mpn": "GRM21BZ71A226ME15L",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01A.pdf",
+      "notes": "22uF ±20%, 10V, X7R(MURATA) Z7, 0805. Official SimSurfing typical at 25C/0.5Vrms/120Hz: 14.288852uF at 3.3V, 11.788160uF at 4.2V; not a guaranteed full-temperature/small-ripple minimum. See capacitor_validation. Local polymer supplements transient reservoir; retain short HF return."
+    },
+    "C402": {
+      "mpn": "C0603C104K5RACTU",
+      "manufacturer": "KEMET",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.kemet.com/component-documentation/download/specsheet/C0603C104K5RACTU",
+      "notes": "100nF ±10%, 50V X7R 0603; voltage rating exceeds original 10/16V requirement."
+    },
+    "C403": {
+      "mpn": "6SVPC100M",
+      "manufacturer": "Panasonic",
+      "footprint": "Capacitor_SMD:CP_Elec_5x5.9",
+      "source": "https://industrial.panasonic.com/ww/products/pt/os-con/models/6SVPC100M",
+      "notes": "100uF ±20%, 6.3V polymer, ESR max 30mΩ at 100kHz, rated ripple 1.97Arms at 100kHz/105°C. B6 case 5.0mm diameter, not original 6.3mm generic can. Distributed rail capacitance changes loop response.",
+      "value": "100u / 6.3V polymer"
+    },
+    "R401": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "C404": {
+      "mpn": "GRM188R71C105KA12D",
+      "manufacturer": "Murata",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R71C105KA12-01.pdf",
+      "notes": "1uF ±10%, 16V X7R 0603; ESP32-C5 EN reset RC; nominal RC with 10k is 10ms, actual startup timing remains bias/tolerance dependent."
+    },
+    "SW401": {
+      "mpn": "TL3301NF160QG",
+      "manufacturer": "E-Switch",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+      "source": "https://www.e-switch.com/product/tl3301-series-smt-tactile-switch/",
+      "notes": "6x6mm SMT gullwing normally-open tactile; 4.3mm actuator, 160gf, silver contacts; current P010515 drawing."
+    },
+    "R402": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "SW402": {
+      "mpn": "TL3301NF160QG",
+      "manufacturer": "E-Switch",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG",
+      "source": "https://www.e-switch.com/product/tl3301-series-smt-tactile-switch/",
+      "notes": "6x6mm SMT gullwing normally-open tactile; 4.3mm actuator, 160gf, silver contacts; current P010515 drawing."
+    },
+    "R403": {
+      "mpn": "RC0603FR-0710KL",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. "
+    },
+    "J401": {
+      "mpn": "TSW-106-07-G-S",
+      "manufacturer": "Samtec",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "source": "https://www.samtec.com/products/tsw-106-07-g-s",
+      "notes": "Single-row 2.54mm pitch 0.635mm square post through-hole header, -07 standard tail. J101/Jx01 3V3 is reference only, do not power externally through debugger."
+    },
+    "R404": {
+      "mpn": "RC0603FR-074K7L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. VALID default-low pull-down selected ≤8.2kΩ for RP2350 A2 E9 compatibility."
+    },
+    "R405": {
+      "mpn": "RC0603FR-074K7L",
+      "manufacturer": "Yageo",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "notes": "0603 thick-film, ±1%, 0.1W. VALID default-low pull-down selected ≤8.2kΩ for RP2350 A2 E9 compatibility."
+    },
+    "TP1": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "Fabricated copper test pad; no assembled component.",
+      "purchasable": false
+    },
+    "TP2": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "Fabricated copper test pad; no assembled component.",
+      "purchasable": false
+    },
+    "TP3": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "Fabricated copper test pad; no assembled component.",
+      "purchasable": false
+    },
+    "TP101": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "Fabricated copper test pad; no assembled component.",
+      "purchasable": false
+    },
+    "TP102": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "Fabricated copper test pad; no assembled component.",
+      "purchasable": false
+    },
+    "TP103": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "Fabricated copper test pad; no assembled component.",
+      "purchasable": false
+    },
+    "TP104": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "Fabricated copper test pad; no assembled component.",
+      "purchasable": false
+    },
+    "H1": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "3.2mm non-plated through mounting hole; no assembled component.",
+      "purchasable": false
+    },
+    "H2": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "3.2mm non-plated through mounting hole; no assembled component.",
+      "purchasable": false
+    },
+    "H3": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "3.2mm non-plated through mounting hole; no assembled component.",
+      "purchasable": false
+    },
+    "H4": {
+      "mpn": "PCB_FEATURE_NOT_PURCHASED",
+      "manufacturer": "PCB fabricator",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "source": "https://jlcpcb.com/capabilities/Capab",
+      "notes": "3.2mm non-plated through mounting hole; no assembled component.",
+      "purchasable": false
+    }
+  },
+  "coverage": {
+    "assembled_parts": 153,
+    "bare_pcb_features": 11,
+    "by_reference_count": 164,
+    "power_flags_excluded": 5
+  },
+  "dfm": {
+    "fabricator": "JLCPCB",
+    "stackup": "JLC04161H-3313",
+    "layer_count": 4,
+    "nominal_board_thickness_mm": 1.6,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "default_track_clearance_mm": 0.15,
+    "local_RP2350_fanout_clearance_mm": 0.1,
+    "via_drill_mm": 0.2,
+    "via_diameter_mm": 0.45,
+    "usb_impedance_calculation": {
+      "request": {
+        "accessId": "c47e98df-e134-48c6-9b46-5629b482eb26",
+        "impedance_calc_mark": "DiffEdgeCoupledCoatedMicrostrip1B",
+        "paramMd5": "d12567c5bed1a4ff677f337ff63a28aa",
+        "impedance_calc_arg": {
+          "H1": 3.9133858267716537,
+          "Er1": 4.1,
+          "H2": 0,
+          "Er2": 0,
+          "H3": 0,
+          "Er3": 0,
+          "H4": 0,
+          "Er4": 0,
+          "W1": 6.220472440944882,
+          "W2": 5.720472440944882,
+          "G1": 0,
+          "G2": 0,
+          "S1": 7.874015748031497,
+          "D1": 0,
+          "O1": 0,
+          "T1": 1.6,
+          "REr": 0,
+          "C1": 1,
+          "C2": 0.6,
+          "C3": 1,
+          "CEr": 3.8,
+          "HZ0": 108.0,
+          "dCalculateMode": 3
+        },
+        "uuid": "c1dddb76-7d5f-4eae-9f39-823cb7697e05"
+      },
+      "response": {
+        "accessId": "c47e98df-e134-48c6-9b46-5629b482eb26",
+        "impedance_calc_error_msg": "",
+        "impedance_calc_mark": "DiffEdgeCoupledCoatedMicrostrip1B",
+        "impedance_calc_result": {
+          "dCer": 0,
+          "dDelay": 5790.5200382,
+          "dErEff": 3.0135379516,
+          "dImpedance": 89.9522758704,
+          "dInductance": 0,
+          "dResultValid": 1
+        },
+        "impedance_calc_status": 0,
+        "impedance_calc_time": 62,
+        "paramMd5": "a37aa82f9accb219a6371d19d6ab15ea",
+        "uuid": "c1dddb76-7d5f-4eae-9f39-823cb7697e05"
+      }
+    },
+    "usb_geometry_mm": {
+      "width": 0.158,
+      "gap": 0.2,
+      "same_layer_other_copper_keepout": 0.5
+    },
+    "usb_calculated_differential_ohms": 89.9522758704,
+    "usb_source": "https://jlcpcb.com/pcb-impedance-calculator",
+    "usb_notes": "Coated differential microstrip L1 over continuous L2 ground, H=.0994mm Dk4.1; official calculator dCalculateMode3. Simulation only; request 90Ω differential controlled impedance and fabricator confirmation.",
+    "usb_connector_footprint": {
+      "source_sha256": "3b8d7da3cae5114ec83022a759a78925113bc2eeec100ea447594f6d8687e4b8",
+      "derived_sha256": "6b5a19aa0bc9462f0afe56b61d3cd2b0560e5659198d3ff32dcae09e6b7866ef",
+      "drawing": "https://gct.co/files/drawings/usb4105.pdf",
+      "drawing_revision": "B4, 18/12/23",
+      "modified_pads": [
+        "A1",
+        "A12",
+        "B1",
+        "B12"
+      ],
+      "old_size_mm": [
+        0.6,
+        1.15
+      ],
+      "new_size_mm": [
+        0.6,
+        1.11
+      ],
+      "old_y_mm": -3.68,
+      "new_y_mm": -3.7,
+      "min_npth_clearance_mm": 0.23330784267859123,
+      "holes_other_pads_unchanged": true,
+      "paste": "1:1 same shortened roundrect; coincident A/B ground pads merge in Gerber",
+      "source_license": "CC-BY-SA-4.0 with KiCad electronic-design exception",
+      "license_file": "FarmMesh.pretty/LICENSE-KiCad.txt"
+    }
+  },
+  "accessories": [
+    {
+      "quantity": 3,
+      "mpn": "FXP830.07.0100C",
+      "manufacturer": "Taoglas",
+      "source": "https://www.taoglas.com/product/freedom-fxp830-2-44-9-6-0ghz-flex-pcb-antenna-ipex-mhfi-2/",
+      "purpose": "One external 50Ω dual-band antenna per ESP32-C5-WROOM-1U",
+      "notes": "MHF I/U.FL-compatible plug and 100mm 1.37mm coax are integral; no extra RF pigtail required. Prototype RF test antenna, not certified-system approval. Keep radiators outside board/battery metal and test mutual coupling; do not substitute MHF4. Antenna gain/type differ from Espressif certification antenna, so certification reuse is not established."
+    },
+    {
+      "quantity": 1,
+      "mpn": "USB2AC1M",
+      "manufacturer": "StarTech.com",
+      "source": "https://www.startech.com/en-at/cables/usb2ac1m",
+      "purpose": "1m USB-A to USB-C data cable for RP2350 USB/BOOTSEL",
+      "notes": "USB2.0 data cable; board still requires battery or regulated bench input. Not a charging path."
+    },
+    {
+      "quantity": 1,
+      "mpn": "VHR-2N",
+      "manufacturer": "JST",
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eVH.pdf",
+      "purpose": "J1 mating battery cable housing",
+      "notes": "Project harness pin1 BAT_PLUS, pin2 GND; verify polarity before inserting a pack."
+    },
+    {
+      "quantity": 2,
+      "mpn": "SVH-21T-P1.1",
+      "manufacturer": "JST",
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eVH.pdf",
+      "purpose": "J1 mating crimp contacts",
+      "notes": "Use 18–22AWG wire and the specified JST crimp process; select 18AWG short battery leads for prototype high-current tests."
+    },
+    {
+      "quantity": 1,
+      "mpn": "SNT-100-BK-G",
+      "manufacturer": "Samtec",
+      "source": "https://www.samtec.com/products/snt-100-bk-g",
+      "purpose": "J2 OFF jumper shunt",
+      "notes": "2.54mm 2-position, 0.64mm square-post mating; populated shunt holds converter OFF."
+    },
+    {
+      "quantity": 1,
+      "mpn": "M20-1060500",
+      "manufacturer": "Harwin",
+      "source": "https://www.harwin.com/products/M20-1060500",
+      "purpose": "J101 five-way SWD cable housing",
+      "notes": "0.64mm square-post compatible; custom wire mapping required, not a standard keyed SWD cable."
+    },
+    {
+      "quantity": 3,
+      "mpn": "M20-1060600",
+      "manufacturer": "Harwin",
+      "source": "https://www.harwin.com/products/M20-1060600",
+      "purpose": "J201/J301/J401 six-way UART/debug housings",
+      "notes": "Custom wire mapping required. Only 3.3V logic; 3V3 pin is reference, not external power input."
+    },
+    {
+      "quantity": 23,
+      "mpn": "M20-1180042",
+      "manufacturer": "Harwin",
+      "source": "https://cdn.harwin.com/pdfs/IS-15.pdf",
+      "purpose": "Loose female gold crimp contacts for four debug harness housings",
+      "notes": "Use 22–30AWG wire with correct crimp tooling; quantity is all 5+3×6 positions, omit a physical contact where external power injection must be prevented."
+    }
+  ],
+  "procurement_check": {
+    "date": "2026-09-23",
+    "scope": "Manufacturer order codes plus distributor catalogue/stock indications; no purchase, reservation, quantity or delivery promise. Assembler may need customer-supplied parts.",
+    "critical_parts": [
+      {
+        "mpn": "RP2350B",
+        "source": "https://www.lcsc.com/product-detail/Microcontrollers-MCU-MPU-SOC_Raspberry-Pi-RP2350B_C42415655.html",
+        "status": "Distributor product listing; verify silicon lot A3/A4 preference at order."
+      },
+      {
+        "mpn": "ESP32-C5-WROOM-1U-N8R8",
+        "source": "https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-C5-WROOM-1U-N8R8?qs=4dK74SdgGtxee18dMuslog%3D%3D",
+        "status": "Exact orderable variant with stock indication seen."
+      },
+      {
+        "mpn": "LTC3119IFE#PBF",
+        "source": "https://www.mouser.sk/en/ProductDetail/Analog-Devices/LTC3119IFEPBF?qs=sGAEpiMZZMsMIqGZiACxIbGPqYNaVq2%2F%2F%252BCqgEA5%252BgXmOPjsnUvSPg%3D%3D",
+        "status": "Exact FE package variant listed with stock indication; limited stock possible."
+      },
+      {
+        "mpn": "W25Q128JVSIQ",
+        "source": "https://www.digikey.fr/en/products/detail/winbond-electronics/W25Q128JVSIQ/5803943",
+        "status": "Active exact SI/Q variant listed with stock indication."
+      },
+      {
+        "mpn": "TS3USB30EDGSR",
+        "source": "https://www.digikey.com/en/products/detail/texas-instruments/TS3USB30EDGSR/2193086",
+        "status": "TI Active; distributor stock indication seen; TI anonymous page alone says not available."
+      },
+      {
+        "mpn": "TLV3011BIDBVR",
+        "source": "https://www.mouser.com/ProductDetail/Texas-Instruments/TLV3011BIDBVR?qs=3Rah4i%252BhyCEbcRLZ4CMXdw%3D%3D",
+        "status": "TI Active; exact B variant distributor stock indication seen."
+      },
+      {
+        "mpn": "AOTA-B201610S3R3-101-T",
+        "source": "https://abracon.com/parametric/inductors/AOTA-B201610S3R3-101-T",
+        "status": "Manufacturer Active; exact DigiKey variant had in-stock indication on review date although direct manufacturer ecommerce warehouse was unavailable. Secure exact marked part before assembly; no unreviewed inductor substitution or stock reservation implied.",
+        "distributor_source": "https://www.digikey.com.au/en/products/detail/abracon-llc/AOTA-B201610S3R3-101-T/25621527"
+      }
+    ]
+  },
+  "validation_limits": [
+    "Exact GRM21BZ71A226ME15L official typical DC-bias curve is recorded in capacitor_validation at 25C/0.5Vrms/120Hz. Full-temperature, low-AC-ripple, aging and tolerance minimum effective capacitance remain unqualified. Other MLCC working-bias capacitance values are not numerically validated here.",
+    "LTC3119 loop with 220uF plus 3×100uF polymer reservoirs requires compensation/load-step verification; small ESR does not prove stability.",
+    "USB calculation is a nominal field-solver result for the specified stackup, not impedance measurement.",
+    "Assembly BOM complete for prototype; final routed PCB/manufacturing-file audit and physical bring-up are separate."
+  ],
+  "capacitor_validation": {
+    "GRM21BZ71A226ME15L": {
+      "status": "official_typical_curve_retrieved_not_guaranteed_minimum",
+      "retrieved_date": "2026-09-23",
+      "packing_code_note": "SimSurfing uses GRM21BZ71A226ME15 without final packing suffix L; official product metadata identifies the same electrical part.",
+      "source": "https://ds.murata.com/simsurfing/mlcc.html?lcid=en-us",
+      "measurement_conditions_source": "https://ds.murata.com/simsurfing_data/pdf/en-us/mlcc/sim_mlcc_measuringcond_e.pdf",
+      "request_endpoint": "https://ds.murata.com/simserve/characteristics",
+      "request_params": {
+        "callback": "nothing",
+        "ReqType": "Characteristics",
+        "ReqChara": "[{\"partnumber\":\"GRM21BZ71A226ME15\",\"chara_type\":\"c_dcbias_capacitance\",\"parameter\":{\"tc\":\"25\",\"ac\":\"0.5\"},\"WorkInfo\":{\"color\":\"EA002A\",\"graph_set_y_name\":\"\"}}]",
+        "CallBack": "",
+        "WorkInfo": "svgGraph1"
+      },
+      "request_url": "https://ds.murata.com/simserve/characteristics?callback=nothing&ReqType=Characteristics&ReqChara=%5B%7B%22partnumber%22%3A%22GRM21BZ71A226ME15%22%2C%22chara_type%22%3A%22c_dcbias_capacitance%22%2C%22parameter%22%3A%7B%22tc%22%3A%2225%22%2C%22ac%22%3A%220.5%22%7D%2C%22WorkInfo%22%3A%7B%22color%22%3A%22EA002A%22%2C%22graph_set_y_name%22%3A%22%22%7D%7D%5D&CallBack=&WorkInfo=svgGraph1",
+      "response_sha256": "662e4209ee2470dc889907910592f94f6a3ba756e7fa337bd67166ccd6e7feca",
+      "response_utf8": "{ \"JsonCharaData\":[{\"partnumber\":\"GRM21BZ71A226ME15\", \"chara_type\":\"c_dcbias_capacitance\", \"WorkInfo\":{\"tc\":\"25\", \"ac\":\"0.5\", \"color\":\"EA002A\"}, \"charadata\":[{\"caption\":\"C-DC bias\",\"caption2\":\"capacitance, 25.0degC, AC0.5Vrms\",\"error\":\"\",\"dc\":\"0\",\"tc\":\"25\",\"ac\":\"0.5\",\"x_name\":\"DC Bias\",\"x_unit\":\"V\",\"x_subunit\":\"\",\"x_min\":\"NaN\",\"x_max\":\"NaN\",\"x_divtype\":\"nomal\",\"x_decimal_digit\":\"1\",\"x_axisoption\":\"null\",\"x_grad_step\":\"null\",\"x_grad_passpoint\":\"0\",\"y_name\":\"Capacitance\",\"y_unit\":\"F\",\"y_subunit\":\"u\",\"y_min\":\"NaN\",\"y_max\":\"NaN\",\"y_divtype\":\"nomal\",\"y_decimal_digit\":\"3\",\"y_axisoption\":\"null\",\"y_grad_step\":\"null\",\"y_grad_passpoint\":\"0\",\"graphoption\":\"null\",\"data\":[[[0.0],[21.4817]],[[0.05],[21.53249476031536]],[[0.1],[21.5741966257595]],[[0.15000000000000002],[21.60695853952832]],[[0.2],[21.630943169410894]],[[0.25],[21.646322159439062]],[[0.30000000000000004],[21.653275389215477]],[[0.35000000000000003],[21.651990243342603]],[[0.4],[21.64266089317702]],[[0.45],[21.6254875929371]],[[0.5],[21.600675991997974]],[[0.55],[21.568436465017644]],[[0.6000000000000001],[21.52898346135236]],[[0.65],[21.482534875038848]],[[0.7000000000000001],[21.42931143644717]],[[0.75],[21.36953612654003]],[[0.8],[21.3034336145143]],[[0.8500000000000001],[21.23122971944763]],[[0.9],[21.153150896428272]],[[0.9500000000000001],[21.069423747509592]],[[1.0],[20.980274557702366]],[[1.05],[20.885928856098097]],[[1.1],[20.7866110021051]],[[1.1500000000000001],[20.68254379667596]],[[1.2000000000000002],[20.573948118310362]],[[1.25],[20.461042583530496]],[[1.3],[20.34404323144792]],[[1.35],[20.2231632319697]],[[1.4000000000000001],[20.09861261712872]],[[1.4500000000000002],[19.9705980349667]],[[1.5],[19.839322525349882]],[[1.55],[19.704985317054682]],[[1.6],[19.567781645424734]],[[1.6500000000000001],[19.427902589870868]],[[1.7000000000000002],[19.28553493046098]],[[1.75],[19.140861022828002]],[[1.8],[18.99405869060987]],[[1.85],[18.845301134626176]],[[1.9000000000000001],[18.694756857990804]],[[1.9500000000000002],[18.54258960635869]],[[2.0],[18.38895832250736]],[[2.0500000000000003],[18.234017114459245]],[[2.1],[18.077915236359697]],[[2.15],[17.920797081336765]],[[2.2],[17.762802185582483]],[[2.25],[17.604065242911396]],[[2.3000000000000003],[17.44471612906944]],[[2.35],[17.284879935085836]],[[2.4000000000000004],[17.12467700898113]],[[2.45],[16.964223005166343]],[[2.5],[16.80362894089107]],[[2.5500000000000003],[16.643001259121647]],[[2.6],[16.482441897254894]],[[2.6500000000000004],[16.32204836109719]],[[2.7],[16.16191380356359]],[[2.75],[16.002127107576616]],[[2.8000000000000003],[15.842772972669096]],[[2.85],[15.683932004820589]],[[2.9000000000000004],[15.525680809081058]],[[2.95],[15.36809208456029]],[[3.0],[15.211234721385027]],[[3.0500000000000003],[15.055173899249546]],[[3.1],[14.899971187208187]],[[3.1500000000000004],[14.745684644380809]],[[3.2],[14.592368921263828]],[[3.25],[14.440075361360702]],[[3.3000000000000003],[14.28885210286598]],[[3.35],[14.138744180156866]],[[3.4000000000000004],[13.989793624865134]],[[3.45],[13.84203956632047]],[[3.5],[13.695518331173723]],[[3.5500000000000003],[13.550263542025338]],[[3.6],[13.406306214900075]],[[3.6500000000000004],[13.2636748554243]],[[3.7],[13.122395553576634]],[[3.75],[12.982492076896325]],[[3.8000000000000003],[12.843985962046643]],[[3.85],[12.706896604642983]],[[3.9000000000000004],[12.5712413472666]],[[3.95],[12.437035565595968]],[[4.0],[12.30429275259791]],[[4.05],[12.173024600729931]],[[4.1000000000000005],[12.043241082114466]],[[4.15],[11.914950526653662]],[[4.2],[11.788159698061303]],[[4.25],[11.662873867795543]],[[4.3],[11.53909688688272]],[[4.3500000000000005],[11.41683125562862]],[[4.4],[11.296078191219317]],[[4.45],[11.176837693218648]],[[4.5],[11.059108606974315]],[[4.55],[10.942888684948729]],[[4.6000000000000005],[10.82817464599473]],[[4.65],[10.714962232599767]],[[4.7],[10.603246266125263]],[[4.75],[10.493020700070788]],[[4.800000000000001],[10.38427867139513]],[[4.8500000000000005],[10.277012549928541]],[[4.9],[10.171213985912445]],[[4.95],[10.066873955704473]],[[5.0],[9.963982805688213]],[[5.050000000000001],[9.862530294428238]],[[5.1000000000000005],[9.762505633111921]],[[5.15],[9.66389752432043]],[[5.2],[9.566694199171867]],[[5.25],[9.470883452880008]],[[5.300000000000001],[9.376452678772289]],[[5.3500000000000005],[9.283388900811056]],[[5.4],[9.191678804661898]],[[5.45],[9.101308767352947]],[[5.5],[9.012264885568731]],[[5.550000000000001],[8.924533002622047]],[[5.6000000000000005],[8.83809873414667]],[[5.65],[8.752947492553472]],[[5.7],[8.66906451029196]],[[5.75],[8.586434861958573]],[[5.800000000000001],[8.50504348529242]],[[5.8500000000000005],[8.424875201098624]],[[5.9],[8.345914732138386]],[[5.95],[8.268146721024443]],[[6.0],[8.191555747159487]],[[6.050000000000001],[8.116126342754466]],[[6.1000000000000005],[8.041843007962756]],[[6.15],[7.968690225165333]],[[6.2],[7.8966524724411125]],[[6.25],[7.825714236255929]],[[6.300000000000001],[7.755860023402349]],[[6.3500000000000005],[7.687074372222093]],[[6.4],[7.619341863141439]],[[6.45],[7.552647128549415]],[[6.5],[7.486974862047547]],[[6.550000000000001],[7.422309827099039]],[[6.6000000000000005],[7.35863686510431]],[[6.65],[7.295940902929114]],[[6.7],[7.234206959910409]],[[6.75],[7.173420154364331]],[[6.800000000000001],[7.113565709619876]],[[6.8500000000000005],[7.054628959600976]],[[6.9],[6.996595353978734]],[[6.95],[6.939450462915165]],[[7.0],[6.883179981418503]],[[7.050000000000001],[6.827769733329748]],[[7.1000000000000005],[6.773205674959201]],[[7.15],[6.71947389839117]],[[7.2],[6.666560634473985]],[[7.25],[6.614452255512255]],[[7.300000000000001],[6.56313527767719]],[[7.3500000000000005],[6.512596363150396]],[[7.4],[6.462822322015812]],[[7.45],[6.413800113914027]],[[7.5],[6.365516849472277]],[[7.550000000000001],[6.317959791523146]],[[7.6000000000000005],[6.271116356124389]],[[7.65],[6.224974113391568]],[[7.7],[6.179520788154914]],[[7.75],[6.134744260451125]],[[7.800000000000001],[6.0906325658603775]],[[7.8500000000000005],[6.047173895698489]],[[7.9],[6.004356597073512]],[[7.95],[5.962169172815707]],[[8.0],[5.920600281289349]],[[8.05],[5.879638736094584]],[[8.1],[5.839273505666955]],[[8.15],[5.799493712781859]],[[8.200000000000001],[5.760288633971045]],[[8.25],[5.721647698857686]],[[8.3],[5.683560489416161]],[[8.35],[5.646016739162816]],[[8.4],[5.609006332282973]],[[8.450000000000001],[5.5725193026998125]],[[8.5],[5.536545833089949]],[[8.55],[5.501076253850752]],[[8.6],[5.466101042023563]],[[8.65],[5.431610820177408]],[[8.700000000000001],[5.397596355257039]],[[8.75],[5.364048557399054]],[[8.8],[5.330958478719878]],[[8.85],[5.298317312078611]],[[8.9],[5.26611638981831]],[[8.950000000000001],[5.234347182488197]],[[9.0],[5.203001297549953]],[[9.05],[5.172070478070467]],[[9.1],[5.141546601403509]],[[9.15],[5.111421677862575]],[[9.200000000000001],[5.0816878493871025]],[[9.25],[5.052337388203774]],[[9.3],[5.023362695484997]],[[9.35],[4.994756300006088]],[[9.4],[4.96651085680265]],[[9.450000000000001],[4.938619145829812]],[[9.5],[4.911074070624342]],[[9.55],[4.8838686569710905]],[[9.600000000000001],[4.856996051574656]],[[9.65],[4.830449520737539]],[[9.700000000000001],[4.804222449045305]],[[9.75],[4.778308338059968]],[[9.8],[4.752700805022061]],[[9.850000000000001],[4.727393581562165]],[[9.9],[4.70238051242241]],[[9.950000000000001],[4.677655554188471]],[[10.0],[4.65321277403256]]]}]}], \"WorkInfo\":\"svgGraph1\", \"CallBack\":\"\"}",
+      "conditions": {
+        "temperature_C": 25,
+        "AC_Vrms": 0.5,
+        "measurement_frequency_Hz": 120,
+        "DC_bias_apply_duration_s": 60
+      },
+      "points": [
+        {
+          "dc_V": 0,
+          "capacitance_uF": 21.4817,
+          "interpolated": false
+        },
+        {
+          "dc_V": 3.3,
+          "capacitance_uF": 14.28885210286598,
+          "interpolated": false
+        },
+        {
+          "dc_V": 4.2,
+          "capacitance_uF": 11.788159698061303,
+          "interpolated": false
+        },
+        {
+          "dc_V": 5,
+          "capacitance_uF": 9.963982805688213,
+          "interpolated": false
+        },
+        {
+          "dc_V": 10,
+          "capacitance_uF": 4.65321277403256,
+          "interpolated": false
+        }
+      ],
+      "limitations": [
+        "Typical reference data, not guaranteed minimum capacitance over initial tolerance, temperature, aging and service life.",
+        "GetAcChoices4Cdcb returns only [0.5]; a 0.01 Vrms request returns an unsupported-AC error. Do not claim the 0.5 Vrms curve represents the actual small-ripple operating point.",
+        "Requests for -20 and 85 C returned actual charadata tc=25; their WorkInfo echoes the requested temperatures. Inspect charadata rather than request metadata; no full-temperature bias curve has been validated.",
+        "The Z7 50%-rated-bias temperature coefficient limit is not a guarantee of retaining 85% nominal capacitance at that DC bias."
+      ],
+      "engineering_decision": "Retain the selected 22uF 10V 0805 exact MPN. Traceable bias data now exist, so no replacement is needed solely to obtain a curve. Include actual bias-reduced capacitance in loop/load-step evaluation; prototype data do not qualify the full operating envelope."
+    }
+  }
+}

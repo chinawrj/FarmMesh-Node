@@ -1,8 +1,8 @@
-# FarmMesh Node A0 原理图审阅说明
+# FarmMesh Node A1 硬件设计说明
 
-日期：2026-09-23。状态：**首版工程审阅稿，尚未完成 PCB、样板或性能验证，不是生产/采购发布版。**
+日期：2026-09-23。A1 投样放行状态以 [RELEASE.md](RELEASE.md) 为准；尚无实物或性能验证。
 
-This is the first reviewable seven-sheet KiCad 10 schematic: one RP2350B, three official ESP32-C5-WROOM-1U-N8R8 modules, a protected 1S Li-ion input and a 3.3 V buck-boost supply. ERC and static connectivity/pad checks do not establish power, RF or interface performance. PCB layout, charging/solar power and firmware remain future work.
+The A1 eight-sheet KiCad 10 design and 100 × 100 mm four-layer PCB contain one RP2350B, three official ESP32-C5-WROOM-1U-N8R8 modules, a protected 1S Li-ion input and a 3.3 V buck-boost supply. ERC and static connectivity/pad checks do not establish power, RF or interface performance. The prototype release status is recorded in RELEASE.md. Charging/solar power and application firmware remain future work.
 
 ## 打开与文件
 
@@ -10,14 +10,14 @@ This is the first reviewable seven-sheet KiCad 10 schematic: one RP2350B, three 
 
 | 文件 | 用途 |
 | --- | --- |
-| [七页 PDF](review/FarmMesh-Node-A0.pdf) | 索引、电源、RP2350B、三页 C5、USB |
-| [BOM.csv](BOM.csv) | 145 个板上元件，未定 MPN 清楚标为 TBD |
+| [八页 PDF](review/FarmMesh-Node-A1.pdf) | 索引、电源、RP2350B、三页 C5、USB、测试及机械 |
+| [BOM.csv](BOM.csv) | 153 个已定料装配元件与 11 个 PCB 特征；下单用 manufacturing/assembly/BOM-assembly.csv |
 | [gpio-pinmap.csv](gpio-pinmap.csv) | 全部 36 条链路信号，C5 GPIO/模组焊盘与 RP GPIO/封装焊盘 |
 | [ERC](reports/erc.json) | KiCad 原始检查结果 |
 | [网表及焊盘核对](reports/connectivity-and-footprints.json) | 实际导出网表与已加载封装的结构检查 |
 | [电源审阅](reports/power-review.md)、[RP 审阅](reports/rp2350-review.md)、[C5 审阅](reports/c5-review.md) | 独立检查、官方依据及待验证边界 |
 
-索引页的子图框使用全局网络标签连接，框本身没有层次端口。`TX` / `RX` 始终从 C5 视角命名。五个 PWR_FLAG 只是 ERC 驱动声明，不是物料；145 个板上元件之外另有这五个标记。
+索引页的子图框使用全局网络标签连接，框本身没有层次端口。`TX` / `RX` 始终从 C5 视角命名。五个 PWR_FLAG 只是 ERC 驱动声明，不是物料；164 个板上对象之外另有这五个标记。
 
 ## 硬件决策
 
@@ -28,7 +28,7 @@ This is the first reviewable seven-sheet KiCad 10 schematic: one RP2350B, three 
 - LTC3119IFE#PBF 使用官方 TA06 3.3 V / 500 kHz 电路为起点。4.7 µH XAL7070-472MEC，反馈 316 kΩ / 100 kΩ，输出标称 3.307 V。78.7 kΩ + 820 pF 补偿是起始值，附加模组电容后的环路稳定性尚未测量。
 - MPPC 接 VCC 关闭该功能，本稿不是 MPPT；PWM/SYNC 接地允许 Burst。VCC 是内部辅助电源，不得直接短接到 3V3；D1 阳极 3V3、阴极 VCC。PGOOD 仅给 RP 检测，不直接拉三颗 C5 的 EN。
 - RUN 174 kΩ / 100 kΩ：标称启动约 3.30 V、停止约 3.01 V，受器差和负载压降影响。电压低于启动点的电池可能不能冷启动。J2 短接将 RUN 拉低用于关机；仅触发 UVLO 不能等同于数据表的完整关断电流。
-- C7 6SVPE220M 为 Panasonic C6 外形，使用 `CP_Elec_6.3x5.9`。输入 100 µF 及各 C5 100 µF 储能电容仍需定料；其容量、ESR、纹波与温度参数影响启动及环路。
+- C7 6SVPE220M 为 Panasonic C6 外形，使用 `CP_Elec_6.3x5.9`。C6 输入选 10SVPC120M（120 µF / 10 V）；各 C5 选 6SVPC100M（100 µF / 6.3 V），封装分别为 6.3 × 5.9 mm 和 5 × 5.9 mm。输出共有 520 µF 聚合物电容，分布电容对启动和环路的影响仍须实测。22 µF MLCC 的官方 25°C 直流偏压典型数据和重放记录见 parts-selection.json，不将典型值当全温最小保证。
 
 | 预算项目 | 当前设计输入 |
 | --- | --- |
@@ -51,9 +51,9 @@ GPIO0–35 分配三组接口，GPIO36 为 PGOOD，GPIO37（FT pad46）检测 US
 
 ### 三个 ESP32-C5 模组
 
-U201/U301/U401 均选官方 **ESP32-C5-WROOM-1U-N8R8**：8 MB Flash、8 MB PSRAM、外置天线接口。每颗需独立的 2.4/5 GHz 天线及适配 ANT1 的线缆，尚未定料；默认不用模组 ANT2 pad31。此 1U 型号没有 PCB 天线，不应机械套用 PCB 天线版的 15 mm 天线区规则；仍须规划连接器空间、天线摆放及三射频之间隔离。
+U201/U301/U401 均选官方 **ESP32-C5-WROOM-1U-N8R8**：8 MB Flash、8 MB PSRAM、外置天线接口。每颗需独立的 2.4/5 GHz 天线及适配 ANT1 的线缆，已选配套 MPN 见 parts-selection.json 的 accessories；默认不用模组 ANT2 pad31。此 1U 型号没有 PCB 天线，不应机械套用 PCB 天线版的 15 mm 天线区规则；仍须规划连接器空间、天线摆放及三射频之间隔离。
 
-每模组 22 µF + 100 nF 近 pad2，100 µF 作为暂定本地储能。EN 采用 10 kΩ / 1 µF，GPIO27 和 GPIO28 各 10 kΩ 上拉；BOOT 将 GPIO28 拉低，RESET 拉低 EN。按住 BOOT、脉冲 RESET 进入 UART 下载。
+每模组 22 µF + 100 nF 近 pad2，100 µF 聚合物电容提供本地储能。EN 采用 10 kΩ / 1 µF，GPIO27 和 GPIO28 各 10 kΩ 上拉；BOOT 将 GPIO28 拉低，RESET 拉低 EN。按住 BOOT、脉冲 RESET 进入 UART 下载。
 
 J201/J301/J401：1 GND，2 C5 TX，3 C5 RX，4 EN，5 BOOT，6 3V3 参考。使用 3.3 V 逻辑的 UART 适配器；pin6 是参考输出，不是另一电源入口。RP SWD J101：1 3V3 参考，2 SWDIO，3 GND，4 SWCLK，5 RUN。
 
@@ -76,22 +76,19 @@ PIO0 GPIOBASE=0 负责 A；PIO1 GPIOBASE=0 负责 B；PIO2 GPIOBASE=16 负责 C�
 
 ### USB 边界
 
-J102 USB4105-GF-A 只用于 RP 数据；VBUS 不给板供电，也不充电，使用时仍需电池。CC1/CC2 各 5.1 kΩ，D± 经 USBLC6-2SC6 和靠 RP 的 27 Ω 串联电阻。USBLC6 的 I/O 是 1↔6 与 3↔4 直通对，VBUS 有 100 nF。
+J102 USB4105-GF-A 只用于 RP 数据；VBUS 不给板供电，也不充电，使用时仍需电池。CC1/CC2 各 5.1 kΩ，D± 经 USBLC6-2SC6、TS3USB30EDGSR 数据开关及靠 RP 的 27 Ω 串联电阻。USBLC6 的 I/O 是 1↔6 与 3↔4 直通对，VBUS 有 100 nF。
 
-VBUS 通过 5.1 kΩ / 7.5 kΩ 接 GPIO37。按 1% 电阻及 4.4–5.5 V VBUS，检测电压约 2.598–3.300 V，低于 FT 脚 IOVDD=0 时的 3.63 V 上限；程序检测前应关闭 GPIO37 内部上下拉。应用固件需根据 VBUS 决定 USB attach，但 ROM BOOTSEL 不会自动采用此自定义检测脚，不能据此宣称已解决所有自供电 USB 时序。首次样板需重点验证 BOOTSEL、拔插、主机掉电及 D+/ESD 钳位反灌。
+VBUS 通过 5.1 kΩ / 7.5 kΩ 接 GPIO37。按 1% 电阻及 4.4–5.5 V VBUS，检测电压约 2.598–3.300 V，低于 FT 脚 IOVDD=0 时的 3.63 V 上限；程序检测前应关闭 GPIO37 内部上下拉。A1 增加 TLV3011BIDBVR（必须 B 版本）与 237 kΩ / 100 kΩ 比较网络，在 VBUS 低于标称约 4.19 V 时将开关 /OE 拉高；10 kΩ 默认上拉使 USB 物理断开，不依赖应用程序或 ROM 读取 GPIO37。容差、失电、欠压及电源先后顺序仍须按首板指南测量；Ioff 规格不代表任意欠压条件。
 
-## 校验结果与后续门槛
+## 布局与校验
 
-KiCad 10.0.5 ERC：**0 error / 0 warning / 0 exclusion**。未添加专门屏蔽项；报告列出的四项 ignored checks 是默认配置（单次全局标签、四向节点、SPICE、封装筛选），不是把本设计报错手动隐藏。
+A1 使用 100 × 100 mm、四层 1.6 mm 板；F.Cu / In1.GND / In2.GND / B.Cu。JLC04161H-3313 叠层、USB 90 Ω 主干几何和制造公差见 [FABRICATION.md](FABRICATION.md)。两内层保留为参考地，RP buck 的 LX 下方仅在相邻 In1.Cu 局部避空。三路 C5 电源主干为 1.5 mm，RP 支路为 1.0 mm；局部电源回路、QSPI、晶振和 USB 先行布线，再完成普通信号。
 
-实际 KiCad XML 网表核对：145 个板上元件、131 个已连接网络组、36 条接口；22 种封装由 KiCad `pcbnew.FootprintLoad` 实际加载，并逐个核对符号 pin 与 footprint pad 编号集合。C5 为 32 个焊盘编号、40 个铜区（EP29 拆成九格）。PDF 七页经逐页渲染审阅；桌面 KiCad 工程也进行打开检查。
+153 个装配元件均有明确 MPN，7 个裸铜测试点及 4 个安装孔为 PCB 特征。三颗 C5、RP 和 LTC 的接地过孔均置于实际 EP 锡膏窗口之外，采用普通 tenting；这不等同于树脂填孔或保证封孔。M3 螺钉头部区域禁布外层铜。
 
-这些静态检查不验证电压、电流、温升、环路或协议功能。进入 PCB/样板前仍需：
+最终 ERC、DRC、未连接、原理图一致性以及逐焊盘几何校验以 reports 中绑定最终文件 SHA 的报告为准。三份 A1 独立审阅分别覆盖电源、RF/数字接口和定料/制造；原 A0 审阅记录仅保留为历史。
 
-1. 定下所有 TBD 电容、开关、连接器配套件及天线 MPN，核查直流偏压后的有效容量、ESR/ESL、纹波与温度规格。
-2. 按官方布局完成 LTC3119 高频回路/地/散热与 RP 核心 buck 的方向和电容布局；核实 C5 EP 焊盘、锡膏及接地过孔工艺。
-3. 在低电量/冷电池及三颗 C5 同时发射时验证启动、UVLO、3V3/1V1 瞬态、补偿稳定性、纹波、限流、反接和温升。
-4. 逐路验证 UART/SWD/USB，再用必要测试固件验证 4 位接口；无线协议、吞吐、三射频共存、部署和太阳能预算另行推进。
+[首板验收指南](FIRST-BOARD-TEST.md) 给出分阶段限流上电、3V3/1V1、UVLO、UART/SWD/USB、环路/负载/温升及射频测试。2.2 A 总输出和 3 A 脉冲是验证目标，50 Mbps 板内链路、用户吞吐与无线共存尚未测得。投样文件通过静态检查不能代替这些实测。
 
 ## 重生成与来源
 
@@ -102,7 +99,7 @@ python3 scripts/build_design.py
 for sheet in *.kicad_sch; do kicad-cli sch upgrade "$sheet"; done
 kicad-cli sch export netlist --format kicadxml -o reports/netlist.xml FarmMesh-Node.kicad_sch
 kicad-cli sch erc --format json --severity-all -o reports/erc.json FarmMesh-Node.kicad_sch
-kicad-cli sch export pdf -o review/FarmMesh-Node-A0.pdf FarmMesh-Node.kicad_sch
+kicad-cli sch export pdf -o review/FarmMesh-Node-A1.pdf FarmMesh-Node.kicad_sch
 # 用能 import pcbnew 的 Python 运行：
 python3 scripts/verify_design.py
 ```
@@ -110,3 +107,5 @@ python3 scripts/verify_design.py
 关键引用见三份审阅记录：[Espressif C5 模组 v1.3](https://www.espressif.com/sites/default/files/documentation/esp32-c5-wroom-1_wroom-1u_datasheet_en.pdf)、[RP2350 datasheet](https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf)、[RP 硬件设计指南](https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008280-DS-2-hardware-design-with-rp2350.pdf)、[LTC3119 Rev B](https://www.analog.com/media/en/technical-documentation/data-sheets/3119fb.pdf)。链接内容可能更新，选型重新冻结时需复核版本。
 
 L101 footprint 的几何和方向标记提取自 Raspberry Pi 官方 RP2350B Minimal R4-S1，去掉了原工程专属元数据和不可独立解析的内嵌 3D 引用；保留其 [MIT 许可](third-party/raspberry-pi-reference-LICENSE.txt)。[参考设计下载](https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-010329-CA-1-RP2350B%20Minimal%20KiCAD.zip)。其余标准符号/封装依赖 KiCad 库，自建 C5 焊盘按官方尺寸绘制。本文件不为整个项目额外指定许可证。
+
+`build_pcb.py` 只重建放置与关键走线底稿，**不会重现最终普通信号布线，不能覆盖发布板后直接下单**。最终原生 PCB 是完整布线的权威源；`verify_pcb.py` 为只读核查。`export_manufacturing.py` 与封包脚本在冻结源上生成并核验制造输出。

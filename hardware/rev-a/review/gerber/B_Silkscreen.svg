@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="102.05000000000001mm" height="102.05000000000001mm" viewBox="-1.025 -101.025 102.05000000000001 102.05000000000001" style="background-color:white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(-0.025 0.025) scale(1 -1) translate(0.025 100.025)">
+    <rect x="3.15" y="-88.85" width="1.7" height="1.7" fill="white"/>
+    <circle cx="4.0" cy="-85.46" r="0.85" fill="white"/>
+    <circle cx="4.0" cy="-82.92" r="0.85" fill="white"/>
+    <circle cx="4.0" cy="-80.38" r="0.85" fill="white"/>
+    <circle cx="4.0" cy="-77.84" r="0.85" fill="white"/>
+    <circle cx="4.0" cy="-75.3" r="0.85" fill="white"/>
+    <circle cx="95.0" cy="-95.0" r="1.6" fill="white"/>
+    <path d="M 86.9 -41.1 L 89.1 -41.1 L 89.1 -38.9 L 86.9 -38.9 L 86.9 -41.1" fill="white"/>
+    <circle cx="86.9" cy="-41.1" r="0.250001" fill="white"/>
+    <circle cx="89.1" cy="-41.1" r="0.250001" fill="white"/>
+    <circle cx="89.1" cy="-38.9" r="0.250001" fill="white"/>
+    <circle cx="86.9" cy="-38.9" r="0.250001" fill="white"/>
+    <rect x="86.9" y="-41.35" width="2.2" height="0.500002" fill="white"/>
+    <rect x="88.0" y="-40.25" width="2.2" height="0.500002" transform="rotate(90.0 89.1 -40.0)" fill="white"/>
+    <rect x="86.9" y="-39.15" width="2.2" height="0.500002" transform="rotate(180.0 88.0 -38.9)" fill="white"/>
+    <rect x="85.8" y="-40.25" width="2.2" height="0.500002" transform="rotate(-90.0 86.9 -40.0)" fill="white"/>
+    <circle cx="91.96" cy="-40.0" r="1.35" fill="white"/>
+    <rect x="96.15" y="-24.85" width="1.7" height="1.7" fill="white"/>
+    <circle cx="97.0" cy="-26.54" r="0.85" fill="white"/>
+    <rect x="11.15" y="-4.85" width="1.7" height="1.7" fill="white"/>
+    <circle cx="14.54" cy="-4.0" r="0.85" fill="white"/>
+    <circle cx="17.08" cy="-4.0" r="0.85" fill="white"/>
+    <circle cx="19.62" cy="-4.0" r="0.85" fill="white"/>
+    <circle cx="22.16" cy="-4.0" r="0.85" fill="white"/>
+    <circle cx="24.7" cy="-4.0" r="0.85" fill="white"/>
+    <rect x="62.15" y="-35.85" width="1.7" height="1.7" fill="white"/>
+    <circle cx="63.0" cy="-37.54" r="0.85" fill="white"/>
+    <circle cx="63.0" cy="-40.08" r="0.85" fill="white"/>
+    <circle cx="63.0" cy="-42.62" r="0.85" fill="white"/>
+    <circle cx="63.0" cy="-45.16" r="0.85" fill="white"/>
+    <circle cx="5.0" cy="-95.0" r="1.6" fill="white"/>
+    <circle cx="52.89" cy="-6.605" r="0.325" fill="white"/>
+    <circle cx="47.11" cy="-6.605" r="0.325" fill="white"/>
+    <path d="M 54.32 -7.655 L 54.32 -6.555" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0"/>
+    <path d="M 54.32 -3.325 L 54.32 -2.525" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0"/>
+    <path d="M 45.68 -7.655 L 45.68 -6.555" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0"/>
+    <path d="M 45.68 -3.325 L 45.68 -2.525" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0"/>
+    <circle cx="95.0" cy="-5.0" r="1.6" fill="white"/>
+    <rect x="87.15" y="-96.85" width="1.7" height="1.7" fill="white"/>
+    <circle cx="85.46" cy="-96.0" r="0.85" fill="white"/>
+    <circle cx="82.92" cy="-96.0" r="0.85" fill="white"/>
+    <circle cx="80.38" cy="-96.0" r="0.85" fill="white"/>
+    <circle cx="77.84" cy="-96.0" r="0.85" fill="white"/>
+    <circle cx="75.3" cy="-96.0" r="0.85" fill="white"/>
+    <circle cx="5.0" cy="-5.0" r="1.6" fill="white"/>
+  </g>
+</svg>

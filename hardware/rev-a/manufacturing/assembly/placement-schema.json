@@ -1,0 +1,34 @@
+{
+  "schema": "KiCad 10 CSV",
+  "columns": [
+    "Ref",
+    "Val",
+    "Package",
+    "PosX",
+    "PosY",
+    "Rot",
+    "Side"
+  ],
+  "units": "mm",
+  "origin": "KiCad absolute origin (0,0)",
+  "axes": "X right; Y up. Negative Y values are expected for this board located below the KiCad origin.",
+  "rotation": "KiCad front-side counterclockwise degrees; footprint origin, not guaranteed body centroid.",
+  "side": "top/front; A1 has only front-side fitted parts",
+  "assembly_count": 153,
+  "smd_count": 147,
+  "excluded_board_features": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "TP1",
+    "TP2",
+    "TP3",
+    "TP101",
+    "TP102",
+    "TP103",
+    "TP104"
+  ],
+  "smd_policy": "Footprint SMD attribute; keep hybrid USB4105. Do not use --exclude-fp-th.",
+  "fabricator_note": "Canonical engineering CSV, not a claim of JLC/LCSC turnkey part-number or rotation-library matching. Assembler must confirm importer, component rotation and body-centroid conventions."
+}
